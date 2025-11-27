@@ -14,16 +14,18 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         private int posicao;
 
-        private int quantCartas;
+        private int quantCartas; //Da última partida
 
         private Queue<int> ranking; //Stream Reader
 
-        public Jogador(string nome, int posicao, int quantCartas, Queue<int> ranking)
+        private List<Carta> MontedoJogador;
+
+        public Jogador(string nome)
         {
             this.nome = nome;
-            this.posicao = posicao;
-            this.quantCartas = quantCartas;
-            this.ranking = ranking;
+            this.posicao = -1;
+            this.quantCartas = 0;
+            this.ranking = null;
         }
 
         public string Nome
@@ -49,6 +51,11 @@ namespace Trabalho_de_AED___Rouba_Monte
             get { return ranking; }
             set { ranking = value; }
         }
+
+
+        //Método para retirar a carta da vez do monte de compra
+
+
     }
 
     public class Carta
@@ -60,7 +67,6 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         private string naipe; //Só vão ter três: Dama (11), Valete (12) e Rei (13) [Só vão servir como meio visual]
 
-        //private bool coringa;
 
         public Carta(int numero, string naipe)
         {
@@ -83,13 +89,73 @@ namespace Trabalho_de_AED___Rouba_Monte
     }
 
 
+
+    public class MontedeCompra
+    {
+        List<Carta> cartasparaComprar;
+
+        int QuantidadedeCarta;
+
+        public MontedeCompra(List<Carta> cartasparaComprar)
+        {
+            cartasparaComprar = null;
+        }
+
+        public void InserirMontedeCompra(Carta cartaAdicionar)
+        {
+
+        }
+
+        //Método para inserir carta no monte
+
+    }
+
+
+    public class AreadeDescarte
+    {
+        List<Carta> cartas;
+
+        public AreadeDescarte()
+        {
+            cartas = null;
+        }
+
+        public void InserirAreaDescarte()
+        {
+
+        }
+
+        public void ImprimirAreadeDescarte()
+        {
+
+        }
+
+
+        //Inicializa vazia
+
+
+        //Imprimir área de descarte para o jogador
+
+    }
+
+
+
+    public class Arquivo
+    {
+
+
+        //Gerado ao fim, não é impresso durante o jogo
+
+
+    }
+
+
+
     //Fazer uma classe para os montes?
 
     // Monte terá um objeto jogador como atributo
 
-    // Coringa terá checagem via booleano?
 
-    // if (numerotestado == numero || coringacheck == true)
 
 
     // Jogador
@@ -124,7 +190,46 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             //Pergunta quantidade de Jogadores e Cartas
 
+            Console.WriteLine("Quantas cartas serão geradas?");
+            int quantCartas = int.Parse.(Console.ReadLine());
 
+            while (quantCartas < 0)
+            {
+                Console.WriteLine("A quantidade de cartas deve ser positiva");
+                int quantCartas = int.Parse.(Console.ReadLine());
+
+            }
+
+            Console.WriteLine("Quantos jogadores irão participar?");
+            int quantJogadores = int.Parse(Console.ReadLine());
+
+            while (quantJogadores < 0)
+            {
+                Console.WriteLine("A quantidade de jogadores deve ser positiva");
+                int quantJogadores = int.Parse.(Console.ReadLine());
+
+            }
+
+            MontedeCompra MontedeCompras = new MontedeCompra();
+
+            for (int i = 0; i <= quantCartas; i++)
+            {
+
+            }
+
+            for (int i = 0; i <= quantJogadores; i++)
+            {
+                Console.WriteLine("Nome do jogador " + i + 1);
+                string nomeJogador = Console.ReadLine()
+
+                Jogador jogadorNovo = new Jogador(nomeJogador)
+            }
+
+            do
+            {
+                
+
+            }while() //Continuar até a área de descarte e o monte de compra estiver vazio
         }
     }
 }
