@@ -18,7 +18,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         private Queue<int> ranking; //Stream Reader
 
-        private List<Carta> MontedoJogador;
+        private List<Carta> MonteDoJogador;
 
         public Jogador(string nome)
         {
@@ -106,10 +106,34 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         }
 
+
         //Método para inserir carta no monte
 
+        public void EmbaralharMonteDeCompra(Carta cartaAdicionar)
+        {
+
+        }
     }
 
+    /*
+    Jogadores Topo:
+
+    Adrielly: |1| Vitor |3|
+    
+
+    ----------
+    MESA:
+
+    | 11 | |12 |
+
+    ----------
+
+    Luiz: |5|
+
+
+    CW("Qual monte roubar?")
+    
+     */
 
     public class AreadeDescarte
     {
@@ -222,14 +246,23 @@ namespace Trabalho_de_AED___Rouba_Monte
                 Console.WriteLine("Nome do jogador " + i + 1);
                 string nomeJogador = Console.ReadLine()
 
-                Jogador jogadorNovo = new Jogador(nomeJogador)
+                Jogador jogadorNovo = new Jogador(nomeJogador) //COLOCAR NO WHATTSZAP COMO MUDAR O NÚMERO A CADA LOOP!!!!!!!!!!!
             }
 
             do
             {
-                
 
-            }while() //Continuar até a área de descarte e o monte de compra estiver vazio
+
+            } while () //Continuar até a área de descarte e o monte de compra estiver vazio
+
+
+            //Antes de jogar novamente, quer ver os rankings, de quem?
+
+            //Quer alterar o número de cartas
+
+            //Quer gerar novos jogadores?
+
+            //Quer parar?
         }
     }
 }
