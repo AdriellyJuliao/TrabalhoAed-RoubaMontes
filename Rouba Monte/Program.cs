@@ -52,11 +52,48 @@ namespace Trabalho_de_AED___Rouba_Monte
             set { ranking = value; }
         }
 
+        public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, string nomedoogadordavez)
+        {
+
+            Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(MontedeCompraPartida);
+
+            foreach (Jogador x in Jogadores)
+            {
+                if (x.Nome != nomedoogadordavez && CartadoMomento)
+                {
+
+                }
+
+                
+            }
+
+        }
 
         //Método para retirar a carta da vez do monte de compra
 
 
     }
+
+    public class Jogadores
+    {
+        private List<Jogador> participantes;
+
+        public Jogadores(List<Jogador> participantes)
+        {
+            this.participantes = participantes;
+            todos = null;
+        }
+
+        public List<Jogador> Participantes
+        {
+            get { return participantes; }
+            set { participantes = value; }
+        }
+
+        public void AdicionarJogadores() { }
+
+    }
+
 
     public class Carta
     {
@@ -86,24 +123,178 @@ namespace Trabalho_de_AED___Rouba_Monte
             get { return naipe; }
             set { naipe = value; }
         }
+
+       
     }
+
+
 
 
 
     public class MontedeCompra
     {
-        List<Carta> cartasparaComprar;
+        private List<Carta> cartasparaComprar;
 
-        int QuantidadedeCarta;
+        private int quantidadeCarta;
 
-        public MontedeCompra(List<Carta> cartasparaComprar)
+        public MontedeCompra(List<Carta> cartasparaComprar, int quantidadeCarta)
         {
             cartasparaComprar = null;
+            this.quantidadeCarta = quantidadeCarta;
         }
 
-        public void InserirMontedeCompra(Carta cartaAdicionar)
+        public void PreencherMontedeCompras()
+        {
+            int j = 0;
+            for (int i = 0; i <= quantidadeCarta; i++)
+            {
+                if (j > 13)
+                {
+                    j = 0
+                }
+
+                switch (j)
+
+                {
+                    case 1:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+                        break;
+
+                    case 2:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+                        break;
+
+                    case 3:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+
+                        break;
+
+                    case 4:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+
+                        break;
+
+                    case 5:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+
+                        break;
+
+                    case 6:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+
+                        break;
+
+                    case 7:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+
+                        break;
+
+                    case 8:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+
+                        break;
+
+                    case 9:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+                        break;
+
+                    case 10:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+                        break;
+
+                    case 11:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+                        break;
+
+                    case 12:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+                        break;
+
+                    case 13:
+
+                        Carta CartaGerada = new Carta(j, null);
+
+                        cartasparaComprar.Insert(CartaGerada);
+
+                        break;
+
+                    default:
+                        throw new Exception("Número Inválido");
+
+                }
+
+                j++;
+            }
+
+        }
+
+        public void EmbaralharMontedeCompra()
         {
 
+            if (cartasparaComprar == null || quantidadeCarta < 0)
+            {
+                throw new Exception("Monte Vazio ou de Tamanho Inválido")
+            }
+
+            else
+            {
+
+            }
+            //Usar ordenação para embaralhar
+        }
+
+        public Carta RemoverMontedeCarta()
+        {
+            Carta cartaRemovida = CartasparaComprar.Remove;
+            return cartaRemovida;
         }
 
 
@@ -112,6 +303,18 @@ namespace Trabalho_de_AED___Rouba_Monte
         public void EmbaralharMonteDeCompra(Carta cartaAdicionar)
         {
 
+        }
+
+        public List<Carta> CartasparaComprar
+        {
+            get { return cartasparaComprar; }
+            set { cartasparaComprar = value; }
+        }
+
+        public int QuantidadedeCarta
+        {
+            get { return quantidadedeCarta; }
+            set { quantidadedeCarta = value; }
         }
     }
 
@@ -144,13 +347,14 @@ namespace Trabalho_de_AED___Rouba_Monte
             cartas = null;
         }
 
-        public void InserirAreaDescarte()
+        public void InserirAreaDescarte(Carta x)
         {
 
         }
 
         public void ImprimirAreadeDescarte()
         {
+            Console.WriteLine();
 
         }
 
@@ -169,6 +373,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
 
         //Gerado ao fim, não é impresso durante o jogo
+        //Somente as 5 últimas rodadas, ou seja, sera preciso reescrever
 
 
     }
@@ -214,47 +419,60 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             //Pergunta quantidade de Jogadores e Cartas
 
-            Console.WriteLine("Quantas cartas serão geradas?");
-            int quantCartas = int.Parse.(Console.ReadLine());
-
-            while (quantCartas < 0)
-            {
-                Console.WriteLine("A quantidade de cartas deve ser positiva");
-                int quantCartas = int.Parse.(Console.ReadLine());
-
-            }
-
-            Console.WriteLine("Quantos jogadores irão participar?");
-            int quantJogadores = int.Parse(Console.ReadLine());
-
-            while (quantJogadores < 0)
-            {
-                Console.WriteLine("A quantidade de jogadores deve ser positiva");
-                int quantJogadores = int.Parse.(Console.ReadLine());
-
-            }
-
-            MontedeCompra MontedeCompras = new MontedeCompra();
-
-            for (int i = 0; i <= quantCartas; i++)
-            {
-
-            }
-
-            for (int i = 0; i <= quantJogadores; i++)
-            {
-                Console.WriteLine("Nome do jogador " + i + 1);
-                string nomeJogador = Console.ReadLine()
-
-                Jogador jogadorNovo = new Jogador(nomeJogador) //COLOCAR NO WHATTSZAP COMO MUDAR O NÚMERO A CADA LOOP!!!!!!!!!!!
-            }
+            bool continuarJogando, resetarJogadores, resetarQuantidadeCartas, visualizarrankings;
 
             do
             {
+                Console.WriteLine("Quantas cartas serão geradas?");
+                int quantCartas = int.Parse.(Console.ReadLine());
+
+                while (quantCartas < 0)
+                {
+                    Console.WriteLine("A quantidade de cartas deve ser positiva");
+                    int quantCartas = int.Parse.(Console.ReadLine());
+
+                }
+
+                Console.WriteLine("Quantos jogadores irão participar?");
+                int quantJogadores = int.Parse(Console.ReadLine());
+
+                while (quantJogadores < 0)
+                {
+                    Console.WriteLine("A quantidade de jogadores deve ser positiva");
+                    int quantJogadores = int.Parse.(Console.ReadLine());
+
+                }
+
+                MontedeCompra MontedeCompras = new MontedeCompra();
+
+                MontedeCompras.PreencherMontedeCompras();
+
+                for (int i = 0; i <= quantJogadores; i++)
+                {
+                    Console.WriteLine("Nome do jogador " + i + 1);
+                    string nomeJogador = Console.ReadLine()
 
 
-            } while () //Continuar até a área de descarte e o monte de compra estiver vazio
+                    Jogador jogadorNovo = new Jogador(nomeJogador) //COLOCAR NO WHATTSZAP COMO MUDAR O NÚMERO A CADA LOOP!!!!!!!!!!!
+                 
+                }
 
+                do
+                {
+
+
+                } while (MontedeCompras.QuantidadedeCarta == 0); //Continuar até a área de descarte e o monte de compra estiver vazio
+
+                Console.WriteLine("Quer Continuar Jogando?");
+
+                Console.WriteLine("Deseja Alterar a quantidade de Cartas?");
+
+                Console.WriteLine("Deseja gerar novos jogadores?");
+
+            } while (continuarJogando)
+
+
+            Console.WriteLine("Obrigado por Jogar!");
 
             //Antes de jogar novamente, quer ver os rankings, de quem?
 
