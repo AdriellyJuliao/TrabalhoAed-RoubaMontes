@@ -16,6 +16,9 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         private int quantCartas; //Da última partida
 
+        private int quantCartasAgora; //Do jogo atual
+
+
         private Queue<int> ranking; //Stream Reader
 
         private List<Carta> MonteDoJogador;
@@ -25,6 +28,7 @@ namespace Trabalho_de_AED___Rouba_Monte
             this.nome = nome;
             this.posicao = -1;
             this.quantCartas = 0;
+            this.quantCartasAgora = 0;
             this.ranking = null;
         }
 
@@ -46,6 +50,12 @@ namespace Trabalho_de_AED___Rouba_Monte
             set { quantCartas = value; }
         }
 
+        public int QuantCartasAgora
+        {
+            get { return quantCartasAgora; }
+            set { quantCartasAgora = value; }
+        }
+
         public Queue<int> Ranking
         {
             get { return ranking; }
@@ -55,41 +65,37 @@ namespace Trabalho_de_AED___Rouba_Monte
         public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, string nomedoogadordavez, AreadeDescarte Mesa)
         {
 
-            Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(MontedeCompraPartida);
-            bool FimdaCartadaVez = false;
+            Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(MontedeCompraPartida); //Puxar carta do monte de compra
+            bool FimdaCartadaVez = false; //Verifica se o turno dessa carta tá rolando
 
-            int montecomtopoigual = 0;
+            int montecomtopoigual = 0; //Caso outros tenham o mesmo valor de carta no topo
             foreach (Jogador x in Jogadores)
             {
 
-                Carta Topo = Jogadores[x]
-                if (x.Nome != nomedoogadordavez && CartadoMomento == x.MonteDoJogador[MonteDoJogador.Count - 1])
+                if (x.Nome != nomedoogadordavez && CartadoMomento == x.MonteDoJogador[MonteDoJogador.Count - 1]) //Na regra se mais de um monte do tipo jogador for igual a carta da vez...
                 {
-                    montecomtopoigual++;
+                    montecomtopoigual++; //... Então tem que escolher aleatoriamente depois, precisa armazena a posição delas
                 }
 
-                else if (montecomtopoigual > 1)
-                {
-                    if ()
-                }
+
 
 
             }
 
-            if (montecomtopoigual == 1)
+            if (montecomtopoigual == 1) //Se for um rouba o monte do jogador
             {
 
             }
 
-            else if (montecomtopoigual > 1)
+            else if (montecomtopoigual > 1) //Se tiver mais rouba aleatoriamente conforme a quantidade
             {
 
             }
 
-            else 
-            { 
+            else //Caso nenhum jogador tenha o monte igual a carta da vez
+            {
 
-                foreach (Carta x in Mesa.Cartas)
+                foreach (Carta x in Mesa.Cartas) //Ver a área de descarte
                 {
                     if (x == cartas)
                     {
@@ -97,22 +103,53 @@ namespace Trabalho_de_AED___Rouba_Monte
                     }
                 }
 
-            if (CartadoMomento == MonteDoJogador[MonteDoJogador.Count - 1])
-            {
+                if (CartadoMomento == MonteDoJogador[MonteDoJogador.Count - 1]) //Senão tiver então o jogador tenta usar no próprio monte
+                {
 
-            }
+                }
 
-            Mesa.InserirAreaDescarte(CartadoMomento);
+                Mesa.InserirAreaDescarte(CartadoMomento); //Se ainda não conseguiu, por fim, colocar na área de descarte
 
             }
         }
+
+
+        /*REGRAS QUANTO A CARTA DA VEZ
+        
+        Os jogadores, dispostos em um círculo ao redor da mesa de jogo (--FILA IMPLICITA?--), jogam em sequência, em sentido horário. As jogadas 
+        prosseguem da seguinte forma: 
+
+        • O jogador que tem a vez de jogar retira a carta de cima do monte de compras e a mostra aos outros jogadores; vamos 
+          chamar essa carta de carta da vez. 
+
+        • Se a carta da vez for igual à carta do topo de um monte de um outro jogador, o jogador "rouba" esse monte, 
+          colocando-o em seu próprio monte, coloca a carta da vez no topo do seu monte, face para cima, e continua a jogada 
+          (ou seja, retira outra carta do monte de compras e repete o processo).  Duas cartas são consideradas iguais se tiverem 
+           o mesmo valor. Caso a carta da vez seja igual ao topo de dois ou mais montes, deve-se roubar apenas o maior monte 
+          (monte com mais cartas). Se houver empate em relação ao tamanho dos montes, deve-se escolher aleatoriamente 
+          um dos montes para roubar.  
+
+        • Se o teste acima falhar, o jogador verifica se a carta da vez é igual a alguma carta presente na área de descarte. Caso 
+          seja, o jogador retira essa carta da área de descarte colocando-a no seu monte, juntamente com a carta da vez no 
+          topo, com as faces voltadas para cima, e continua a jogada (ou seja, retira outra carta do monte de compras e repete o processo). 
+
+        • Se o teste acima falhar, o jogador verifica se a carta da vez é igual a carta do topo de seu próprio monte. Caso seja, 
+          o jogador coloca a carta da vez no topo de seu próprio monte, com a face para cima, e continua a jogada (ou seja, 
+          retira outra carta do monte de compras e repete o processo). 
+
+        • Se a carta da vez for diferente das cartas da área de descarte e das cartas nos topos dos montes, o jogador a coloca 
+          na área de descarte, com a face para cima, e a jogada se encerra (ou seja, o próximo jogador efetua a sua jogada). 
+          
+          Note que esse é o único caso em que o jogador não continua a jogada.    
+
+        */
 
         //Método para retirar a carta da vez do monte de compra
 
 
     }
 
-    public class Jogadores
+    public class Jogadores  //Usar uma classe ou uma lista de jogadadores somente?
     {
         private List<Jogador> participantes;
 
@@ -186,7 +223,7 @@ namespace Trabalho_de_AED___Rouba_Monte
             int j = 0;
             for (int i = 0; i <= quantidadeCarta; i++)
             {
-                if (j > 13)
+                if (j > 13) //Caso j seja maior que a quantidade de variações de cartas sera preenchido com novas cartas na mesma ordem
                 {
                     j = 0
                 }
@@ -196,7 +233,7 @@ namespace Trabalho_de_AED___Rouba_Monte
                 {
                     case 1:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, null); 
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -306,10 +343,11 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     default:
                         throw new Exception("Número Inválido");
+                        break;
 
                 }
 
-                j++;
+                j++; //Aumenta o valor j em relação ao número da carta
             }
 
         }
@@ -338,10 +376,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         //Método para inserir carta no monte
 
-        public void EmbaralharMonteDeCompra(Carta cartaAdicionar)
-        {
-
-        }
+       
 
         public List<Carta> CartasparaComprar
         {
@@ -465,6 +500,8 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             bool continuarJogando, resetarJogadores, resetarQuantidadeCartas, visualizarrankings;
 
+            Queue <Jogador> FiladeJogadores;
+
             do
             {
                 Console.WriteLine("Quantas cartas serão geradas?");
@@ -498,17 +535,33 @@ namespace Trabalho_de_AED___Rouba_Monte
 
 
                     Jogador jogadorNovo = new Jogador(nomeJogador) //COLOCAR NO WHATTSZAP COMO MUDAR O NÚMERO A CADA LOOP!!!!!!!!!!!
+
+
+                   FiladeJogadores.Enqueue(jogadorNovo);
                  
                 }
 
-                do
+                do 
                 {
+
+
+
+
+
+                    //Aqui onde vai rolar o jogo em si
+
+
+
+
 
 
                 } while (MontedeCompras.QuantidadedeCarta == 0); //Continuar até a área de descarte e o monte de compra estiver vazio
 
+                Console.WriteLine("Deseja ver os Rankings de algum jogador?");
+                string resp1 = Console.ReadLine();
+
                 Console.WriteLine("Quer Continuar Jogando?");
-                string resp = Console.ReadLine();
+                string resp2 = Console.ReadLine();
 
                 if (resp == "Sim" || resp == "sim" || resp == "S" || resp == "s")
                 {
@@ -526,6 +579,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                 if (continuarJogando)
                 {
+                    
                     Console.WriteLine("Deseja Alterar a quantidade de Cartas?");
 
                     Console.WriteLine("Deseja gerar novos jogadores?");
