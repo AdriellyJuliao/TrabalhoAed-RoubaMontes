@@ -52,21 +52,59 @@ namespace Trabalho_de_AED___Rouba_Monte
             set { ranking = value; }
         }
 
-        public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, string nomedoogadordavez)
+        public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, string nomedoogadordavez, AreadeDescarte Mesa)
         {
 
             Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(MontedeCompraPartida);
+            bool FimdaCartadaVez = false;
 
+            int montecomtopoigual = 0;
             foreach (Jogador x in Jogadores)
             {
-                if (x.Nome != nomedoogadordavez && CartadoMomento)
-                {
 
+                Carta Topo = Jogadores[x]
+                if (x.Nome != nomedoogadordavez && CartadoMomento == x.MonteDoJogador[MonteDoJogador.Count - 1])
+                {
+                    montecomtopoigual++;
                 }
 
-                
+                else if (montecomtopoigual > 1)
+                {
+                    if ()
+                }
+
+
             }
 
+            if (montecomtopoigual == 1)
+            {
+
+            }
+
+            else if (montecomtopoigual > 1)
+            {
+
+            }
+
+            else 
+            { 
+
+                foreach (Carta x in Mesa.Cartas)
+                {
+                    if (x == cartas)
+                    {
+
+                    }
+                }
+
+            if (CartadoMomento == MonteDoJogador[MonteDoJogador.Count - 1])
+            {
+
+            }
+
+            Mesa.InserirAreaDescarte(CartadoMomento);
+
+            }
         }
 
         //Método para retirar a carta da vez do monte de compra
@@ -358,6 +396,12 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         }
 
+        public List<Carta> Cartas
+        {
+            get { return cartas; }
+            set { cartas = value; }
+        }
+
 
         //Inicializa vazia
 
@@ -464,10 +508,29 @@ namespace Trabalho_de_AED___Rouba_Monte
                 } while (MontedeCompras.QuantidadedeCarta == 0); //Continuar até a área de descarte e o monte de compra estiver vazio
 
                 Console.WriteLine("Quer Continuar Jogando?");
+                string resp = Console.ReadLine();
 
-                Console.WriteLine("Deseja Alterar a quantidade de Cartas?");
+                if (resp == "Sim" || resp == "sim" || resp == "S" || resp == "s")
+                {
+                    continuarJogando = true;
+                }
 
-                Console.WriteLine("Deseja gerar novos jogadores?");
+                else if (resp == "Não" || resp == "não" || resp == "N" || resp == "n")
+                {
+                    continuarJogando = false;
+                }
+                else
+                {
+                    throw new Exception("Resposta Inválida");
+                }
+
+                if (continuarJogando)
+                {
+                    Console.WriteLine("Deseja Alterar a quantidade de Cartas?");
+
+                    Console.WriteLine("Deseja gerar novos jogadores?");
+                }
+
 
             } while (continuarJogando)
 
