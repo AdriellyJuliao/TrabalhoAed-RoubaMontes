@@ -64,7 +64,7 @@ namespace Trabalho_de_AED___Rouba_Monte
             set { ranking = value; }
         }
 
-        public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, string nomedoogadordavez, AreadeDescarte Mesa)
+        public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, string nomedojogadordavez, AreadeDescarte Mesa)
         {
 
             Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(MontedeCompraPartida); //Puxar carta do monte de compra
@@ -77,7 +77,7 @@ namespace Trabalho_de_AED___Rouba_Monte
             foreach (Jogador x in Jogadores)
             {
 
-                if (x.Nome != nomedoogadordavez && CartadoMomento == x.MonteDoJogador[MonteDoJogador.Count - 1]) //Na regra se mais de um monte do tipo jogador for igual a carta da vez...
+                if (x.Nome != nomedojogadordavez && CartadoMomento == x.MonteDoJogador[MonteDoJogador.Count - 1]) //Na regra se mais de um monte do tipo jogador for igual a carta da vez...
                 {
                     montecomtopoigual++; //... Então tem que escolher aleatoriamente depois, precisa armazena a posição delas
 
@@ -100,7 +100,7 @@ namespace Trabalho_de_AED___Rouba_Monte
                     }
 
                     MonteDoJogador.Insert(CartadoMomento);
-                    QuantCartasAgora++
+                    QuantCartasAgora++;
 
                     x.quantCartasAgora = 0;
                 }
@@ -228,13 +228,13 @@ namespace Trabalho_de_AED___Rouba_Monte
         {
             int definidordeNumeroCarta = 1;
 
-            string[] tiposNaipes = new string["Copas", "Ouros", "Paus", "Espadas"];
+            string[] tiposNaipes = new string[] { "Copas", "Ouros", "Paus", "Espadas" };
 
             for (int i = 0; i <= quantidadeCarta; i++)
             {
-                if (j > 13) //Caso j seja maior que a quantidade de variações de cartas sera preenchido com novas cartas na mesma ordem
+                if (i > 13) //Caso i seja maior que a quantidade de variações de cartas sera preenchido com novas cartas na mesma ordem
                 {
-                    definidordeNumeroCarta = 1
+                    definidordeNumeroCarta = 1;
                 }
                 Random naipeAleatorio = new Random();
                 int indicedoVetorNaipes = naipeAleatorio.Next(0, 3);
@@ -245,7 +245,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);  //Fazer vetor para o valor dos tipos de naipes
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
                         break;
 
@@ -253,7 +253,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
                         break;
 
@@ -261,7 +261,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
 
                         break;
@@ -270,7 +270,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
 
                         break;
@@ -279,7 +279,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
 
                         break;
@@ -288,7 +288,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
 
                         break;
@@ -297,7 +297,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
 
                         break;
@@ -306,7 +306,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
 
                         break;
@@ -315,7 +315,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
                         break;
 
@@ -323,7 +323,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
                         break;
 
@@ -331,7 +331,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
                         break;
 
@@ -339,7 +339,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
                         break;
 
@@ -347,7 +347,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                         Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Insert(CartaGerada);
+                        cartasparaComprar.Add(CartaGerada);
 
                         break;
 
