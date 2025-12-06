@@ -1,0 +1,79 @@
+# Compiled source files
+bin/
+obj/
+out/
+build/
+
+# Visual Studio cache
+.vs/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code settings
+.vscode/
+
+# Build results
+*.exe
+*.dll
+*.pdb
+*.cache
+*.config
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# NuGet packages
+*.nupkg
+packages/
+*.snk
+
+# Backup and autosave
+*~
+*.bak
+*.swp
+
+# Rider / ReSharper
+.idea/
+*.DotSettings.user
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+# Publish output
+publish/
+dist/
+
+# ASP.NET specific
+appsettings.Development.json
+
+# Other IDEs
+*.iml
+
+# Arquivos gerados automaticamente pelo VS
+*_i.c
+*_p.c
+*.ilk
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+
+# Arquivos de lock
+*.lock.json
+
+# Arquivos de cache do Visual Studio
+.vs/

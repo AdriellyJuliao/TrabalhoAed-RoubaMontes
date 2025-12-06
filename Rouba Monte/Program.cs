@@ -237,7 +237,7 @@ namespace Trabalho_de_AED___Rouba_Monte
                     definidordeNumeroCarta = 1
                 }
                 Random naipeAleatorio = new Random();
-                int indicedoVetorNaipes = naipeAleatorio.Next(0, 4);
+                int indicedoVetorNaipes = naipeAleatorio.Next(0, 3);
                 switch (definidordeNumeroCarta)
 
                 {
@@ -364,20 +364,28 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public void EmbaralharMontedeCompra()
         {
-
-            if (cartasparaComprar == null || quantidadeCarta < 0)
+            // Verificação básica
+            if (cartasparaComprar == null || quantidadeCarta <= 0)
             {
-                throw new Exception("Monte Vazio ou de Tamanho Inválido");
+                throw new Exception("Monte vazio ou de tamanho inválido");
             }
 
-            else
-            {
+            // Algoritmo para embaralhar, pegando uma carta aleatória e trocando de posição
+            Random rnd = new Random();
 
-                //Usar o merge?
+            for (int i = quantidadeCarta - 1; i > 0; i--)
+            {
+                // Sorteia um índice entre 0 e i
+                int j = rnd.Next(0, i + 1);
+
+                // Troca as cartas de posição
+                Carta temp = cartasparaComprar[i];
+                cartasparaComprar[i] = cartasparaComprar[j];
+                cartasparaComprar[j] = temp;
 
             }
-            //Usar ordenação para embaralhar
         }
+
 
         public Carta RemoverMontedeCarta()
         {
