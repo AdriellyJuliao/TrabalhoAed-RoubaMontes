@@ -422,12 +422,16 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public void InserirAreaDescarte(Carta x)
         {
-
+            cartas.Insert(x);
         }
 
         public void ImprimirAreadeDescarte()
         {
-            Console.WriteLine();
+            foreach (Carta x in cartas)
+            {
+                Console.Write("||") //Simular o visual de uma carta?
+                Console.Write(x.Numero "||" );
+            }
 
         }
 
@@ -579,10 +583,64 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                 if (continuarJogando)
                 {
-                    
-                    Console.WriteLine("Deseja Alterar a quantidade de Cartas?");
 
-                    Console.WriteLine("Deseja gerar novos jogadores?");
+                    Console.WriteLine("1) Continuar com a mesma Quantidade de Cartas e Jogadores");
+                    Console.WriteLine("2) Continuar com a mesma Quantidade de Cartas e Alterar Jogadores");
+                    Console.WriteLine("3) Alterar a quantidade de Cartas e manter os mesmos Jogadores");
+                    Console.WriteLine("4) Alterar a quantidade de Cartas e Jogadores");
+                    int opcoesContinuar = int.Parse(Console.ReadLine());
+
+                    switch (opcoesContinuar)
+
+                    {
+                        case 1:
+
+                            resetarQuantidadeCartas = false;
+
+                            resetarJogadores = false;
+
+                            break;
+
+                        case 2:
+
+                            resetarQuantidadeCartas = false;
+
+                            resetarJogadores = true;
+
+                            break;
+
+
+                        case 3:
+
+                            resetarQuantidadeCartas = true;
+
+                            resetarJogadores = false;
+                            break;
+
+                        case 4:
+
+                            resetarQuantidadeCartas = true;
+
+                            resetarJogadores = true;
+
+
+                            break;
+
+
+                        default:
+
+                            throw new Exception("Escolha Inválida!");
+
+
+                            break;
+
+
+
+
+                    }
+
+
+
                 }
 
 
