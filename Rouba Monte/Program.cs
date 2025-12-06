@@ -32,6 +32,7 @@ namespace Trabalho_de_AED___Rouba_Monte
             this.quantCartas = 0;
             this.quantCartasAgora = 0;
             this.ranking = null;
+            this.MonteDoJogador = new List<Carta>();
         }
 
         public string Nome
@@ -67,75 +68,111 @@ namespace Trabalho_de_AED___Rouba_Monte
         public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, string nomedojogadordavez, AreadeDescarte Mesa)
         {
 
-            Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(MontedeCompraPartida); //Puxar carta do monte de compra
+            Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(); //Puxar carta do monte de compra
             bool FimdaCartadaVez = false; //Verifica se o turno dessa carta tá rolando
 
-            List<int> montedeAdversariosCompativeis = new List<int>;
+            List<Jogador> listadeAdversariosCompativeis = new List<Jogador>();
 
 
-            int montecomtopoigual = 0; //Caso outros tenham o mesmo valor de carta no topo
             foreach (Jogador x in Jogadores)
             {
-
-                if (x.Nome != nomedojogadordavez && CartadoMomento == x.MonteDoJogador[MonteDoJogador.Count - 1]) //Na regra se mais de um monte do tipo jogador for igual a carta da vez...
+                if (CartadoMomento.Numero == x.MonteDoJogador[MonteDoJogador.Count - 1].Numero && x.nome != nome) 
                 {
-                    montecomtopoigual++; //... Então tem que escolher aleatoriamente depois, precisa armazena a posição delas
-
-                    montedeAdversariosCompativeis.Insert(x.Nome);
+                    listadeAdversariosCompativeis.Add(x);
                 }
-
-
-
-
             }
 
-            if (montecomtopoigual == 1 && montedeAdversariosCompativeis.Count==1) //Se for um rouba o monte do jogador
-            {
-                foreach(Jogador x in montedeAdversariosCompativeis)
-                {
-                    foreach (Carta y in x.MonteDoJogador)
-                    {
-                        MonteDoJogador.Insert(y);
-                        QuantCartasAgora++;
-                    }
+            if (listadeAdversariosCompativeis.Count == 1)
+            { 
 
-                    MonteDoJogador.Insert(CartadoMomento);
+                while (listadeAdversariosCompativeis[0].MonteDoJogador.Count > 0)
+                {
+                    Carta carta = listadeAdversariosCompativeis[0].MonteDoJogador[0];
+
+                    MonteDoJogador.Add(carta);
                     QuantCartasAgora++;
 
-                    x.quantCartasAgora = 0;
+                    listadeAdversariosCompativeis[0].MonteDoJogador.RemoveAt(0);
+                    listadeAdversariosCompativeis[0].QuantCartasAgora--;
                 }
+            MonteDoJogador.Add(CartadoMomento);
+            QuantCartasAgora++;
             }
-
-            //Roubar a quantidade maior, se for igual é aleatorio
-            else if (montecomtopoigual > 1) //Se tiver mais rouba aleatoriamente conforme a quantidade
+            else if (listadeAdversariosCompativeis.Count > 1)
             {
-
-                if ()
+                int maiorQuantidadeCartas = int.MinValue;
+                foreach (Jogador x in listadeAdversariosCompativeis)
                 {
-
-                }
-
-            }
-
-            else //Caso nenhum jogador tenha o monte igual a carta da vez
-            {
-
-                foreach (Carta x in Mesa.Cartas) //Ver a área de descarte
-                {
-                    if (x == cartas)
+                    if (x.MonteDoJogador.Count > maiorQuantidadeCartas)
                     {
-
+                        maiorQuantidadeCartas = x.MonteDoJogador.Count;
+                    }
+                }
+                for (int i = 0; i < listadeAdversariosCompativeis.Count; i++)
+                {
+                    if (listadeAdversariosCompativeis[i].MonteDoJogador.Count != maiorQuantidadeCartas)
+                    {
+                        listadeAdversariosCompativeis.RemoveAt(i);
                     }
                 }
 
-                if (CartadoMomento == MonteDoJogador[MonteDoJogador.Count - 1]) //Senão tiver então o jogador tenta usar no próprio monte
+                if (listadeAdversariosCompativeis.Count == 1)
                 {
 
+                    while (listadeAdversariosCompativeis[0].MonteDoJogador.Count > 0)
+                    {
+                        Carta carta = listadeAdversariosCompativeis[0].MonteDoJogador[0];
+
+                        MonteDoJogador.Add(carta);
+                        QuantCartasAgora++;
+
+                        listadeAdversariosCompativeis[0].MonteDoJogador.RemoveAt(0);
+                        listadeAdversariosCompativeis[0].QuantCartasAgora--;
+                    }
+                    MonteDoJogador.Add(CartadoMomento);
+                    QuantCartasAgora++;
                 }
+                else
+                {
+                    Random jogadorAleatorio = new Random();
+                    int indiceJogadorAleatorio = jogadorAleatorio.Next(0, listadeAdversariosCompativeis.Count);
+                    Jogador jogadorEscolhido = listadeAdversariosCompativeis[indiceJogadorAleatorio];
+                    while (jogadorEscolhido.MonteDoJogador.Count > 0)
+                    {
+                        Carta carta = jogadorEscolhido.MonteDoJogador[0];
 
-                Mesa.InserirAreaDescarte(CartadoMomento); //Se ainda não conseguiu, por fim, colocar na área de descarte
+                        MonteDoJogador.Add(carta);
+                        QuantCartasAgora++;
 
+                        jogadorEscolhido.MonteDoJogador.RemoveAt(0);
+                        jogadorEscolhido.QuantCartasAgora--;
+                    }
+                    MonteDoJogador.Add(CartadoMomento);
+                    QuantCartasAgora++;
+                }
             }
+            else if (Mesa.Cartas.Contains(CartadoMomento))
+            {
+                Mesa.Cartas.Remove(CartadoMomento);
+                MonteDoJogador.Add(CartadoMomento);
+                QuantCartasAgora += 2;
+            }
+            else if (CartadoMomento.Numero == MonteDoJogador[MonteDoJogador.Count - 1].Numero)
+            {
+                MonteDoJogador.Add(CartadoMomento);
+                QuantCartasAgora++;
+            }
+            else
+            {
+                Mesa.InserirAreaDescarte(CartadoMomento);
+                FimdaCartadaVez = true;
+            }
+
+            
+
+
+         
+
         }
 
 
@@ -169,7 +206,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         */
 
-        //Método para retirar a carta da vez do monte de compra
+       
 
 
     }
@@ -220,147 +257,37 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public MontedeCompra(int quantidadeCarta)
         {
-            cartasparaComprar = null;
+            cartasparaComprar = new List<Carta>();
             this.quantidadeCarta = quantidadeCarta;
         }
 
+
         public void PreencherMontedeCompras()
         {
+            string[] tiposNaipes = { "Copas", "Ouros", "Paus", "Espadas" };
+            Random naipeAleatorio = new Random();
+
             int definidordeNumeroCarta = 1;
 
-            string[] tiposNaipes = new string[] { "Copas", "Ouros", "Paus", "Espadas" };
-
-            for (int i = 0; i <= quantidadeCarta; i++)
+            for (int i = 0; i < quantidadeCarta; i++)
             {
-                if (i > 13) //Caso i seja maior que a quantidade de variações de cartas sera preenchido com novas cartas na mesma ordem
-                {
+                // Reinicia numeração após 13
+                if (definidordeNumeroCarta > 13)
                     definidordeNumeroCarta = 1;
-                }
-                Random naipeAleatorio = new Random();
-                int indicedoVetorNaipes = naipeAleatorio.Next(0, 3);
-                switch (definidordeNumeroCarta)
 
-                {
-                    case 1:
+                // Sorteia o naipe
+                int indicedoVetorNaipes = naipeAleatorio.Next(0, 4);
 
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);  //Fazer vetor para o valor dos tipos de naipes
+                // Cria a carta
+                Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                        cartasparaComprar.Add(CartaGerada);
+                cartasparaComprar.Add(CartaGerada);
 
-                        break;
-
-                    case 2:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-                        break;
-
-                    case 3:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-
-                        break;
-
-                    case 4:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-
-                        break;
-
-                    case 5:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-
-                        break;
-
-                    case 6:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-
-                        break;
-
-                    case 7:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-
-                        break;
-
-                    case 8:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-
-                        break;
-
-                    case 9:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-                        break;
-
-                    case 10:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-                        break;
-
-                    case 11:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-                        break;
-
-                    case 12:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-                        break;
-
-                    case 13:
-
-                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
-
-                        cartasparaComprar.Add(CartaGerada);
-
-                        break;
-
-                    default:
-                        throw new Exception("Número Inválido");
-                        break;
-
-                }
-
-                definidordeNumeroCarta++; //Aumenta o valor do definidorNumeroCarta em relação ao número da carta
+                definidordeNumeroCarta++;
             }
 
         }
+        
 
         public void EmbaralharMontedeCompra()
         {
@@ -371,12 +298,12 @@ namespace Trabalho_de_AED___Rouba_Monte
             }
 
             // Algoritmo para embaralhar, pegando uma carta aleatória e trocando de posição
-            Random rnd = new Random();
+            Random cartaAleatoria = new Random();
 
-            for (int i = quantidadeCarta - 1; i > 0; i--)
+            for (int i = cartasparaComprar.Count - 1; i > 0; i--)
             {
                 // Sorteia um índice entre 0 e i
-                int j = rnd.Next(0, i + 1);
+                int j = cartaAleatoria.Next(0, i + 1);
 
                 // Troca as cartas de posição
                 Carta temp = cartasparaComprar[i];
@@ -389,14 +316,21 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public Carta RemoverMontedeCarta()
         {
-            Carta cartaRemovida = CartasparaComprar.Remove();
-            return cartaRemovida;
+            if(cartasparaComprar.Count == 0)
+            {
+                throw new Exception("O monte de compra está vazio");
+            }
+            else { 
+                Carta carta = cartasparaComprar[cartasparaComprar.Count - 1];
+            cartasparaComprar.RemoveAt(cartasparaComprar.Count - 1);
+            return carta;
+            }
         }
 
 
         //Método para inserir carta no monte
 
-       
+
 
         public List<Carta> CartasparaComprar
         {
@@ -404,10 +338,10 @@ namespace Trabalho_de_AED___Rouba_Monte
             set { cartasparaComprar = value; }
         }
 
-        public int QuantidadedeCarta
+        public int QuantidadeCarta
         {
-            get { return quantidadedeCarta; }
-            set { quantidadedeCarta = value; }
+            get { return quantidadeCarta; }
+            set { quantidadeCarta = value; }
         }
     }
 
@@ -431,7 +365,7 @@ namespace Trabalho_de_AED___Rouba_Monte
     
      */
 
-    public class AreadeDescarte
+        public class AreadeDescarte
     {
         List<Carta> cartas;
 
@@ -442,7 +376,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public void InserirAreaDescarte(Carta x)
         {
-            cartas.Insert(x);
+            cartas.Add(x);
         }
 
         public void ImprimirAreadeDescarte()
