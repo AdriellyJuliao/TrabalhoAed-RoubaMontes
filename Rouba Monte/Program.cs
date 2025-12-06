@@ -69,7 +69,9 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(MontedeCompraPartida); //Puxar carta do monte de compra
             bool FimdaCartadaVez = false; //Verifica se o turno dessa carta tá rolando
-            
+
+            List<int> montedeAdversariosCompativeis = new List<int>;
+
 
             int montecomtopoigual = 0; //Caso outros tenham o mesmo valor de carta no topo
             foreach (Jogador x in Jogadores)
@@ -78,6 +80,8 @@ namespace Trabalho_de_AED___Rouba_Monte
                 if (x.Nome != nomedoogadordavez && CartadoMomento == x.MonteDoJogador[MonteDoJogador.Count - 1]) //Na regra se mais de um monte do tipo jogador for igual a carta da vez...
                 {
                     montecomtopoigual++; //... Então tem que escolher aleatoriamente depois, precisa armazena a posição delas
+
+                    montedeAdversariosCompativeis.Insert(x.Nome);
                 }
 
 
@@ -85,9 +89,21 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             }
 
-            if (montecomtopoigual == 1) //Se for um rouba o monte do jogador
+            if (montecomtopoigual == 1 && montedeAdversariosCompativeis.Count==1) //Se for um rouba o monte do jogador
             {
+                foreach(Jogador x in montedeAdversariosCompativeis)
+                {
+                    foreach (Carta y in x.MonteDoJogador)
+                    {
+                        MonteDoJogador.Insert(y);
+                        QuantCartasAgora++;
+                    }
 
+                    MonteDoJogador.Insert(CartadoMomento);
+                    QuantCartasAgora++
+
+                    x.quantCartasAgora = 0;
+                }
             }
 
             //Roubar a quantidade maior, se for igual é aleatorio
@@ -210,7 +226,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public void PreencherMontedeCompras()
         {
-            int j = 1;
+            int definidordeNumeroCarta = 1;
 
             string[] tiposNaipes = new string["Copas", "Ouros", "Paus", "Espadas"];
 
@@ -218,16 +234,16 @@ namespace Trabalho_de_AED___Rouba_Monte
             {
                 if (j > 13) //Caso j seja maior que a quantidade de variações de cartas sera preenchido com novas cartas na mesma ordem
                 {
-                    j = 1
+                    definidordeNumeroCarta = 1
                 }
                 Random naipeAleatorio = new Random();
                 int indicedoVetorNaipes = naipeAleatorio.Next(0, 4);
-                switch (j)
+                switch (definidordeNumeroCarta)
 
                 {
                     case 1:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);  //Fazer vetor para o valor dos tipos de naipes
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);  //Fazer vetor para o valor dos tipos de naipes
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -235,7 +251,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 2:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -243,7 +259,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 3:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -252,7 +268,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 4:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -261,7 +277,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 5:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -270,7 +286,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 6:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -279,7 +295,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 7:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -288,7 +304,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 8:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -297,7 +313,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 9:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -305,7 +321,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 10:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -313,7 +329,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 11:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -321,7 +337,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 12:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -329,7 +345,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 13:
 
-                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
+                        Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -341,7 +357,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                 }
 
-                j++; //Aumenta o valor j em relação ao número da carta
+                definidordeNumeroCarta++; //Aumenta o valor do definidorNumeroCarta em relação ao número da carta
             }
 
         }
@@ -356,6 +372,8 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             else
             {
+
+                //Usar o merge?
 
             }
             //Usar ordenação para embaralhar
@@ -561,23 +579,46 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                 } while (MontedeCompras.QuantidadedeCarta != 0); //Continuar até o monte de compra estiver vazio
 
+                foreach (Jogador x in FiladeJogadores) //Será Armazenado sempre a quantidade da última partida
+                {
+                    x.QuantCartas = x.QuantCartasAgora;
+                }
+
+                do
+                {
+
                 Console.WriteLine("Deseja ver os Rankings de algum jogador?");
                 Console.WriteLine("Digite S ou N");
                 char resp1 = Console.ReadLine();
 
                 if (resp1 == "S" || resp1 == "s")
                 {
-                    continuarJogando = true;
+                    visualizarrankings = true;
                 }
 
                 else if (resp1 == "N" || resp1 == "n")
                 {
-                    continuarJogando = false;
+                    visualizarrankings = false;
                 }
                 else
                 {
                     throw new Exception("Resposta Inválida");
                 }
+
+                
+                   
+                    if (visualizarrankings)
+                    {
+
+                        Console.WriteLine("Digite o nome de um jogador");
+
+                    }
+
+
+                } while (visualizarrankings)
+
+
+                
 
                 Console.WriteLine("Quer Continuar Jogando?"); //Colocar qual caractere usar para responder
                 Console.WriteLine("Digite S ou N");
