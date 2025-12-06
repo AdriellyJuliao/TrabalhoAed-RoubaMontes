@@ -65,18 +65,27 @@ namespace Trabalho_de_AED___Rouba_Monte
             set { ranking = value; }
         }
 
-        public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, string nomedojogadordavez, AreadeDescarte Mesa)
+        public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, AreadeDescarte Mesa)
         {
+            //confirmar se a carta do monte esta sendo comparada o numero ou a carta inteira(deve ser apenas o numero) 
+            //Fazer validacao para que o sistema nao procure um jogador que nao tenha um monte pois vai dar erro de out of range
+            // erro pra tirar a carta da mesa, nao pode ser usado o contains na forma em que esta sendo usada
+            // quando for pegar carta a area do descarte, ta sendo iterado 2 cartas na quantidade de cartas do jogador porem so uma carta é aicionada ao monte de cartas
 
-            Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(); //Puxar carta do monte de compra
             bool FimdaCartadaVez = false; //Verifica se o turno dessa carta tá rolando
+
+            do
+            {
+                
+            
+            Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(); //Puxar carta do monte de compra           
 
             List<Jogador> listadeAdversariosCompativeis = new List<Jogador>();
 
 
             foreach (Jogador x in Jogadores)
             {
-                if (CartadoMomento.Numero == x.MonteDoJogador[MonteDoJogador.Count - 1].Numero && x.nome != nome) 
+                if (CartadoMomento.Numero == x.MonteDoJogador[x.MonteDoJogador.Count - 1].Numero && x.nome != nome) 
                 {
                     listadeAdversariosCompativeis.Add(x);
                 }
@@ -108,7 +117,7 @@ namespace Trabalho_de_AED___Rouba_Monte
                         maiorQuantidadeCartas = x.MonteDoJogador.Count;
                     }
                 }
-                for (int i = 0; i < listadeAdversariosCompativeis.Count; i++)
+                for (int i = listadeAdversariosCompativeis.Count - 1; i >= 0; i--)
                 {
                     if (listadeAdversariosCompativeis[i].MonteDoJogador.Count != maiorQuantidadeCartas)
                     {
@@ -168,10 +177,10 @@ namespace Trabalho_de_AED___Rouba_Monte
                 FimdaCartadaVez = true;
             }
 
+
+
+            } while (!FimdaCartadaVez);
             
-
-
-         
 
         }
 
