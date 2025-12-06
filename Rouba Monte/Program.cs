@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using System.Xml.Schema;
 
 namespace Trabalho_de_AED___Rouba_Monte
 {
@@ -67,6 +69,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(MontedeCompraPartida); //Puxar carta do monte de compra
             bool FimdaCartadaVez = false; //Verifica se o turno dessa carta tá rolando
+            
 
             int montecomtopoigual = 0; //Caso outros tenham o mesmo valor de carta no topo
             foreach (Jogador x in Jogadores)
@@ -87,8 +90,14 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             }
 
+            //Roubar a quantidade maior, se for igual é aleatorio
             else if (montecomtopoigual > 1) //Se tiver mais rouba aleatoriamente conforme a quantidade
             {
+
+                if ()
+                {
+
+                }
 
             }
 
@@ -149,26 +158,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
     }
 
-    public class Jogadores  //Usar uma classe ou uma lista de jogadadores somente?
-    {
-        private List<Jogador> participantes;
-
-        public Jogadores(List<Jogador> participantes)
-        {
-            this.participantes = participantes;
-            todos = null;
-        }
-
-        public List<Jogador> Participantes
-        {
-            get { return participantes; }
-            set { participantes = value; }
-        }
-
-        public void AdicionarJogadores() { }
-
-    }
-
+   
 
     public class Carta
     {
@@ -212,7 +202,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         private int quantidadeCarta;
 
-        public MontedeCompra(List<Carta> cartasparaComprar, int quantidadeCarta)
+        public MontedeCompra(int quantidadeCarta)
         {
             cartasparaComprar = null;
             this.quantidadeCarta = quantidadeCarta;
@@ -220,20 +210,24 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public void PreencherMontedeCompras()
         {
-            int j = 0;
+            int j = 1;
+
+            string[] tiposNaipes = new string["Copas", "Ouros", "Paus", "Espadas"];
+
             for (int i = 0; i <= quantidadeCarta; i++)
             {
                 if (j > 13) //Caso j seja maior que a quantidade de variações de cartas sera preenchido com novas cartas na mesma ordem
                 {
-                    j = 0
+                    j = 1
                 }
-
+                Random naipeAleatorio = new Random();
+                int indicedoVetorNaipes = naipeAleatorio.Next(0, 4);
                 switch (j)
 
                 {
                     case 1:
 
-                        Carta CartaGerada = new Carta(j, null); 
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);  //Fazer vetor para o valor dos tipos de naipes
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -241,7 +235,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 2:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -249,7 +243,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 3:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -258,7 +252,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 4:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -267,7 +261,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 5:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -276,7 +270,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 6:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -285,7 +279,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 7:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -294,7 +288,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 8:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -303,7 +297,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 9:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -311,7 +305,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 10:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -319,7 +313,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 11:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -327,7 +321,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 12:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -335,7 +329,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     case 13:
 
-                        Carta CartaGerada = new Carta(j, null);
+                        Carta CartaGerada = new Carta(j, tiposNaipes[indicedoVetorNaipes]);
 
                         cartasparaComprar.Insert(CartaGerada);
 
@@ -357,7 +351,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             if (cartasparaComprar == null || quantidadeCarta < 0)
             {
-                throw new Exception("Monte Vazio ou de Tamanho Inválido")
+                throw new Exception("Monte Vazio ou de Tamanho Inválido");
             }
 
             else
@@ -369,7 +363,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public Carta RemoverMontedeCarta()
         {
-            Carta cartaRemovida = CartasparaComprar.Remove;
+            Carta cartaRemovida = CartasparaComprar.Remove();
             return cartaRemovida;
         }
 
@@ -456,7 +450,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
 
         //Gerado ao fim, não é impresso durante o jogo
-        //Somente as 5 últimas rodadas, ou seja, sera preciso reescrever
+        //Somente as 5 últimas rodadas, ou seja, será preciso reescrever toda vez que terminar uma partida
 
 
     }
@@ -504,31 +498,37 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             bool continuarJogando, resetarJogadores, resetarQuantidadeCartas, visualizarrankings;
 
-            Queue <Jogador> FiladeJogadores;
+            Queue<Jogador> FiladeJogadores;
 
             do
             {
-                Console.WriteLine("Quantas cartas serão geradas?");
-                int quantCartas = int.Parse.(Console.ReadLine());
-
-                while (quantCartas < 0)
+                if (resetarQuantidadeCartas)
                 {
-                    Console.WriteLine("A quantidade de cartas deve ser positiva");
+                    Console.WriteLine("Quantas cartas serão geradas?");
                     int quantCartas = int.Parse.(Console.ReadLine());
 
+                    while (quantCartas < 0)
+                    {
+                        Console.WriteLine("A quantidade de cartas deve ser positiva");
+                        int quantCartas = int.Parse.(Console.ReadLine());
+
+                    }
                 }
 
-                Console.WriteLine("Quantos jogadores irão participar?");
-                int quantJogadores = int.Parse(Console.ReadLine());
+                if (resetarJogadores) {
 
-                while (quantJogadores < 0)
-                {
-                    Console.WriteLine("A quantidade de jogadores deve ser positiva");
-                    int quantJogadores = int.Parse.(Console.ReadLine());
+                    Console.WriteLine("Quantos jogadores irão participar?");
+                    int quantJogadores = int.Parse(Console.ReadLine());
 
+                    while (quantJogadores < 0)
+                    {
+                        Console.WriteLine("A quantidade de jogadores deve ser positiva");
+                        int quantJogadores = int.Parse.(Console.ReadLine());
+
+                    }
                 }
 
-                MontedeCompra MontedeCompras = new MontedeCompra();
+                MontedeCompra MontedeCompras = new MontedeCompra(quantCartas);
 
                 MontedeCompras.PreencherMontedeCompras();
 
@@ -538,14 +538,14 @@ namespace Trabalho_de_AED___Rouba_Monte
                     string nomeJogador = Console.ReadLine()
 
 
-                    Jogador jogadorNovo = new Jogador(nomeJogador) //COLOCAR NO WHATTSZAP COMO MUDAR O NÚMERO A CADA LOOP!!!!!!!!!!!
+                    Jogador jogadorNovo = new Jogador(nomeJogador);
 
 
                    FiladeJogadores.Enqueue(jogadorNovo);
-                 
+
                 }
 
-                do 
+                do
                 {
 
 
@@ -559,20 +559,36 @@ namespace Trabalho_de_AED___Rouba_Monte
 
 
 
-                } while (MontedeCompras.QuantidadedeCarta == 0); //Continuar até a área de descarte e o monte de compra estiver vazio
+                } while (MontedeCompras.QuantidadedeCarta != 0); //Continuar até o monte de compra estiver vazio
 
                 Console.WriteLine("Deseja ver os Rankings de algum jogador?");
-                string resp1 = Console.ReadLine();
+                Console.WriteLine("Digite S ou N");
+                char resp1 = Console.ReadLine();
 
-                Console.WriteLine("Quer Continuar Jogando?");
-                string resp2 = Console.ReadLine();
-
-                if (resp == "Sim" || resp == "sim" || resp == "S" || resp == "s")
+                if (resp1 == "S" || resp1 == "s")
                 {
                     continuarJogando = true;
                 }
 
-                else if (resp == "Não" || resp == "não" || resp == "N" || resp == "n")
+                else if (resp1 == "N" || resp1 == "n")
+                {
+                    continuarJogando = false;
+                }
+                else
+                {
+                    throw new Exception("Resposta Inválida");
+                }
+
+                Console.WriteLine("Quer Continuar Jogando?"); //Colocar qual caractere usar para responder
+                Console.WriteLine("Digite S ou N");
+                char resp2 = Console.ReadLine();
+
+                if (resp2 == "S" || resp2 == "s")
+                {
+                    continuarJogando = true;
+                }
+
+                else if (resp2 == "N" || resp2 == "n")
                 {
                     continuarJogando = false;
                 }
@@ -648,6 +664,8 @@ namespace Trabalho_de_AED___Rouba_Monte
 
 
             Console.WriteLine("Obrigado por Jogar!");
+
+            
 
             //Antes de jogar novamente, quer ver os rankings, de quem?
 
