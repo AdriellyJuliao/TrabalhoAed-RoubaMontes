@@ -181,11 +181,16 @@ namespace Trabalho_de_AED___Rouba_Monte
                     else
                     {
                         // descartar normalmente
+<<<<<<< HEAD
                         Mesa.Mesa.Cartas.Add(CartadoMomento);
+=======
+                        Mesa.Mesa.Cartas.Add(CartadoMomento);;
+>>>>>>> d8253765fde61dc26ec4ffc45b46fca1dadbb5f1
                         FimdaCartadaVez = true;
                     }
                 }
             } while (!FimdaCartadaVez);
+<<<<<<< HEAD
 
 
         }
@@ -234,6 +239,40 @@ namespace Trabalho_de_AED___Rouba_Monte
       Note que esse é o único caso em que o jogador não continua a jogada.    
 
     */
+=======
+        }
+    }
+
+                /*REGRAS QUANTO A CARTA DA VEZ
+
+                Os jogadores, dispostos em um círculo ao redor da mesa de jogo (--FILA IMPLICITA?--), jogam em sequência, em sentido horário. As jogadas 
+                prosseguem da seguinte forma: 
+
+                • O jogador que tem a vez de jogar retira a carta de cima do monte de compras e a mostra aos outros jogadores; vamos 
+                  chamar essa carta de carta da vez. 
+
+                • Se a carta da vez for igual à carta do topo de um monte de um outro jogador, o jogador "rouba" esse monte, 
+                  colocando-o em seu próprio monte, coloca a carta da vez no topo do seu monte, face para cima, e continua a jogada 
+                  (ou seja, retira outra carta do monte de compras e repete o processo).  Duas cartas são consideradas iguais se tiverem 
+                   o mesmo valor. Caso a carta da vez seja igual ao topo de dois ou mais montes, deve-se roubar apenas o maior monte 
+                  (monte com mais cartas). Se houver empate em relação ao tamanho dos montes, deve-se escolher aleatoriamente 
+                  um dos montes para roubar.  
+
+                • Se o teste acima falhar, o jogador verifica se a carta da vez é igual a alguma carta presente na área de descarte. Caso 
+                  seja, o jogador retira essa carta da área de descarte colocando-a no seu monte, juntamente com a carta da vez no 
+                  topo, com as faces voltadas para cima, e continua a jogada (ou seja, retira outra carta do monte de compras e repete o processo). 
+
+                • Se o teste acima falhar, o jogador verifica se a carta da vez é igual a carta do topo de seu próprio monte. Caso seja, 
+                  o jogador coloca a carta da vez no topo de seu próprio monte, com a face para cima, e continua a jogada (ou seja, 
+                  retira outra carta do monte de compras e repete o processo). 
+
+                • Se a carta da vez for diferente das cartas da área de descarte e das cartas nos topos dos montes, o jogador a coloca 
+                  na área de descarte, com a face para cima, e a jogada se encerra (ou seja, o próximo jogador efetua a sua jogada). 
+
+                  Note que esse é o único caso em que o jogador não continua a jogada.    
+
+                */
+>>>>>>> d8253765fde61dc26ec4ffc45b46fca1dadbb5f1
 
 
 
@@ -290,6 +329,80 @@ namespace Trabalho_de_AED___Rouba_Monte
             this.quantidadeCarta = quantidadeCarta;
         }
 
+<<<<<<< HEAD
+=======
+
+        public void PreencherMontedeCompras()
+        {
+            string[] tiposNaipes = { "Copas", "Ouros", "Paus", "Espadas" };
+            Random naipeAleatorio = new Random();
+
+            int definidordeNumeroCarta = 1;
+
+            for (int i = 0; i < quantidadeCarta; i++)
+            {
+                // Reinicia numeração após 13
+                if (definidordeNumeroCarta > 13)
+                    definidordeNumeroCarta = 1;
+
+                // Sorteia o naipe
+                int indicedoVetorNaipes = naipeAleatorio.Next(0, 4);
+
+                // Cria a carta
+                Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
+
+                cartasparaComprar.Add(CartaGerada);
+
+                definidordeNumeroCarta++;
+            }
+
+        }
+        
+
+        public void EmbaralharMontedeCompra()
+        {
+            // Verificação básica
+            if (cartasparaComprar == null || quantidadeCarta <= 0)
+            {
+                throw new Exception("Monte vazio ou de tamanho inválido");
+            }
+
+            // Algoritmo para embaralhar, pegando uma carta aleatória e trocando de posição
+            Random cartaAleatoria = new Random();
+
+            for (int i = cartasparaComprar.Count - 1; i > 0; i--)
+            {
+                // Sorteia um índice entre 0 e i
+                int j = cartaAleatoria.Next(0, i + 1);
+
+                // Troca as cartas de posição
+                Carta temp = cartasparaComprar[i];
+                cartasparaComprar[i] = cartasparaComprar[j];
+                cartasparaComprar[j] = temp;
+
+            }
+        }
+
+
+        public Carta RemoverMontedeCarta()
+        {
+            if(cartasparaComprar.Count == 0)
+            {
+                throw new Exception("O monte de compra está vazio");
+            }
+            else { 
+                Carta carta = cartasparaComprar[cartasparaComprar.Count - 1];
+            cartasparaComprar.RemoveAt(cartasparaComprar.Count - 1);
+            return carta;
+            }
+        }
+
+
+        //Método para inserir carta no monte
+
+
+
+>>>>>>> d8253765fde61dc26ec4ffc45b46fca1dadbb5f1
         public List<Carta> CartasparaComprar
         {
             get { return cartasparaComprar; }
@@ -397,7 +510,7 @@ namespace Trabalho_de_AED___Rouba_Monte
     
      */
 
-    public class AreadeDescarte
+        public class AreadeDescarte
     {
         List<Carta> cartas;
 
@@ -710,5 +823,6 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             //Quer parar?
         }
+        }
     }
-}
+
