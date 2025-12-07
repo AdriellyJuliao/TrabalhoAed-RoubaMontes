@@ -573,11 +573,28 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                 for (int i = 0; i <= quantJogadores; i++)
                 {
-                    Console.WriteLine("Nome do jogador " + i++);
-                    string nomeJogador = Console.ReadLine()
+                    bool nomeigual = false;
+
+                    do
+                    {
+                        nomeigual = false;
+                        Console.WriteLine("Nome do jogador " + i++);
+                        string nomeJogadorInserir = Console.ReadLine();
+
+                        foreach(Jogador jogadoresRegistrados in jogadoresDaPartida)
+                        {
+                            if (jogadoresRegistrados.Nome == nomeJogadorInserir)
+                            {
+                                nomeigual = true;
+
+                                Console.WriteLine("O nome " + nomeJogadorInserir + "já foi usado");
+                            }
+                        }
 
 
-                    Jogador jogadorNovo = new Jogador(nomeJogador);
+                    } while (nomeigual = true);
+
+                    Jogador jogadorNovo = new Jogador(nomeJogadorInserir);
 
 
                     jogadoresDaPartida.Add(jogadorNovo);
