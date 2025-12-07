@@ -21,10 +21,9 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         private int quantCartasAgora; //Do jogo atual
 
-
         private Queue<int> ranking; //Stream Reader
 
-        private List<Carta> MonteDoJogador;
+        private List<Carta> monteDoJogador;
 
         public Jogador(string nome) //CONSTRUTOR
         {
@@ -33,7 +32,7 @@ namespace Trabalho_de_AED___Rouba_Monte
             this.quantCartas = 0;
             this.quantCartasAgora = 0;
             this.ranking = null;
-            this.MonteDoJogador = new List<Carta>();
+            this.monteDoJogador = new List<Carta>();
         }
 
         public string Nome
@@ -64,6 +63,12 @@ namespace Trabalho_de_AED___Rouba_Monte
         {
             get { return ranking; }
             set { ranking = value; }
+        }
+
+        public List<Carta> MonteDoJogador
+        {
+            get { return monteDoJogador; }
+            set { monteDoJogador = value; }
         }
 
         public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, AreadeDescarte Mesa)
@@ -198,8 +203,11 @@ namespace Trabalho_de_AED___Rouba_Monte
             {
                 throw new Exception("Quantidade de Rankings do jogador (" + nome + ") está fora do limite")
             }
-            int contagemRanking = 0
-            foreach(int rankingdojogador in ranking)
+            int contagemRanking = 0;
+
+            Console.WriteLine("Rankings do " + nome);
+
+            foreach (int rankingdojogador in ranking)
             {
                 Console.WriteLine(contagemRanking + ") " + rankingdojogador);
 
@@ -369,17 +377,17 @@ namespace Trabalho_de_AED___Rouba_Monte
 
 
         //Método para inserir carta no monte
-               
-
-        
-        }
 
 
 
+    }
 
 
-       
-    
+
+
+
+
+
 
     /*
     Jogadores Topo:
@@ -401,13 +409,16 @@ namespace Trabalho_de_AED___Rouba_Monte
     
      */
 
-     public class AreadeDescarte
+    public class AreadeDescarte
     {
-        List<Carta> cartas;
+        private List<Carta> cartas;
+
+        private int quantidadeCartasNaMesa;
 
         public AreadeDescarte()
         {
-            cartas = null;
+            cartas = new List<Carta>;
+            quantidadeCartasNaMesa = 0;
         }
 
         public List<Carta> Cartas
@@ -415,6 +426,13 @@ namespace Trabalho_de_AED___Rouba_Monte
             get { return cartas; }
             set { cartas = value; }
         }
+
+        public List<Carta> QuantidadeCartasNaMesa
+        {
+            get { return quantidadeCartasNaMesa; }
+            set { quantidadeCartasNaMesa = value; }
+        }
+
 
         public void InserirAreaDescarte(Carta x)
         {
@@ -429,6 +447,16 @@ namespace Trabalho_de_AED___Rouba_Monte
                 Console.Write(x.Numero "||");
             }
 
+        }
+
+        public void LimparAreadeDescarte()
+        {
+            for (int i = 0; i < cartas.Count - 1; i++)
+            {
+                cartas.RemoveAt(0);
+            }
+
+            quantidadeCartasNaMesa = 0;
         }
 
 
@@ -504,6 +532,9 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             Lista<Jogador> jogadoresDaPartida;
 
+            AreadeDescarte MesadaPartida = new AreadeDescarte();
+
+
             do
             {
                 if (resetarQuantidadeCartas)
@@ -569,9 +600,11 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                 } while (MontedeCompras.QuantidadedeCarta != 0); //Continuar até o monte de compra estiver vazio
 
+                MesadaPartida.LimparAreadeDescarte();
+
                 //Ordenar ranking dos jogadores aqui, após o jogo ter terminado
 
-                foreach(Jogador jogadorEscolhido in jogadoresDaPartida)
+                foreach (Jogador jogadorEscolhido in jogadoresDaPartida)
                 {
                     jogadorEscolhido.QuantCartas = jogadorEscolhido.QuantCartasAgora;
                 }
