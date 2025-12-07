@@ -68,7 +68,7 @@ namespace Trabalho_de_AED___Rouba_Monte
         public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, AreadeDescarte Mesa)
         {
             //Fazer validacao para que o sistema nao procure um jogador que nao tenha um monte pois vai dar erro de out of range
-            //Comentario para informar que o metodo para pegar carta da mesa aparenta esta pronta (assim espero)
+            //Prioridade menor mas seria interessante na hora de digitar o nome dos jogadores nao deixar repetir pois pode dar confusão no metodo CartaDaVez
             bool FimdaCartadaVez = false;
 
             do
@@ -180,7 +180,7 @@ namespace Trabalho_de_AED___Rouba_Monte
                     else
                     {
                         // descartar normalmente
-                        Mesa.InserirAreaDescarte(CartadoMomento);
+                        Mesa.Mesa.Cartas.Add(CartadoMomento);;
                         FimdaCartadaVez = true;
                     }
                 }
