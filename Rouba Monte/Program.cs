@@ -658,6 +658,16 @@ namespace Trabalho_de_AED___Rouba_Monte
                     {
 
                         Console.WriteLine("Digite o nome de um jogador");
+                        string nomeJogadorRanking = Console.ReadLine();
+
+
+                        foreach(Jogador jogadorRanking in jogadoresDaPartida)
+                        {
+                            if(jogadorRanking.Nome == nomeJogadorRanking)
+                            {
+                                jogadorRanking.VisualizarRanking();
+                            }
+                        }
 
                     }
 
