@@ -67,160 +67,163 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, AreadeDescarte Mesa)
         {
-            //confirmar se a carta do monte esta sendo comparada o numero ou a carta inteira(deve ser apenas o numero) 
             //Fazer validacao para que o sistema nao procure um jogador que nao tenha um monte pois vai dar erro de out of range
-            // erro pra tirar a carta da mesa, nao pode ser usado o contains na forma em que esta sendo usada
-            // quando for pegar carta a area do descarte, ta sendo iterado 2 cartas na quantidade de cartas do jogador porem so uma carta é aicionada ao monte de cartas
-
-            bool FimdaCartadaVez = false; //Verifica se o turno dessa carta tá rolando
+            //Comentario para informar que o metodo para pegar carta da mesa aparenta esta pronta (assim espero)
+            bool FimdaCartadaVez = false;
 
             do
             {
-                
-            
-            Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta(); //Puxar carta do monte de compra           
+                Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta();
+                List<Jogador> listadeAdversariosCompativeis = new List<Jogador>();
 
-            List<Jogador> listadeAdversariosCompativeis = new List<Jogador>();
-
-
-            foreach (Jogador x in Jogadores)
-            {
-                if (CartadoMomento.Numero == x.MonteDoJogador[x.MonteDoJogador.Count - 1].Numero && x.nome != nome) 
+                foreach (Jogador x in Jogadores)
                 {
-                    listadeAdversariosCompativeis.Add(x);
-                }
-            }
-
-            if (listadeAdversariosCompativeis.Count == 1)
-            { 
-
-                while (listadeAdversariosCompativeis[0].MonteDoJogador.Count > 0)
-                {
-                    Carta carta = listadeAdversariosCompativeis[0].MonteDoJogador[0];
-
-                    MonteDoJogador.Add(carta);
-                    QuantCartasAgora++;
-
-                    listadeAdversariosCompativeis[0].MonteDoJogador.RemoveAt(0);
-                    listadeAdversariosCompativeis[0].QuantCartasAgora--;
-                }
-            MonteDoJogador.Add(CartadoMomento);
-            QuantCartasAgora++;
-            }
-            else if (listadeAdversariosCompativeis.Count > 1)
-            {
-                int maiorQuantidadeCartas = int.MinValue;
-                foreach (Jogador x in listadeAdversariosCompativeis)
-                {
-                    if (x.MonteDoJogador.Count > maiorQuantidadeCartas)
+                    if (x.MonteDoJogador.Count > 0 &&
+                        CartadoMomento.Numero == x.MonteDoJogador[x.MonteDoJogador.Count - 1].Numero &&
+                        x.nome != Nome)
                     {
-                        maiorQuantidadeCartas = x.MonteDoJogador.Count;
+                        listadeAdversariosCompativeis.Add(x);
                     }
+
                 }
-                for (int i = listadeAdversariosCompativeis.Count - 1; i >= 0; i--)
+
+                // --- SE EXISTEM VÁRIOS ADVERSÁRIOS COMPATÍVEIS ---
+                if (listadeAdversariosCompativeis.Count > 1)
                 {
-                    if (listadeAdversariosCompativeis[i].MonteDoJogador.Count != maiorQuantidadeCartas)
+                    int maiorQuantidadeCartas = int.MinValue;
+
+                    foreach (Jogador x in listadeAdversariosCompativeis)
                     {
-                        listadeAdversariosCompativeis.RemoveAt(i);
+                        if (x.MonteDoJogador.Count > maiorQuantidadeCartas)
+                        {
+                            maiorQuantidadeCartas = x.MonteDoJogador.Count;
+                        }
+                    }
+
+                    for (int i = listadeAdversariosCompativeis.Count - 1; i >= 0; i--)
+                    {
+                        if (listadeAdversariosCompativeis[i].MonteDoJogador.Count != maiorQuantidadeCartas)
+                        {
+                            listadeAdversariosCompativeis.RemoveAt(i);
+                        }
                     }
                 }
 
+                // --- SOMENTE 1 ADVERSÁRIO ---
                 if (listadeAdversariosCompativeis.Count == 1)
                 {
-
                     while (listadeAdversariosCompativeis[0].MonteDoJogador.Count > 0)
                     {
                         Carta carta = listadeAdversariosCompativeis[0].MonteDoJogador[0];
-
                         MonteDoJogador.Add(carta);
                         QuantCartasAgora++;
 
                         listadeAdversariosCompativeis[0].MonteDoJogador.RemoveAt(0);
                         listadeAdversariosCompativeis[0].QuantCartasAgora--;
                     }
+
                     MonteDoJogador.Add(CartadoMomento);
                     QuantCartasAgora++;
                 }
-                else
+
+                // --- AINDA EXISTEM VÁRIOS APÓS O FILTRO (EMPATE) ---
+                else if (listadeAdversariosCompativeis.Count > 1)
                 {
                     Random jogadorAleatorio = new Random();
                     int indiceJogadorAleatorio = jogadorAleatorio.Next(0, listadeAdversariosCompativeis.Count);
+
                     Jogador jogadorEscolhido = listadeAdversariosCompativeis[indiceJogadorAleatorio];
+
                     while (jogadorEscolhido.MonteDoJogador.Count > 0)
                     {
                         Carta carta = jogadorEscolhido.MonteDoJogador[0];
-
                         MonteDoJogador.Add(carta);
                         QuantCartasAgora++;
 
                         jogadorEscolhido.MonteDoJogador.RemoveAt(0);
                         jogadorEscolhido.QuantCartasAgora--;
                     }
+
                     MonteDoJogador.Add(CartadoMomento);
                     QuantCartasAgora++;
                 }
-            }
-            else if (Mesa.Cartas.Contains(CartadoMomento))
-            {
-                Mesa.Cartas.Remove(CartadoMomento);
-                MonteDoJogador.Add(CartadoMomento);
-                QuantCartasAgora += 2;
-            }
-            else if (CartadoMomento.Numero == MonteDoJogador[MonteDoJogador.Count - 1].Numero)
-            {
-                MonteDoJogador.Add(CartadoMomento);
-                QuantCartasAgora++;
-            }
-            else
-            {
-                Mesa.InserirAreaDescarte(CartadoMomento);
-                FimdaCartadaVez = true;
-            }
 
+                // --- ROUBAR DA ÁREA DE DESCARTE (comparando apenas o número) ---
+                else
+                {
+                    // procurar carta com mesmo número na mesa
+                    int indiceEncontrado = -1;
 
+                    for (int i = 0; i < Mesa.Cartas.Count; i++)
+                    {
+                        if (Mesa.Cartas[i].Numero == CartadoMomento.Numero)
+                        {
+                            indiceEncontrado = i;
+                            break;
+                        }
+                    }
 
+                    if (indiceEncontrado != -1)
+                    {
+                        // pegar a carta
+                        Carta cartaNaMesa = Mesa.Cartas[indiceEncontrado];
+
+                        // remover da mesa
+                        Mesa.Cartas.RemoveAt(indiceEncontrado);
+
+                        // adicionar as duas cartas ao jogador
+                        MonteDoJogador.Add(cartaNaMesa);
+                        MonteDoJogador.Add(CartadoMomento);
+
+                        QuantCartasAgora += 2;
+                    }
+                    else
+                    {
+                        // descartar normalmente
+                        Mesa.InserirAreaDescarte(CartadoMomento);
+                        FimdaCartadaVez = true;
+                    }
+                }
             } while (!FimdaCartadaVez);
-            
-
         }
-
-
-        /*REGRAS QUANTO A CARTA DA VEZ
-        
-        Os jogadores, dispostos em um círculo ao redor da mesa de jogo (--FILA IMPLICITA?--), jogam em sequência, em sentido horário. As jogadas 
-        prosseguem da seguinte forma: 
-
-        • O jogador que tem a vez de jogar retira a carta de cima do monte de compras e a mostra aos outros jogadores; vamos 
-          chamar essa carta de carta da vez. 
-
-        • Se a carta da vez for igual à carta do topo de um monte de um outro jogador, o jogador "rouba" esse monte, 
-          colocando-o em seu próprio monte, coloca a carta da vez no topo do seu monte, face para cima, e continua a jogada 
-          (ou seja, retira outra carta do monte de compras e repete o processo).  Duas cartas são consideradas iguais se tiverem 
-           o mesmo valor. Caso a carta da vez seja igual ao topo de dois ou mais montes, deve-se roubar apenas o maior monte 
-          (monte com mais cartas). Se houver empate em relação ao tamanho dos montes, deve-se escolher aleatoriamente 
-          um dos montes para roubar.  
-
-        • Se o teste acima falhar, o jogador verifica se a carta da vez é igual a alguma carta presente na área de descarte. Caso 
-          seja, o jogador retira essa carta da área de descarte colocando-a no seu monte, juntamente com a carta da vez no 
-          topo, com as faces voltadas para cima, e continua a jogada (ou seja, retira outra carta do monte de compras e repete o processo). 
-
-        • Se o teste acima falhar, o jogador verifica se a carta da vez é igual a carta do topo de seu próprio monte. Caso seja, 
-          o jogador coloca a carta da vez no topo de seu próprio monte, com a face para cima, e continua a jogada (ou seja, 
-          retira outra carta do monte de compras e repete o processo). 
-
-        • Se a carta da vez for diferente das cartas da área de descarte e das cartas nos topos dos montes, o jogador a coloca 
-          na área de descarte, com a face para cima, e a jogada se encerra (ou seja, o próximo jogador efetua a sua jogada). 
-          
-          Note que esse é o único caso em que o jogador não continua a jogada.    
-
-        */
-
-       
-
-
     }
 
-   
+                /*REGRAS QUANTO A CARTA DA VEZ
+
+                Os jogadores, dispostos em um círculo ao redor da mesa de jogo (--FILA IMPLICITA?--), jogam em sequência, em sentido horário. As jogadas 
+                prosseguem da seguinte forma: 
+
+                • O jogador que tem a vez de jogar retira a carta de cima do monte de compras e a mostra aos outros jogadores; vamos 
+                  chamar essa carta de carta da vez. 
+
+                • Se a carta da vez for igual à carta do topo de um monte de um outro jogador, o jogador "rouba" esse monte, 
+                  colocando-o em seu próprio monte, coloca a carta da vez no topo do seu monte, face para cima, e continua a jogada 
+                  (ou seja, retira outra carta do monte de compras e repete o processo).  Duas cartas são consideradas iguais se tiverem 
+                   o mesmo valor. Caso a carta da vez seja igual ao topo de dois ou mais montes, deve-se roubar apenas o maior monte 
+                  (monte com mais cartas). Se houver empate em relação ao tamanho dos montes, deve-se escolher aleatoriamente 
+                  um dos montes para roubar.  
+
+                • Se o teste acima falhar, o jogador verifica se a carta da vez é igual a alguma carta presente na área de descarte. Caso 
+                  seja, o jogador retira essa carta da área de descarte colocando-a no seu monte, juntamente com a carta da vez no 
+                  topo, com as faces voltadas para cima, e continua a jogada (ou seja, retira outra carta do monte de compras e repete o processo). 
+
+                • Se o teste acima falhar, o jogador verifica se a carta da vez é igual a carta do topo de seu próprio monte. Caso seja, 
+                  o jogador coloca a carta da vez no topo de seu próprio monte, com a face para cima, e continua a jogada (ou seja, 
+                  retira outra carta do monte de compras e repete o processo). 
+
+                • Se a carta da vez for diferente das cartas da área de descarte e das cartas nos topos dos montes, o jogador a coloca 
+                  na área de descarte, com a face para cima, e a jogada se encerra (ou seja, o próximo jogador efetua a sua jogada). 
+
+                  Note que esse é o único caso em que o jogador não continua a jogada.    
+
+                */
+
+
+
+
+
+
+
 
     public class Carta
     {
@@ -667,5 +670,6 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             //Quer parar?
         }
+        }
     }
-}
+
