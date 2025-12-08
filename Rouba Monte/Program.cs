@@ -89,6 +89,8 @@ namespace Trabalho_de_AED___Rouba_Monte
                 do
                 {
                     Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta();
+                    logdoJogo.Registrar(this.nome "Retirou do Monte de Compra a carta " + CartadoMomento.Numero + " de " + CartadoMomento.Naipe + ".");
+
                     List<Jogador> listadeAdversariosCompativeis = new List<Jogador>();
 
                     foreach (Jogador x in Jogadores)
@@ -217,7 +219,7 @@ namespace Trabalho_de_AED___Rouba_Monte
         {
             if (ranking.Count > 5)
             {
-                throw new Exception("Quantidade de Rankings do jogador (" + nome + ") está fora do limite")
+                throw new Exception("Quantidade de Rankings do jogador (" + nome + ") está fora do limite");
             }
             int contagemRanking = 0;
 
@@ -442,11 +444,12 @@ namespace Trabalho_de_AED___Rouba_Monte
             }
             else 
         
-            { 
-            Carta carta = cartasparaComprar[cartasparaComprar.Count - 1];
-            cartasparaComprar.RemoveAt(cartasparaComprar.Count - 1);
+            {
+            Carta carta = cartasparaComprar[count - 1];
+            cartasparaComprar.RemoveAt(count - 1);
+            quantidadeCarta--;
             return carta;
-            }
+           }
         }
 
 
@@ -517,20 +520,16 @@ namespace Trabalho_de_AED___Rouba_Monte
         {
             foreach (Carta x in cartas)
             {
-                Console.Write("||"); //Simular o visual de uma carta?
-                Console.Write(x.Numero "||");
+              Console.Write("||" + x.Numero + "||");  //Simular o visual de uma carta?
             }
 
         }
 
         public void LimparAreadeDescarte()
         {
-            for (int i = 0; i < cartas.Count - 1; i++)
-            {
-                cartas.RemoveAt(0);
-            }
+         cartas.Clear();
+        quantidadeCartasNaMesa = 0;
 
-            quantidadeCartasNaMesa = 0;
     }
 
 
@@ -676,9 +675,9 @@ public class Arquivo
 
             int quantCartas, quantJogadores;
 
-            List<Jogador> jogadoresDaPartida;
+            List<Jogador> jogadoresDaPartida = new List<Jogador>();
 
-            AreadeDescarte MesadaPartida = new AreadeDescarte();
+            AreadeDescarte mesadaPartida = new AreadeDescarte();
 
             Arquivo logdoJogo = new Arquivo();
 
@@ -710,7 +709,7 @@ public class Arquivo
                     while (quantJogadores < 0)
                     {
                         Console.WriteLine("A quantidade de jogadores deve ser positiva");
-                        quantJogadores = int.Parse.(Console.ReadLine());
+                        quantJogadores = int.Parse(Console.ReadLine());
 
                     }
                 }
@@ -776,7 +775,7 @@ public class Arquivo
                     {
                         logdoJogo.Registrar("Agora é a vez do " + jogadordaVez.Nome + " jogar");
 
-                        jogadordaVez.CartaDaVez(montedeCompras, jogadoresDaPartida, MesadaPartida);
+                        jogadordaVez.CartaDaVez(montedeCompras, jogadoresDaPartida, mesadaPartida);
                     }
 
 
@@ -787,7 +786,7 @@ public class Arquivo
 
                 } while (montedeCompras.QuantidadeCarta != 0); //Continuar até o monte de compra estiver vazio
 
-                MesadaPartida.LimparAreadeDescarte();
+                mesadaPartida.LimparAreadeDescarte();
                 logdoJogo.Registrar("A área de descarte foi limpa");
 
 
@@ -801,7 +800,6 @@ public class Arquivo
                 }
 
 
-                //REFINAR ISSO DEPOIS
                 jogadoresDaPartida = Jogador.OrdernarListaJogadores(jogadoresDaPartida);
 
                 do
