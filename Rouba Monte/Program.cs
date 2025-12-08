@@ -664,6 +664,7 @@ public class Arquivo
 
     internal class Program
     {
+        public static Arquivo logDoJogo = new Arquivo();
         static void Main(string[] args)
         {
 
@@ -848,7 +849,7 @@ public class Arquivo
                     if (resp1 == 'S' || resp1 == 's')
                     {
                         visualizarRankings = true;
-                        
+
                     }
 
                     else if (resp1 == 'N' || resp1 == 'n')
@@ -882,103 +883,72 @@ public class Arquivo
                 } while (visualizarRankings);
 
 
-                Console.WriteLine("Quer Continuar Jogando?"); //Colocar qual caractere usar para responder
-                Console.WriteLine("Digite S ou N");
-                char resp2 = char.Parse(Console.ReadLine());
+                // Perguntar se deseja continuar
+                Console.WriteLine("Deseja continuar jogando? (S/N)");
+                char respContinuar = char.Parse(Console.ReadLine());
 
-                if (resp2 == 'S' || resp2 == 's')
+
+                if (respContinuar == 'S' || respContinuar == 's')
                 {
                     continuarJogando = true;
-                    logDoJogo.Registrar("O jogo irá continuar");
 
-                }
-
-                else if (resp2 == 'N' || resp2 == 'n')
-                {
-                    continuarJogando = false;
-                    logDoJogo.Registrar("O será encerrado");
-
-                }
-                else
-                {
-                    throw new Exception("Resposta Inválida");
-                }
-
-                if (continuarJogando)
-                {
 
                     Console.WriteLine("1) Manter Cartas e Jogadores");
                     Console.WriteLine("2) Manter Cartas e Alterar Jogadores");
                     Console.WriteLine("3) Alterar Cartas e Manter Jogadores");
                     Console.WriteLine("4) Alterar Cartas e Jogadores");
-                    int opcoesContinuar = int.Parse(Console.ReadLine());
 
-                    switch (opcoesContinuar)
 
+                    int opcao = int.Parse(Console.ReadLine());
+
+
+                    switch (opcao)
                     {
                         case 1:
-
                             resetarQuantidadeCartas = false;
-
                             resetarJogadores = false;
-
-                            logDoJogo.Registrar("A quantidade de cartas e os Jogadores serão Mantidos para a próxima partida");
-
-
+                            logDoJogo.Registrar("A quantidade de cartas e os Jogadores serão mantidos para a próxima partida");
                             break;
 
+
                         case 2:
-
                             resetarQuantidadeCartas = false;
-
                             resetarJogadores = true;
-
                             logDoJogo.Registrar("A quantidade de cartas será mantida mas os Jogadores serão alterados para a próxima partida");
-
-
                             break;
 
 
                         case 3:
-
                             resetarQuantidadeCartas = true;
-
                             resetarJogadores = false;
-
                             logDoJogo.Registrar("A quantidade de cartas será alterada mas os Jogadores serão mantidos para a próxima partida");
-
                             break;
+
 
                         case 4:
-
                             resetarQuantidadeCartas = true;
-
                             resetarJogadores = true;
-
                             logDoJogo.Registrar("A quantidade de cartas e os Jogadores serão Alterados para a próxima partida");
-
-
-
                             break;
-
 
                         default:
-
-                            throw new Exception("Escolha Inválida!");
-
-
-                            break;
-
+                            throw new Exception("Opção inválida!");
                     }
-
                 }
+                else if (respContinuar == 'N' || respContinuar == 'n')
+                {
+                    continuarJogando = false;
+                }
+                else
+                {
+                    throw new Exception("Resposta inválida!");
+                }
+
 
             } while (continuarJogando);
 
-
-            Console.WriteLine("Obrigado por Jogar!");
-
-            logDoJogo.Registrar("O jogo se encerrou");
+            Console.WriteLine("Obrigado por jogar!");
+            logDoJogo.Registrar("O jogo foi encerrado.");
 
             //Antes de jogar novamente, quer ver os rankings, de quem?
 
