@@ -5,6 +5,7 @@ using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Schema;
@@ -32,7 +33,7 @@ namespace Trabalho_de_AED___Rouba_Monte
             this.posicao = -1;
             this.quantCartas = 0;
             this.quantCartasAgora = 0;
-            this.ranking = new Queue<int>;
+            this.ranking = new Queue<int>();
             this.monteDoJogador = new List<Carta>();
         }
 
@@ -78,129 +79,143 @@ namespace Trabalho_de_AED___Rouba_Monte
             //Prioridade menor mas seria interessante na hora de digitar o nome dos jogadores nao deixar repetir pois pode dar confusão no metodo CartaDaVez
             bool FimdaCartadaVez = false;
 
-            do
+            if (MontedeCompraPartida == null)
             {
-                Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta();
-                List<Jogador> listadeAdversariosCompativeis = new List<Jogador>();
+                Console.WriteLine("Monte de Compra Esgotado");
+                FimdaCartadaVez = true;
+            }
+            else {
 
-                foreach (Jogador x in Jogadores)
+                do
                 {
-                    if (x.MonteDoJogador.Count > 0 &&
-                        CartadoMomento.Numero == x.MonteDoJogador[x.MonteDoJogador.Count - 1].Numero &&
-                        x.nome != Nome)
+                    Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta();
+                    List<Jogador> listadeAdversariosCompativeis = new List<Jogador>();
+
+                    foreach (Jogador x in Jogadores)
                     {
-                        listadeAdversariosCompativeis.Add(x);
+                        if (x.MonteDoJogador.Count > 0 &&
+                            CartadoMomento.Numero == x.MonteDoJogador[x.MonteDoJogador.Count - 1].Numero &&
+                            x.Nome != this.Nome)
+                        {
+                            listadeAdversariosCompativeis.Add(x);
+                        }
+
                     }
 
-                }
-
-                // --- SE EXISTEM VÁRIOS ADVERSÁRIOS COMPATÍVEIS ---
-                if (listadeAdversariosCompativeis.Count > 1)
-                {
-                    int maiorQuantidadeCartas = int.MinValue;
-
-                    foreach (Jogador x in listadeAdversariosCompativeis)
+                    // --- SE EXISTEM VÁRIOS ADVERSÁRIOS COMPATÍVEIS ---
+                    if (listadeAdversariosCompativeis.Count > 1)
                     {
-                        if (x.MonteDoJogador.Count > maiorQuantidadeCartas)
+                        int maiorQuantidadeCartas = int.MinValue;
+
+                        foreach (Jogador x in listadeAdversariosCompativeis)
                         {
-                            maiorQuantidadeCartas = x.MonteDoJogador.Count;
+                            if (x.MonteDoJogador.Count > maiorQuantidadeCartas)
+                            {
+                                maiorQuantidadeCartas = x.MonteDoJogador.Count;
+                            }
+                        }
+
+                        for (int i = listadeAdversariosCompativeis.Count - 1; i >= 0; i--)
+                        {
+                            if (listadeAdversariosCompativeis[i].MonteDoJogador.Count != maiorQuantidadeCartas)
+                            {
+                                listadeAdversariosCompativeis.RemoveAt(i);
+                            }
                         }
                     }
 
-                    for (int i = listadeAdversariosCompativeis.Count - 1; i >= 0; i--)
+                    // --- SOMENTE 1 ADVERSÁRIO ---
+                    if (listadeAdversariosCompativeis.Count == 1)
                     {
-                        if (listadeAdversariosCompativeis[i].MonteDoJogador.Count != maiorQuantidadeCartas)
+                        while (listadeAdversariosCompativeis[0].MonteDoJogador.Count > 0)
                         {
-                            listadeAdversariosCompativeis.RemoveAt(i);
+                            Carta carta = listadeAdversariosCompativeis[0].MonteDoJogador[0];
+                            MonteDoJogador.Add(carta);
+                            QuantCartasAgora++;
+
+                            listadeAdversariosCompativeis[0].MonteDoJogador.RemoveAt(0);
+                            listadeAdversariosCompativeis[0].QuantCartasAgora--;
                         }
-                    }
-                }
 
-                // --- SOMENTE 1 ADVERSÁRIO ---
-                if (listadeAdversariosCompativeis.Count == 1)
-                {
-                    while (listadeAdversariosCompativeis[0].MonteDoJogador.Count > 0)
-                    {
-                        Carta carta = listadeAdversariosCompativeis[0].MonteDoJogador[0];
-                        MonteDoJogador.Add(carta);
-                        QuantCartasAgora++;
-
-                        listadeAdversariosCompativeis[0].MonteDoJogador.RemoveAt(0);
-                        listadeAdversariosCompativeis[0].QuantCartasAgora--;
-                    }
-
-                    MonteDoJogador.Add(CartadoMomento);
-                    QuantCartasAgora++;
-                }
-
-                // --- AINDA EXISTEM VÁRIOS APÓS O FILTRO (EMPATE) ---
-                else if (listadeAdversariosCompativeis.Count > 1)
-                {
-                    Random jogadorAleatorio = new Random();
-                    int indiceJogadorAleatorio = jogadorAleatorio.Next(0, listadeAdversariosCompativeis.Count);
-
-                    Jogador jogadorEscolhido = listadeAdversariosCompativeis[indiceJogadorAleatorio];
-
-                    while (jogadorEscolhido.MonteDoJogador.Count > 0)
-                    {
-                        Carta carta = jogadorEscolhido.MonteDoJogador[0];
-                        MonteDoJogador.Add(carta);
-                        QuantCartasAgora++;
-
-                        jogadorEscolhido.MonteDoJogador.RemoveAt(0);
-                        jogadorEscolhido.QuantCartasAgora--;
-                    }
-
-                    MonteDoJogador.Add(CartadoMomento);
-                    QuantCartasAgora++;
-                }
-
-                // --- ROUBAR DA ÁREA DE DESCARTE (comparando apenas o número) ---
-                else
-                {
-                    // procurar carta com mesmo número na mesa
-                    int indiceEncontrado = -1;
-
-                    for (int i = 0; i < Mesa.Cartas.Count; i++)
-                    {
-                        if (Mesa.Cartas[i].Numero == CartadoMomento.Numero)
-                        {
-                            indiceEncontrado = i;
-                            i = Mesa.Cartas.Count; //Retirado o break, já que o valor do count da mesa tem o mesmo resultado
-                        }
-                    }
-
-                    if (indiceEncontrado != -1)
-                    {
-                        // pegar a carta
-                        Carta cartaNaMesa = Mesa.Cartas[indiceEncontrado];
-
-                        // remover da mesa
-                        Mesa.Cartas.RemoveAt(indiceEncontrado);
-
-                        // adicionar as duas cartas ao jogador
-                        MonteDoJogador.Add(cartaNaMesa);
                         MonteDoJogador.Add(CartadoMomento);
-
-                        QuantCartasAgora += 2;
+                        QuantCartasAgora++;
                     }
+
+                    // --- AINDA EXISTEM VÁRIOS APÓS O FILTRO (EMPATE) ---
+                    else if (listadeAdversariosCompativeis.Count > 1)
+                    {
+                        Random jogadorAleatorio = new Random();
+                        int indiceJogadorAleatorio = jogadorAleatorio.Next(0, listadeAdversariosCompativeis.Count);
+
+                        Jogador jogadorEscolhido = listadeAdversariosCompativeis[indiceJogadorAleatorio];
+
+                        while (jogadorEscolhido.MonteDoJogador.Count > 0)
+                        {
+                            Carta carta = jogadorEscolhido.MonteDoJogador[0];
+                            MonteDoJogador.Add(carta);
+                            QuantCartasAgora++;
+
+                            jogadorEscolhido.MonteDoJogador.RemoveAt(0);
+                            jogadorEscolhido.QuantCartasAgora--;
+                        }
+
+                        MonteDoJogador.Add(CartadoMomento);
+                        QuantCartasAgora++;
+                    }
+
+                    // --- ROUBAR DA ÁREA DE DESCARTE (comparando apenas o número) ---
                     else
                     {
-                        // descartar normalmente
-                        Mesa.Mesa.Cartas.Add(CartadoMomento);
+                        // procurar carta com mesmo número na mesa
+                        int indiceEncontrado = -1;
 
-                        Mesa.Mesa.Cartas.Add(CartadoMomento); ;
-                        FimdaCartadaVez = true;
+                        for (int i = 0; i < Mesa.Cartas.Count; i++)
+                        {
+                            if (Mesa.Cartas[i].Numero == CartadoMomento.Numero)
+                            {
+                                indiceEncontrado = i;
+                                i = Mesa.Cartas.Count; //Retirado o break, já que o valor do count da mesa tem o mesmo resultado
+                            }
+                        }
+
+                        if (indiceEncontrado != -1)
+                        {
+                            // pegar a carta
+                            Carta cartaNaMesa = Mesa.Cartas[indiceEncontrado];
+
+                            // remover da mesa
+                            Mesa.Cartas.RemoveAt(indiceEncontrado);
+
+                            // adicionar as duas cartas ao jogador
+                            MonteDoJogador.Add(cartaNaMesa);
+                            MonteDoJogador.Add(CartadoMomento);
+
+                            QuantCartasAgora += 2;
+                        }
+
+                        else if (this.MonteDoJogador.Count > 0 && this.MonteDoJogador[this.MonteDoJogador.Count - 1].Numero == CartadoMomento.Numero)
+                        {
+                            this.MonteDoJogador.Add(CartadoMomento);
+                            this.QuantCartasAgora++;
+                            continue; // continua o do/while
+                        }
+
+                        else
+                        {
+                            // descartar normalmente
+                            Mesa.Cartas.Add(CartadoMomento);
+                            Mesa.Cartas.Add(CartadoMomento);
+                            FimdaCartadaVez = true;
+                        }
                     }
-                }
-            } while (!FimdaCartadaVez);
+                } while (!FimdaCartadaVez);
 
-
+            }
         }
 
         public void VisualizarRanking()
         {
-            if (ranking.Count < 0 || ranking.Count > 5)
+            if (ranking.Count > 5)
             {
                 throw new Exception("Quantidade de Rankings do jogador (" + nome + ") está fora do limite")
             }
@@ -211,11 +226,12 @@ namespace Trabalho_de_AED___Rouba_Monte
             foreach (int rankingdojogador in ranking)
             {
                 Console.WriteLine(contagemRanking + ") " + rankingdojogador);
+                contagemRanking++;
 
             }
         }
 
-        public List<Jogador> OrdernarListaJogadores(List<Jogador> listadeJogadoresdaPartida)
+        public static List<Jogador> OrdernarListaJogadores(List<Jogador> listadeJogadoresdaPartida)
         {
             // Usar Quicksort para ordenar a lista de jogadores pela quantidade de cartas
             Quicksort(listadeJogadoresdaPartida, 0, listadeJogadoresdaPartida.Count - 1);
@@ -260,11 +276,15 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             // Recursão nas duas metades
             if (esq < j)
+            {
                 Quicksort(listadaOrdenacao, esq, j);
+            }
             if (i < dir)
+            {
                 Quicksort(listadaOrdenacao, i, dir);
+            }
         }
-    }
+        }
 }
 
     /*REGRAS QUANTO A CARTA DA VEZ
@@ -420,8 +440,10 @@ namespace Trabalho_de_AED___Rouba_Monte
             {
                 throw new Exception("O monte de compra está vazio");
             }
-            else { 
-                Carta carta = cartasparaComprar[cartasparaComprar.Count - 1];
+            else 
+        
+            { 
+            Carta carta = cartasparaComprar[cartasparaComprar.Count - 1];
             cartasparaComprar.RemoveAt(cartasparaComprar.Count - 1);
             return carta;
             }
@@ -469,7 +491,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public AreadeDescarte()
         {
-            cartas = new List<Carta>;
+            cartas = new List<Carta>();
             quantidadeCartasNaMesa = 0;
         }
 
@@ -479,23 +501,23 @@ namespace Trabalho_de_AED___Rouba_Monte
             set { cartas = value; }
         }
 
-        public List<Carta> QuantidadeCartasNaMesa
+        public int QuantidadeCartasNaMesa
         {
             get { return quantidadeCartasNaMesa; }
             set { quantidadeCartasNaMesa = value; }
         }
 
-
+    /*
         public void InserirAreaDescarte(Carta x)
         {
             cartas.Add(x);
         }
-
+    */
         public void ImprimirAreadeDescarte()
         {
             foreach (Carta x in cartas)
             {
-                Console.Write("||") //Simular o visual de uma carta?
+                Console.Write("||"); //Simular o visual de uma carta?
                 Console.Write(x.Numero "||");
             }
 
@@ -549,7 +571,7 @@ public class Arquivo
 
         if (File.Exists(nomedoArquivo))
         {
-            linhasExistentes.AddRange(File.ReadAllLines(NOME_ARQUIVO));
+            linhasExistentes.AddRange(File.ReadAllLines(nomedoArquivo));
         }
 
         // Adiciona o cabeçalho da nova partida
@@ -566,7 +588,7 @@ public class Arquivo
         List<string> logFinal = ManterApenas5Partidas(linhasExistentes);
 
         // Reescreve o arquivo inteiro
-        File.WriteAllLines(NOME_ARQUIVO, logFinal);
+        File.WriteAllLines(nomedoArquivo, logFinal);
 
         // Limpa o log interno para a próxima partida
         logDaPartida.Clear();
@@ -650,11 +672,11 @@ public class Arquivo
 
             //Pergunta quantidade de Jogadores e Cartas
 
-            bool continuarJogando, resetarJogadores, resetarQuantidadeCartas, visualizarRankings;
+            bool continuarJogando = true, resetarJogadores = true, resetarQuantidadeCartas = true, visualizarRankings = true;
 
             int quantCartas, quantJogadores;
 
-            Lista<Jogador> jogadoresDaPartida;
+            List<Jogador> jogadoresDaPartida;
 
             AreadeDescarte MesadaPartida = new AreadeDescarte();
 
@@ -666,7 +688,7 @@ public class Arquivo
                 if (resetarQuantidadeCartas)
                 {
                     Console.WriteLine("Quantas cartas serão geradas?");
-                    quantCartas = int.Parse.(Console.ReadLine());
+                    quantCartas = int.Parse(Console.ReadLine());
 
                     while (quantCartas < 0)
                     {
@@ -696,29 +718,29 @@ public class Arquivo
                 logdoJogo.Registrar("O jogo contará com " + quantJogadores + " no total.");
 
 
-                MontedeCompra MontedeCompras = new MontedeCompra(quantCartas);
+                MontedeCompra montedeCompras = new MontedeCompra(quantCartas);
 
                 logdoJogo.Registrar("O monte de compra foi criado.");
 
 
-                MontedeCompras.PreencherMontedeCompras();
+                montedeCompras.PreencherMontedeCompras();
                 logdoJogo.Registrar("O monte de compra foi preenchido.");
-                MontedeCompras.EmbaralharMontedeCompra();
+                montedeCompras.EmbaralharMontedeCompra();
                 logdoJogo.Registrar("O monte de compra foi embaralhado.");
 
 
 
 
-                AreadeDescarte MesadaPartida = new AreadeDescarte();
 
-                for (int i = 0; i <= quantJogadores; i++)
+                for (int i = 0; i < quantJogadores; i++)
                 {
                     bool nomeigual = false;
                     string nomeJogadorInserir;
+                    int contagemJogadoresInseridos = i + 1;
                     do
                     {
                         nomeigual = false;
-                        Console.WriteLine("Nome do jogador " + i++);
+                        Console.WriteLine("Nome do jogador " + contagemJogadoresInseridos);
                         nomeJogadorInserir = Console.ReadLine();
 
                         foreach (Jogador jogadoresRegistrados in jogadoresDaPartida)
@@ -734,7 +756,7 @@ public class Arquivo
                         }
 
 
-                    } while (nomeigual = true);
+                    } while (nomeigual);
 
                     Jogador jogadorNovo = new Jogador(nomeJogadorInserir);
 
@@ -754,7 +776,7 @@ public class Arquivo
                     {
                         logdoJogo.Registrar("Agora é a vez do " + jogadordaVez.Nome + " jogar");
 
-                        jogadordaVez.CartaDaVez(MontedeCompras, jogadoresDaPartida, MesadaPartida);
+                        jogadordaVez.CartaDaVez(montedeCompras, jogadoresDaPartida, MesadaPartida);
                     }
 
 
@@ -763,7 +785,7 @@ public class Arquivo
 
 
 
-                } while (MontedeCompras.QuantidadedeCarta != 0); //Continuar até o monte de compra estiver vazio
+                } while (montedeCompras.QuantidadeCarta != 0); //Continuar até o monte de compra estiver vazio
 
                 MesadaPartida.LimparAreadeDescarte();
                 logdoJogo.Registrar("A área de descarte foi limpa");
@@ -774,18 +796,20 @@ public class Arquivo
                 foreach (Jogador jogadorEscolhido in jogadoresDaPartida)
                 {
                     jogadorEscolhido.QuantCartas = jogadorEscolhido.QuantCartasAgora;
+
+                    jogadorEscolhido.QuantCartasAgora = 0;
                 }
 
 
-                Jogador tmp = new Jogador("0"); //REFINAR ISSO DEPOIS
-                jogadoresDaPartida = tmp.OrdernarListaJogadores(jogadoresDaPartida);
+                //REFINAR ISSO DEPOIS
+                jogadoresDaPartida = Jogador.OrdernarListaJogadores(jogadoresDaPartida);
 
                 do
                 {
 
                     Console.WriteLine("Deseja ver os Rankings de algum jogador?");
                     Console.WriteLine("Digite S ou N");
-                    char resp1 = Console.ReadLine();
+                    char resp1 = char.Parse(Console.ReadLine());
 
                     if (resp1 == 'S' || resp1 == 's')
                     {
@@ -829,7 +853,7 @@ public class Arquivo
 
                 Console.WriteLine("Quer Continuar Jogando?"); //Colocar qual caractere usar para responder
                 Console.WriteLine("Digite S ou N");
-                char resp2 = Console.ReadLine();
+                char resp2 = char.Parse(Console.ReadLine());
 
                 if (resp2 == 'S' || resp2 == 's')
                 {
