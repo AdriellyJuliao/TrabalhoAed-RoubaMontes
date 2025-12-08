@@ -213,7 +213,6 @@ namespace Trabalho_de_AED___Rouba_Monte
                         {
                             // descartar normalmente
                             mesa.Cartas.Add(CartadoMomento);
-                            mesa.Cartas.Add(CartadoMomento);
                             fimdaCartadaVez = true;
                         }
                     }
@@ -224,11 +223,12 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public void VisualizarRanking()
         {
-            if (ranking.Count > 5)
+            /*if (ranking.Count > 5)
             {
                 throw new Exception("Quantidade de Rankings do jogador (" + nome + ") está fora do limite");
-            }
-            int contagemRanking = 0;
+            }*/
+
+            int contagemRanking = 1;
 
             Console.WriteLine("Rankings do " + nome);
 
@@ -261,7 +261,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         }
 
-        private void Quicksort(List<Jogador> listadaOrdenacao, int esq, int dir)
+        private static void Quicksort(List<Jogador> listadaOrdenacao, int esq, int dir)
         {
             int i = esq, j = dir;
             Jogador pivo = listadaOrdenacao[(esq + dir) / 2];
@@ -451,12 +451,8 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public Carta RemoverMontedeCarta()
         {
-        if (cartasparaComprar.Count == 0)
-        {
-            throw new Exception("O monte de compra está vazio");
-        }
-        else
-        {
+       
+      
             int count = cartasparaComprar.Count;
             Carta carta = cartasparaComprar[cartasparaComprar.Count - 1];
             cartasparaComprar.RemoveAt(cartasparaComprar.Count - 1);
@@ -470,7 +466,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
 
 
-    }
+    
 
 
 
@@ -696,7 +692,7 @@ public class Arquivo
 
             bool continuarJogando = true, resetarJogadores = true, resetarQuantidadeCartas = true, visualizarRankings = true;
 
-            int quantCartas, quantJogadores;
+            int quantCartas = -1, quantJogadores = -1;
 
             List<Jogador> jogadoresDaPartida = new List<Jogador>();
 
@@ -854,7 +850,7 @@ public class Arquivo
                     }
                 }
 
-                    Console.WriteLine("Resultado");
+                Console.WriteLine("Resultado");
 
                 if (ganhadores.Count == 1)
                 {
@@ -898,6 +894,18 @@ public class Arquivo
                     if (resp1 == 'S' || resp1 == 's')
                     {
                         visualizarRankings = true;
+
+                        Console.WriteLine("Digite o nome de um jogador");
+                        string nomeJogadorRanking = Console.ReadLine();
+
+
+                        foreach (Jogador jogadorRanking in jogadoresDaPartida)
+                        {
+                            if (jogadorRanking.Nome == nomeJogadorRanking)
+                            {
+                                jogadorRanking.VisualizarRanking();
+                            }
+                        }
                     }
 
                     else if (resp1 == 'N' || resp1 == 'n')
@@ -911,27 +919,10 @@ public class Arquivo
 
 
 
-                    if (visualizarRankings)
-                    {
-
-                        Console.WriteLine("Digite o nome de um jogador");
-                        string nomeJogadorRanking = Console.ReadLine();
-
-
-                        foreach (Jogador jogadorRanking in jogadoresDaPartida)
-                        {
-                            if (jogadorRanking.Nome == nomeJogadorRanking)
-                            {
-                                jogadorRanking.VisualizarRanking();
-                            }
-                        }
-
-                    }
-
 
                 } while (visualizarRankings);
 
-               
+
 
 
                 // Perguntar se deseja continuar
@@ -1002,6 +993,8 @@ public class Arquivo
             Console.WriteLine("Obrigado por Jogar!");
 
             logdoJogo.Registrar("O jogo se encerrou");
+
+            Console.ReadLine();
 
 
 
