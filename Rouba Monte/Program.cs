@@ -872,7 +872,16 @@ public class Arquivo
                         Console.WriteLine(x.Nome + " (" + x.QuantCartas + " cartas)");
                     }
 
-                    logdoJogo.Registrar("Empate entre " + string.Join(", ", ganhadores.Select(x => x.Nome)) + " com " + maiorPontuacao + " cartas.");
+                    List<string> nomes = new List<string>();
+
+                    foreach (Jogador x in ganhadores)
+                    {
+                        nomes.Add(x.Nome);
+                    }
+
+                    string nomesEmpate = string.Join(", ", nomes);
+
+                    logdoJogo.Registrar("Empate entre " + nomesEmpate + " com " + maiorPontuacao + " cartas.");
                 }
 
                 foreach (Jogador x in jogadoresDaPartida)
