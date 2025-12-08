@@ -73,23 +73,29 @@ namespace Trabalho_de_AED___Rouba_Monte
             set { monteDoJogador = value; }
         }
 
-        public void CartaDaVez(MontedeCompra MontedeCompraPartida, List<Jogador> Jogadores, AreadeDescarte Mesa)
+        public void CartaDaVez(MontedeCompra montedeCompraPartida, List<Jogador> Jogadores, AreadeDescarte mesa, Arquivo logsdapartida)
         {
             //Fazer validacao para que o sistema nao procure um jogador que nao tenha um monte pois vai dar erro de out of range
             //Prioridade menor mas seria interessante na hora de digitar o nome dos jogadores nao deixar repetir pois pode dar confusão no metodo CartaDaVez
-            bool FimdaCartadaVez = false;
+            bool fimdaCartadaVez = false;
 
-            if (MontedeCompraPartida == null)
+            if (montedeCompraPartida == null || montedeCompraPartida.QuantidadeCarta == 0)
             {
                 Console.WriteLine("Monte de Compra Esgotado");
-                FimdaCartadaVez = true;
+                fimdaCartadaVez = true;
             }
-            else {
+            else
+            {
 
                 do
                 {
-                    Carta CartadoMomento = MontedeCompraPartida.RemoverMontedeCarta();
-                    logdoJogo.Registrar(this.nome "Retirou do Monte de Compra a carta " + CartadoMomento.Numero + " de " + CartadoMomento.Naipe + ".");
+                    Carta CartadoMomento = montedeCompraPartida.RemoverMontedeCarta();
+                    if (CartadoMomento == null)
+                    {
+                        logsdapartida.Registrar(this.nome + " tentou retirar carta mas monte está vazio.");
+                        break;
+                    }
+                    logsdapartida.Registrar(this.nome + " Retirou do Monte de Compra a carta " + CartadoMomento.Numero + " de " + CartadoMomento.Naipe + ".");
 
                     List<Jogador> listadeAdversariosCompativeis = new List<Jogador>();
 
@@ -171,22 +177,22 @@ namespace Trabalho_de_AED___Rouba_Monte
                         // procurar carta com mesmo número na mesa
                         int indiceEncontrado = -1;
 
-                        for (int i = 0; i < Mesa.Cartas.Count; i++)
+                        for (int i = 0; i < mesa.Cartas.Count; i++)
                         {
-                            if (Mesa.Cartas[i].Numero == CartadoMomento.Numero)
+                            if (mesa.Cartas[i].Numero == CartadoMomento.Numero)
                             {
                                 indiceEncontrado = i;
-                                i = Mesa.Cartas.Count; //Retirado o break, já que o valor do count da mesa tem o mesmo resultado
+                                i = mesa.Cartas.Count; //Retirado o break, já que o valor do count da mesa tem o mesmo resultado
                             }
                         }
 
                         if (indiceEncontrado != -1)
                         {
                             // pegar a carta
-                            Carta cartaNaMesa = Mesa.Cartas[indiceEncontrado];
+                            Carta cartaNaMesa = mesa.Cartas[indiceEncontrado];
 
                             // remover da mesa
-                            Mesa.Cartas.RemoveAt(indiceEncontrado);
+                            mesa.Cartas.RemoveAt(indiceEncontrado);
 
                             // adicionar as duas cartas ao jogador
                             MonteDoJogador.Add(cartaNaMesa);
@@ -199,18 +205,19 @@ namespace Trabalho_de_AED___Rouba_Monte
                         {
                             this.MonteDoJogador.Add(CartadoMomento);
                             this.QuantCartasAgora++;
+                            logsdapartida.Registrar(this.nome + " empilhou a carta " +   CartadoMomento.Numero + " de " + CartadoMomento.Naipe +   " no próprio monte.");
                             continue; // continua o do/while
                         }
 
                         else
                         {
                             // descartar normalmente
-                            Mesa.Cartas.Add(CartadoMomento);
-                            Mesa.Cartas.Add(CartadoMomento);
-                            FimdaCartadaVez = true;
+                            mesa.Cartas.Add(CartadoMomento);
+                            mesa.Cartas.Add(CartadoMomento);
+                            fimdaCartadaVez = true;
                         }
                     }
-                } while (!FimdaCartadaVez);
+                } while (!fimdaCartadaVez);
 
             }
         }
@@ -235,6 +242,11 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public static List<Jogador> OrdernarListaJogadores(List<Jogador> listadeJogadoresdaPartida)
         {
+            if (listadeJogadoresdaPartida == null)
+            {
+                return new List<Jogador>();
+            }
+
             // Usar Quicksort para ordenar a lista de jogadores pela quantidade de cartas
             Quicksort(listadeJogadoresdaPartida, 0, listadeJogadoresdaPartida.Count - 1);
 
@@ -245,6 +257,7 @@ namespace Trabalho_de_AED___Rouba_Monte
             }
 
             return listadeJogadoresdaPartida;
+
 
         }
 
@@ -438,19 +451,19 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public Carta RemoverMontedeCarta()
         {
-            if(cartasparaComprar.Count == 0)
-            {
-                throw new Exception("O monte de compra está vazio");
-            }
-            else 
-        
-            {
-            Carta carta = cartasparaComprar[count - 1];
-            cartasparaComprar.RemoveAt(count - 1);
+        if (cartasparaComprar.Count == 0)
+        {
+            throw new Exception("O monte de compra está vazio");
+        }
+        else
+        {
+            int count = cartasparaComprar.Count;
+            Carta carta = cartasparaComprar[cartasparaComprar.Count - 1];
+            cartasparaComprar.RemoveAt(cartasparaComprar.Count - 1);
             quantidadeCarta--;
             return carta;
-           }
         }
+    }
 
 
         //Método para inserir carta no monte
@@ -527,10 +540,10 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public void LimparAreadeDescarte()
         {
-         cartas.Clear();
-        quantidadeCartasNaMesa = 0;
+          cartas.Clear();
+          quantidadeCartasNaMesa = 0;
 
-    }
+        }
 
 
 
@@ -546,14 +559,21 @@ namespace Trabalho_de_AED___Rouba_Monte
 
 public class Arquivo
 {
-
     private List<string> logDaPartida;
 
-    private const string nomedoArquivo = "log_ultimas_partidas.txt";
+    // Agora o arquivo vai ficar DENTRO DA PASTA /logs
+    private static readonly string pastaLogs = "logs";
+    private static readonly string nomedoArquivo = Path.Combine(pastaLogs, "log_ultimas_partidas.txt");
 
     public Arquivo()
     {
         logDaPartida = new List<string>();
+
+        // Se a pasta "logs" não existir, cria
+        if (!Directory.Exists(pastaLogs))
+        {
+            Directory.CreateDirectory(pastaLogs);
+        }
     }
 
     // Adiciona mensagens ao log interno
@@ -561,6 +581,7 @@ public class Arquivo
     {
         string linha = "[" + DateTime.Now.ToString("HH:mm:ss") + "] " + mensagem;
         logDaPartida.Add(linha);
+        Console.WriteLine(linha);
     }
 
     // Grava a partida no arquivo, mantendo no máximo 5
@@ -573,32 +594,31 @@ public class Arquivo
             linhasExistentes.AddRange(File.ReadAllLines(nomedoArquivo));
         }
 
-        // Adiciona o cabeçalho da nova partida
+        // Cabeçalho da nova partida
         linhasExistentes.Add("");
         linhasExistentes.Add("=============================================");
         linhasExistentes.Add($"   PARTIDA {numeroPartida} - {DateTime.Now:dd/MM/yyyy HH:mm}");
         linhasExistentes.Add("=============================================");
         linhasExistentes.Add("");
 
-        // Adiciona o conteúdo do log
+        // Conteúdo do log interno
         linhasExistentes.AddRange(logDaPartida);
 
         // Limita para no máximo 5 partidas
         List<string> logFinal = ManterApenas5Partidas(linhasExistentes);
 
-        // Reescreve o arquivo inteiro
+        // Reescreve o arquivo completo na pasta /logs
         File.WriteAllLines(nomedoArquivo, logFinal);
 
-        // Limpa o log interno para a próxima partida
+        // Limpa log interno
         logDaPartida.Clear();
     }
 
-    // Limita o arquivo para conter somente as últimas 5 partidas
-     private List<string> ManterApenas5Partidas(List<string> linhas)
+    // Mantém somente as últimas 5 partidas
+    private List<string> ManterApenas5Partidas(List<string> linhas)
     {
         const string cabecalho = "=============================================";
 
-        // Encontra todas as posições onde começa uma partida
         List<int> indicesPartidas = new List<int>();
 
         for (int i = 0; i < linhas.Count; i++)
@@ -609,14 +629,17 @@ public class Arquivo
             }
         }
 
+        // Se tiver 5 ou menos, retorna tudo
         if (indicesPartidas.Count <= 5)
         {
             return linhas;
         }
 
+        // Pega as últimas 5
         int inicio = indicesPartidas[indicesPartidas.Count - 5];
 
         return linhas.GetRange(inicio, linhas.Count - inicio);
+
 
 
         /*O programa deve gerar um arquivo texto com o log das ações executadas em cada partida. Exemplo: "O baralho foi 
@@ -632,16 +655,16 @@ public class Arquivo
 
 
 
-//Fazer uma classe para os montes?
+    //Fazer uma classe para os montes?
 
-// Monte terá um objeto jogador como atributo
-
-
+    // Monte terá um objeto jogador como atributo
 
 
-// Jogador
 
-   internal class Program
+
+    // Jogador
+
+    internal class Program
     {
         static void Main(string[] args)
         {
@@ -692,7 +715,7 @@ public class Arquivo
                     while (quantCartas < 0)
                     {
                         Console.WriteLine("A quantidade de cartas deve ser positiva");
-                        quantCartas = int.Parse.(Console.ReadLine());
+                        quantCartas = int.Parse(Console.ReadLine());
 
                     }
                 }
@@ -768,6 +791,8 @@ public class Arquivo
 
                 }
 
+                logdoJogo.Registrar("O jogador que começará a partida será " + jogadoresDaPartida[0].Nome);
+
                 do
                 {
 
@@ -775,7 +800,7 @@ public class Arquivo
                     {
                         logdoJogo.Registrar("Agora é a vez do " + jogadordaVez.Nome + " jogar");
 
-                        jogadordaVez.CartaDaVez(montedeCompras, jogadoresDaPartida, mesadaPartida);
+                        jogadordaVez.CartaDaVez(montedeCompras, jogadoresDaPartida, mesadaPartida, logdoJogo);
                     }
 
 
@@ -796,17 +821,69 @@ public class Arquivo
                 {
                     jogadorEscolhido.QuantCartas = jogadorEscolhido.QuantCartasAgora;
 
+                    jogadorEscolhido.MonteDoJogador.Clear();
+
                     jogadorEscolhido.QuantCartasAgora = 0;
                 }
 
 
                 jogadoresDaPartida = Jogador.OrdernarListaJogadores(jogadoresDaPartida);
 
+                // Registrar ranking histórico de cada jogador
+                foreach (Jogador x in jogadoresDaPartida)
+                {
+                    // Se já houver 5 valores, remove o mais antigo
+                    if (x.Ranking.Count == 5)
+                    {
+                        x.Ranking.Dequeue();
+                    }
+                    x.Ranking.Enqueue(x.Posicao); // adiciona a posição da partida atual
+                }
+
+                // --Determinar ganhadores--
+                int maiorPontuacao = jogadoresDaPartida[0].QuantCartas; // já está ordenado do menor p/ maior
+
+                List<Jogador> ganhadores = new List<Jogador>();
+
+                foreach (Jogador x in jogadoresDaPartida)
+                {
+                    if (x.QuantCartas == maiorPontuacao)
+                    {
+
+                        ganhadores.Add(x);
+                    }
+                }
+
+                    Console.WriteLine("Resultado");
+
+                if (ganhadores.Count == 1)
+                {
+                    Console.WriteLine("Vitória de " + ganhadores[0].Nome + " com " + ganhadores[0].QuantCartas + " cartas");
+
+                    logdoJogo.Registrar("Vitória individual de " + ganhadores[0].Nome + " com " + ganhadores[0].QuantCartas + " cartas.");
+                }
+
+                else
+                {
+                    Console.WriteLine("Houve empate entre os jogadores:");
+
+                    foreach (Jogador x in ganhadores)
+                    {
+                        Console.WriteLine(x.Nome + " (" + x.QuantCartas + " cartas)");
+                    }
+
+                    logdoJogo.Registrar("Empate entre " + string.Join(", ", ganhadores.Select(x => x.Nome)) + " com " + maiorPontuacao + " cartas.");
+                }
+
+                foreach (Jogador x in jogadoresDaPartida)
+                {
+                    Console.WriteLine(x.Posicao + "° lugar — " + x.Nome + " com " + x.QuantCartas + " cartas");
+                }
+
                 do
                 {
 
-                    Console.WriteLine("Deseja ver os Rankings de algum jogador?");
-                    Console.WriteLine("Digite S ou N");
+                    Console.WriteLine("Deseja ver os Rankings de algum jogador? (S/N)");
                     char resp1 = char.Parse(Console.ReadLine());
 
                     if (resp1 == 'S' || resp1 == 's')
@@ -845,108 +922,72 @@ public class Arquivo
 
                 } while (visualizarRankings);
 
+               
 
 
+                // Perguntar se deseja continuar
+                Console.WriteLine("Deseja continuar jogando? (S/N)");
+                char respContinuar = char.Parse(Console.ReadLine());
 
 
-                Console.WriteLine("Quer Continuar Jogando?"); //Colocar qual caractere usar para responder
-                Console.WriteLine("Digite S ou N");
-                char resp2 = char.Parse(Console.ReadLine());
-
-                if (resp2 == 'S' || resp2 == 's')
+                if (respContinuar == 'S' || respContinuar == 's')
                 {
                     continuarJogando = true;
-                    logdoJogo.Registrar("O jogo irá continuar");
 
-                }
 
-                else if (resp2 == 'N' || resp2 == 'n')
-                {
-                    continuarJogando = false;
-                    logdoJogo.Registrar("O será encerrado");
+                    Console.WriteLine("1) Manter Quantidade de Cartas e Jogadores");
+                    Console.WriteLine("2) Manter Quantidade de Cartas e Alterar Jogadores");
+                    Console.WriteLine("3) Alterar Quantidade de Cartas e Manter Jogadores");
+                    Console.WriteLine("4) Alterar Quantidade de Cartas e Jogadores");
 
-                }
-                else
-                {
-                    throw new Exception("Resposta Inválida");
-                }
 
-                if (continuarJogando)
-                {
+                    int opcao = int.Parse(Console.ReadLine());
 
-                    Console.WriteLine("1) Manter Cartas e Jogadores");
-                    Console.WriteLine("2) Manter Cartas e Alterar Jogadores");
-                    Console.WriteLine("3) Alterar Cartas e Manter Jogadores");
-                    Console.WriteLine("4) Alterar Cartas e Jogadores");
-                    int opcoesContinuar = int.Parse(Console.ReadLine());
 
-                    switch (opcoesContinuar)
-
+                    switch (opcao)
                     {
                         case 1:
-
                             resetarQuantidadeCartas = false;
-
                             resetarJogadores = false;
-
-                            logdoJogo.Registrar("A quantidade de cartas e os Jogadores serão Mantidos para a próxima partida");
-
-
+                            logdoJogo.Registrar("A quantidade de cartas e os Jogadores serão mantidos para a próxima partida");
                             break;
 
+
                         case 2:
-
                             resetarQuantidadeCartas = false;
-
                             resetarJogadores = true;
-
                             logdoJogo.Registrar("A quantidade de cartas será mantida mas os Jogadores serão alterados para a próxima partida");
-
-
                             break;
 
 
                         case 3:
-
                             resetarQuantidadeCartas = true;
-
                             resetarJogadores = false;
-
                             logdoJogo.Registrar("A quantidade de cartas será alterada mas os Jogadores serão mantidos para a próxima partida");
-
                             break;
+
 
                         case 4:
-
                             resetarQuantidadeCartas = true;
-
                             resetarJogadores = true;
-
                             logdoJogo.Registrar("A quantidade de cartas e os Jogadores serão Alterados para a próxima partida");
-
-
-
                             break;
-
 
                         default:
-
-                            throw new Exception("Escolha Inválida!");
-
-
-                            break;
-
-
-
-
+                            throw new Exception("Opção inválida!");
                     }
-
-
-
+                }
+                else if (respContinuar == 'N' || respContinuar == 'n')
+                {
+                    continuarJogando = false;
+                }
+                else
+                {
+                    throw new Exception("Resposta inválida!");
                 }
 
 
-            } while (continuarJogando)
+            } while (continuarJogando);
 
 
             Console.WriteLine("Obrigado por Jogar!");
