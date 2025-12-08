@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Schema;
+using Trabalho_de_AED___Rouba_Monte;
 
 namespace Trabalho_de_AED___Rouba_Monte
 {
@@ -31,7 +32,7 @@ namespace Trabalho_de_AED___Rouba_Monte
             this.posicao = -1;
             this.quantCartas = 0;
             this.quantCartasAgora = 0;
-            this.ranking = null;
+            this.ranking = new Queue<int>;
             this.monteDoJogador = new List<Carta>();
         }
 
@@ -165,7 +166,7 @@ namespace Trabalho_de_AED___Rouba_Monte
                         if (Mesa.Cartas[i].Numero == CartadoMomento.Numero)
                         {
                             indiceEncontrado = i;
-                            break;
+                            i = Mesa.Cartas.Count; //Retirado o break, já que o valor do count da mesa tem o mesmo resultado
                         }
                     }
 
@@ -188,7 +189,7 @@ namespace Trabalho_de_AED___Rouba_Monte
                         // descartar normalmente
                         Mesa.Mesa.Cartas.Add(CartadoMomento);
 
-                        Mesa.Mesa.Cartas.Add(CartadoMomento);;
+                        Mesa.Mesa.Cartas.Add(CartadoMomento); ;
                         FimdaCartadaVez = true;
                     }
                 }
@@ -199,7 +200,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public void VisualizarRanking()
         {
-            if(ranking.Count <0 || ranking.Count >5)
+            if (ranking.Count < 0 || ranking.Count > 5)
             {
                 throw new Exception("Quantidade de Rankings do jogador (" + nome + ") está fora do limite")
             }
@@ -213,7 +214,58 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             }
         }
+
+        public List<Jogador> OrdernarListaJogadores(List<Jogador> listadeJogadoresdaPartida)
+        {
+            // Usar Quicksort para ordenar a lista de jogadores pela quantidade de cartas
+            Quicksort(listadeJogadoresdaPartida, 0, listadeJogadoresdaPartida.Count - 1);
+
+            // Atribuindo as posições de classificação após a ordenação
+            for (int i = 0; i < listadeJogadoresdaPartida.Count; i++)
+            {
+                listadeJogadoresdaPartida[i].Posicao = i + 1;  // Classificação começa de 1
+            }
+
+            return listadeJogadoresdaPartida;
+
+        }
+
+        private void Quicksort(List<Jogador> listadaOrdenacao, int esq, int dir)
+        {
+            int i = esq, j = dir;
+            Jogador pivo = listadaOrdenacao[(esq + dir) / 2];
+
+            while (i <= j)
+            {
+                // Encontrar elemento à esquerda maior que o pivo
+                while (listadaOrdenacao[i].QuantCartas < pivo.QuantCartas)
+                    i++;
+
+                // Encontrar elemento à direita menor que o pivo
+                while (listadaOrdenacao[j].QuantCartas > pivo.QuantCartas)
+                    j--;
+
+                // Se encontrou elementos válidos
+                if (i <= j)
+                {
+                    // Trocar os jogadores
+                    Jogador temp = listadaOrdenacao[i];
+                    listadaOrdenacao[i] = listadaOrdenacao[j];
+                    listadaOrdenacao[j] = temp;
+
+                    i++;
+                    j--;
+                }
+            }
+
+            // Recursão nas duas metades
+            if (esq < j)
+                Quicksort(listadaOrdenacao, esq, j);
+            if (i < dir)
+                Quicksort(listadaOrdenacao, i, dir);
+        }
     }
+}
 
     /*REGRAS QUANTO A CARTA DA VEZ
 
@@ -245,8 +297,8 @@ namespace Trabalho_de_AED___Rouba_Monte
 
     */
 
-        
-    
+
+
 
 
     public class Carta
@@ -457,22 +509,94 @@ namespace Trabalho_de_AED___Rouba_Monte
             }
 
             quantidadeCartasNaMesa = 0;
-        }
-
-
-
-
-        //Inicializa vazia
-
-
-        //Imprimir área de descarte para o jogador
-
     }
 
 
 
-    public class Arquivo
+
+    //Inicializa vazia
+
+
+    //Imprimir área de descarte para o jogador
+
+}
+
+
+
+public class Arquivo
+{
+
+    private List<string> logDaPartida;
+
+    private const string nomedoArquivo = "log_ultimas_partidas.txt";
+
+    public Arquivo()
     {
+        logDaPartida = new List<string>();
+    }
+
+    // Adiciona mensagens ao log interno
+    public void Registrar(string mensagem)
+    {
+        string linha = "[" + DateTime.Now.ToString("HH:mm:ss") + "] " + mensagem;
+        logDaPartida.Add(linha);
+    }
+
+    // Grava a partida no arquivo, mantendo no máximo 5
+    public void SalvarPartida(int numeroPartida)
+    {
+        List<string> linhasExistentes = new List<string>();
+
+        if (File.Exists(nomedoArquivo))
+        {
+            linhasExistentes.AddRange(File.ReadAllLines(NOME_ARQUIVO));
+        }
+
+        // Adiciona o cabeçalho da nova partida
+        linhasExistentes.Add("");
+        linhasExistentes.Add("=============================================");
+        linhasExistentes.Add($"   PARTIDA {numeroPartida} - {DateTime.Now:dd/MM/yyyy HH:mm}");
+        linhasExistentes.Add("=============================================");
+        linhasExistentes.Add("");
+
+        // Adiciona o conteúdo do log
+        linhasExistentes.AddRange(logDaPartida);
+
+        // Limita para no máximo 5 partidas
+        List<string> logFinal = ManterApenas5Partidas(linhasExistentes);
+
+        // Reescreve o arquivo inteiro
+        File.WriteAllLines(NOME_ARQUIVO, logFinal);
+
+        // Limpa o log interno para a próxima partida
+        logDaPartida.Clear();
+    }
+
+    // Limita o arquivo para conter somente as últimas 5 partidas
+     private List<string> ManterApenas5Partidas(List<string> linhas)
+    {
+        const string cabecalho = "=============================================";
+
+        // Encontra todas as posições onde começa uma partida
+        List<int> indicesPartidas = new List<int>();
+
+        for (int i = 0; i < linhas.Count; i++)
+        {
+            if (linhas[i].StartsWith(cabecalho))
+            {
+                indicesPartidas.Add(i);
+            }
+        }
+
+        if (indicesPartidas.Count <= 5)
+        {
+            return linhas;
+        }
+
+        int inicio = indicesPartidas[indicesPartidas.Count - 5];
+
+        return linhas.GetRange(inicio, linhas.Count - inicio);
+
 
         /*O programa deve gerar um arquivo texto com o log das ações executadas em cada partida. Exemplo: "O baralho foi 
           criado com X cartas. Jogadores da partida: [nomes dos jogadores]. Em seguida, indique qual jogador iniciará. Após isso, 
@@ -487,16 +611,16 @@ namespace Trabalho_de_AED___Rouba_Monte
 
 
 
-    //Fazer uma classe para os montes?
+//Fazer uma classe para os montes?
 
-    // Monte terá um objeto jogador como atributo
-
-
+// Monte terá um objeto jogador como atributo
 
 
-    // Jogador
 
-    internal class Program
+
+// Jogador
+
+   internal class Program
     {
         static void Main(string[] args)
         {
@@ -534,6 +658,8 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             AreadeDescarte MesadaPartida = new AreadeDescarte();
 
+            Arquivo logdoJogo = new Arquivo();
+
 
             do
             {
@@ -550,6 +676,9 @@ namespace Trabalho_de_AED___Rouba_Monte
                     }
                 }
 
+                logdoJogo.Registrar("O Monte de Compra será criado com " + quantCartas + " cartas.");
+
+
                 if (resetarJogadores)
                 {
 
@@ -564,30 +693,43 @@ namespace Trabalho_de_AED___Rouba_Monte
                     }
                 }
 
+                logdoJogo.Registrar("O jogo contará com " + quantJogadores + " no total.");
+
+
                 MontedeCompra MontedeCompras = new MontedeCompra(quantCartas);
 
+                logdoJogo.Registrar("O monte de compra foi criado.");
+
+
                 MontedeCompras.PreencherMontedeCompras();
+                logdoJogo.Registrar("O monte de compra foi preenchido.");
                 MontedeCompras.EmbaralharMontedeCompra();
+                logdoJogo.Registrar("O monte de compra foi embaralhado.");
+
+
+
 
                 AreadeDescarte MesadaPartida = new AreadeDescarte();
 
                 for (int i = 0; i <= quantJogadores; i++)
                 {
                     bool nomeigual = false;
-
+                    string nomeJogadorInserir;
                     do
                     {
                         nomeigual = false;
                         Console.WriteLine("Nome do jogador " + i++);
-                        string nomeJogadorInserir = Console.ReadLine();
+                        nomeJogadorInserir = Console.ReadLine();
 
-                        foreach(Jogador jogadoresRegistrados in jogadoresDaPartida)
+                        foreach (Jogador jogadoresRegistrados in jogadoresDaPartida)
                         {
                             if (jogadoresRegistrados.Nome == nomeJogadorInserir)
                             {
                                 nomeigual = true;
 
                                 Console.WriteLine("O nome " + nomeJogadorInserir + "já foi usado");
+                                logdoJogo.Registrar("Não foi possível inserir novamente o nome " + nomeJogadorInserir);
+
                             }
                         }
 
@@ -597,7 +739,11 @@ namespace Trabalho_de_AED___Rouba_Monte
                     Jogador jogadorNovo = new Jogador(nomeJogadorInserir);
 
 
+
                     jogadoresDaPartida.Add(jogadorNovo);
+
+                    logdoJogo.Registrar("O " + nomeJogadorInserir + " ingressou no jogo.");
+
 
                 }
 
@@ -606,6 +752,8 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                     foreach (Jogador jogadordaVez in jogadoresDaPartida)
                     {
+                        logdoJogo.Registrar("Agora é a vez do " + jogadordaVez.Nome + " jogar");
+
                         jogadordaVez.CartaDaVez(MontedeCompras, jogadoresDaPartida, MesadaPartida);
                     }
 
@@ -618,6 +766,8 @@ namespace Trabalho_de_AED___Rouba_Monte
                 } while (MontedeCompras.QuantidadedeCarta != 0); //Continuar até o monte de compra estiver vazio
 
                 MesadaPartida.LimparAreadeDescarte();
+                logdoJogo.Registrar("A área de descarte foi limpa");
+
 
                 //Ordenar ranking dos jogadores aqui, após o jogo ter terminado
 
@@ -626,10 +776,9 @@ namespace Trabalho_de_AED___Rouba_Monte
                     jogadorEscolhido.QuantCartas = jogadorEscolhido.QuantCartasAgora;
                 }
 
-                foreach (Jogador x in FiladeJogadores) //Será Armazenado sempre a quantidade da última partida
-                {
-                    x.QuantCartas = x.QuantCartasAgora;
-                }
+
+                Jogador tmp = new Jogador("0"); //REFINAR ISSO DEPOIS
+                jogadoresDaPartida = tmp.OrdernarListaJogadores(jogadoresDaPartida);
 
                 do
                 {
@@ -661,9 +810,9 @@ namespace Trabalho_de_AED___Rouba_Monte
                         string nomeJogadorRanking = Console.ReadLine();
 
 
-                        foreach(Jogador jogadorRanking in jogadoresDaPartida)
+                        foreach (Jogador jogadorRanking in jogadoresDaPartida)
                         {
-                            if(jogadorRanking.Nome == nomeJogadorRanking)
+                            if (jogadorRanking.Nome == nomeJogadorRanking)
                             {
                                 jogadorRanking.VisualizarRanking();
                             }
@@ -685,11 +834,15 @@ namespace Trabalho_de_AED___Rouba_Monte
                 if (resp2 == 'S' || resp2 == 's')
                 {
                     continuarJogando = true;
+                    logdoJogo.Registrar("O jogo irá continuar");
+
                 }
 
                 else if (resp2 == 'N' || resp2 == 'n')
                 {
                     continuarJogando = false;
+                    logdoJogo.Registrar("O será encerrado");
+
                 }
                 else
                 {
@@ -714,6 +867,9 @@ namespace Trabalho_de_AED___Rouba_Monte
 
                             resetarJogadores = false;
 
+                            logdoJogo.Registrar("A quantidade de cartas e os Jogadores serão Mantidos para a próxima partida");
+
+
                             break;
 
                         case 2:
@@ -721,6 +877,9 @@ namespace Trabalho_de_AED___Rouba_Monte
                             resetarQuantidadeCartas = false;
 
                             resetarJogadores = true;
+
+                            logdoJogo.Registrar("A quantidade de cartas será mantida mas os Jogadores serão alterados para a próxima partida");
+
 
                             break;
 
@@ -730,6 +889,9 @@ namespace Trabalho_de_AED___Rouba_Monte
                             resetarQuantidadeCartas = true;
 
                             resetarJogadores = false;
+
+                            logdoJogo.Registrar("A quantidade de cartas será alterada mas os Jogadores serão mantidos para a próxima partida");
+
                             break;
 
                         case 4:
@@ -737,6 +899,9 @@ namespace Trabalho_de_AED___Rouba_Monte
                             resetarQuantidadeCartas = true;
 
                             resetarJogadores = true;
+
+                            logdoJogo.Registrar("A quantidade de cartas e os Jogadores serão Alterados para a próxima partida");
+
 
 
                             break;
@@ -764,6 +929,9 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             Console.WriteLine("Obrigado por Jogar!");
 
+            logdoJogo.Registrar("O jogo se encerrou");
+
+
 
 
             //Antes de jogar novamente, quer ver os rankings, de quem?
@@ -774,6 +942,6 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             //Quer parar?
         }
-        }
     }
+}
 
