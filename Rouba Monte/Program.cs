@@ -79,13 +79,12 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             do
             {
-                Carta CartadoMomento = montedeCompraPartida.RemoverMontedeCarta();
                 if (montedeCompraPartida == null || montedeCompraPartida.QuantidadeCarta == 0)
                 {
                     logsdapartida.Registrar(this.nome + " tentou retirar carta mas monte está vazio.");
                     break;
                 }
-
+                Carta CartadoMomento = montedeCompraPartida.RemoverMontedeCarta();
                 logsdapartida.Registrar(this.nome + " retirou do Monte de Compra a carta " +
                                        CartadoMomento.Numero + " de " + CartadoMomento.Naipe + ".");
 
@@ -263,7 +262,6 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             return listadeJogadoresdaPartida;
 
-
         }
 
         private static void Quicksort(List<Jogador> listadaOrdenacao, int esq, int dir)
@@ -302,7 +300,6 @@ namespace Trabalho_de_AED___Rouba_Monte
     }
 }
 
-
 public class Carta
 {
     private int numero;
@@ -315,7 +312,6 @@ public class Carta
         this.numero = numero;
         this.naipe = naipe;
     }
-
 
     public int Numero
     {
@@ -331,8 +327,6 @@ public class Carta
 
 
 }
-
-
 
 
 public class MontedeCompra
@@ -359,7 +353,6 @@ public class MontedeCompra
         set { quantidadeCarta = value; }
     }
 
-
     public void PreencherMontedeCompras()
     {
         string[] tiposNaipes = { "Copas", "Ouros", "Paus", "Espadas" };
@@ -381,7 +374,6 @@ public class MontedeCompra
 
     }
 
-
     public void EmbaralharMontedeCompra()
     {
         if (cartasparaComprar == null || quantidadeCarta <= 0)
@@ -401,7 +393,6 @@ public class MontedeCompra
 
         }
     }
-
 
     public Carta RemoverMontedeCarta()
     {
@@ -442,7 +433,6 @@ public class AreadeDescarte
     }
 
 
-
     public void LimparAreadeDescarte()
     {
         cartas.Clear();
@@ -455,15 +445,17 @@ public class AreadeDescarte
 
 public class Arquivo
 {
-    /* private List<string> logDaPartida;
+    private List<string> logDaPartida;
+    private bool logsNaSessao;
 
+    // Arquivos e pastas
     private static readonly string pastaLogs = "logs";
     private static readonly string nomedoArquivo = Path.Combine(pastaLogs, "log_ultimas_partidas.txt");
 
-    // Marcador exclusivo para localizar o início de cada partida
+    // Marcador exclusivo para detectar início de partidas
     private const string marcadorPartida = "#### INICIO PARTIDA";
 
-    public Arquivo()
+    public Arquivo(bool logsNaSessao)
     {
         logDaPartida = new List<string>();
 
@@ -472,95 +464,8 @@ public class Arquivo
         {
             Directory.CreateDirectory(pastaLogs);
         }
-    }
-
-    // Adiciona linhas ao log interno
-    public void Registrar(string mensagem)
-    {
-        string linha = "[" + DateTime.Now.ToString("HH:mm:ss") + "] " + mensagem;
-        logDaPartida.Add(linha);
-        Console.WriteLine(linha);
-    }
-
-    // Salva a partida no arquivo
-    public void SalvarPartida(int numeroPartida)
-    {
-        List<string> linhasExistentes = new List<string>();
-
-        if (File.Exists(nomedoArquivo))
-        {
-            linhasExistentes.AddRange(File.ReadAllLines(nomedoArquivo));
-        }
-
-        // Adiciona a nova partida com o marcador único
-        linhasExistentes.Add("");
-        linhasExistentes.Add(marcadorPartida);
-        linhasExistentes.Add($"PARTIDA {numeroPartida} - {DateTime.Now:dd/MM/yyyy HH:mm}");
-        linhasExistentes.Add("=============================================");
-        linhasExistentes.Add("");
-
-        // Conteúdo desta partida
-        linhasExistentes.AddRange(logDaPartida);
-
-        // Garante no máximo 5 partidas
-        List<string> logFinal = ManterApenas5Partidas(linhasExistentes);
-
-        // Reescreve o arquivo
-        File.WriteAllLines(nomedoArquivo, logFinal);
-
-        // Limpa o log interno para a próxima partida
-        logDaPartida.Clear();
-    }
-
-    // Mantém somente as últimas 5 partidas no arquivo
-    private List<string> ManterApenas5Partidas(List<string> linhas)
-    {
-        List<int> indices = new List<int>();
-
-        // Identifica onde começam as partidas
-        for (int i = 0; i < linhas.Count; i++)
-        {
-            if (linhas[i].StartsWith(marcadorPartida))
-            {
-                indices.Add(i);
-            }
-        }
-
-        // Se tiver 5 ou menos, mantém tudo
-        if (indices.Count <= 5)
-            return linhas;
-
-        // Calcula o índice do começo da 5ª última
-        int inicio = indices[indices.Count - 5];
-
-        // Segurança: evita exceções
-        if (inicio < 0 || inicio >= linhas.Count)
-            return linhas;
-
-        // Retorna somente as 5 últimas partidas
-        return linhas.GetRange(inicio, linhas.Count - inicio);
-    }
-        */
-    private List<string> logDaPartida;
-    private bool logsNaSessao;
-
-
-    // Agora o arquivo vai ficar DENTRO DA PASTA /logs
-    private static readonly string pastaLogs = "logs";
-    private static readonly string nomedoArquivo = Path.Combine(pastaLogs, "log_ultimas_partidas.txt");
-
-    public Arquivo(bool logsNaSessao)
-    {
-        logDaPartida = new List<string>();
-
-        // Se a pasta "logs" não existir, cria
-        if (!Directory.Exists(pastaLogs))
-        {
-            Directory.CreateDirectory(pastaLogs);
-        }
 
         this.logsNaSessao = logsNaSessao;
-
     }
 
     public bool LogsNaSessao
@@ -569,7 +474,7 @@ public class Arquivo
         set { logsNaSessao = value; }
     }
 
-    // Adiciona mensagens ao log interno
+    // Adiciona linhas ao log interno
     public void Registrar(string mensagem)
     {
         string linha = "[" + DateTime.Now.ToString("HH:mm:ss") + "] " + mensagem;
@@ -581,62 +486,34 @@ public class Arquivo
         }
     }
 
-    // Grava a partida no arquivo, mantendo no máximo 5
+    // Salva uma partida no arquivo
     public void SalvarPartida(int numeroPartida)
     {
         List<string> linhasExistentes = new List<string>();
 
+        // Se arquivo já existir, carregue o conteúdo
         if (File.Exists(nomedoArquivo))
         {
             linhasExistentes.AddRange(File.ReadAllLines(nomedoArquivo));
         }
 
-        // Cabeçalho da nova partida
+        // Adiciona nova partida usando o MARCADOR único
         linhasExistentes.Add("");
-        linhasExistentes.Add("=============================================");
-        linhasExistentes.Add($"   PARTIDA {numeroPartida} - {DateTime.Now:dd/MM/yyyy HH:mm}");
+        linhasExistentes.Add(marcadorPartida);
+        linhasExistentes.Add($"PARTIDA {numeroPartida} - {DateTime.Now:dd/MM/yyyy HH:mm}");
         linhasExistentes.Add("=============================================");
         linhasExistentes.Add("");
 
-        // Conteúdo do log interno
+        // Adiciona conteúdo do log atual
         linhasExistentes.AddRange(logDaPartida);
 
-        // Limita para no máximo 5 partidas
-        List<string> logFinal = ManterApenas5Partidas(linhasExistentes);
-
-        // Reescreve o arquivo completo na pasta /logs
-        File.WriteAllLines(nomedoArquivo, logFinal);
+        File.WriteAllLines(nomedoArquivo, linhasExistentes);
 
         // Limpa log interno
         logDaPartida.Clear();
     }
 
-    // Mantém somente as últimas 5 partidas
-    private List<string> ManterApenas5Partidas(List<string> linhas)
-    {
-        const string cabecalho = "=============================================";
 
-        List<int> indicesPartidas = new List<int>();
-
-        for (int i = 0; i < linhas.Count; i++)
-        {
-            if (linhas[i].StartsWith(cabecalho))
-            {
-                indicesPartidas.Add(i);
-            }
-        }
-
-        // Se tiver 5 ou menos, retorna tudo
-        if (indicesPartidas.Count <= 5)
-        {
-            return linhas;
-        }
-
-        // Pega as últimas 5
-        int inicio = indicesPartidas[indicesPartidas.Count - 5];
-
-        return linhas.GetRange(inicio, linhas.Count - inicio);
-    }
 
     internal class Program
     {
@@ -672,7 +549,6 @@ public class Arquivo
 
             Arquivo logdoJogo = new Arquivo(logsNaPartida);
 
-
             do
             {
                 quantPartidas++;
@@ -692,7 +568,6 @@ public class Arquivo
                 }
                 logdoJogo.Registrar("O Monte de Compra será criado com " + quantCartas + " cartas.");
 
-
                 if (resetarJogadores)
                 {
                     jogadoresDaPartida.Clear();
@@ -703,7 +578,6 @@ public class Arquivo
                         Console.WriteLine("Valor inválido! Digite um número inteiro positivo maior que zero:");
                     }
                 }
-
 
                 logdoJogo.Registrar("O jogo contará com " + quantJogadores + " no total.");
 
@@ -755,8 +629,20 @@ public class Arquivo
 
                     }
 
-                    logdoJogo.Registrar("O jogador que começará a partida será " + jogadoresDaPartida[0].Nome);
+
                 }
+                string jogadoresTexto = "Jogadores da Partida " + quantPartidas + ": [";
+                for (int idx = 0; idx < jogadoresDaPartida.Count; idx++)
+                {
+                    jogadoresTexto += jogadoresDaPartida[idx].Nome;
+                    if (idx != jogadoresDaPartida.Count - 1)
+                        jogadoresTexto += ", ";
+                }
+                jogadoresTexto += "]";
+
+                logdoJogo.Registrar(jogadoresTexto);
+                logdoJogo.Registrar("O jogador que começará a partida será " + jogadoresDaPartida[0].Nome);
+                                
                 do
                 {
                     int i = 0;
@@ -816,7 +702,7 @@ public class Arquivo
                     }
                 }
 
-                Console.WriteLine("Resultado");
+                Console.WriteLine("Resultado da Partida " + quantPartidas);
 
                 if (ganhadores.Count == 1)
                 {
@@ -928,7 +814,6 @@ public class Arquivo
 
 
                     int opcao = int.Parse(Console.ReadLine());
-
 
                     switch (opcao)
                     {
