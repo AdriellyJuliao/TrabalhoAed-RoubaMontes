@@ -624,7 +624,7 @@ public class Arquivo
 
                         jogadoresDaPartida.Add(jogadorNovo);
 
-                        logdoJogo.Registrar("O " + nomeJogadorInserir + " ingressou no jogo.");
+                        logdoJogo.Registrar(nomeJogadorInserir + " ingressou no jogo.");
 
 
                     }
@@ -632,10 +632,10 @@ public class Arquivo
 
                 }
                 string jogadoresTexto = "Jogadores da Partida " + quantPartidas + ": [";
-                for (int idx = 0; idx < jogadoresDaPartida.Count; idx++)
+                for (int i = 0; i < jogadoresDaPartida.Count; i++)
                 {
-                    jogadoresTexto += jogadoresDaPartida[idx].Nome;
-                    if (idx != jogadoresDaPartida.Count - 1)
+                    jogadoresTexto += jogadoresDaPartida[i].Nome;
+                    if (i != jogadoresDaPartida.Count - 1)
                         jogadoresTexto += ", ";
                 }
                 jogadoresTexto += "]";
@@ -645,21 +645,21 @@ public class Arquivo
                                 
                 do
                 {
-                    int i = 0;
+                    int loopVezJogadores= 0;
 
                     while (montedeCompras.QuantidadeCarta > 0)
                     {
-                        Jogador jogadordaVez = jogadoresDaPartida[i];
+                        Jogador jogadordaVez = jogadoresDaPartida[loopVezJogadores];
 
                         logdoJogo.Registrar("Agora é a vez de " + jogadordaVez.Nome + " jogar");
 
                         jogadordaVez.CartaDaVez(montedeCompras, jogadoresDaPartida, mesadaPartida, logdoJogo);
 
-                        i++;
+                        loopVezJogadores++;
 
-                        if (i >= jogadoresDaPartida.Count)
+                        if (loopVezJogadores >= jogadoresDaPartida.Count)
                         {
-                            i = 0;
+                            loopVezJogadores = 0;
                         }
                     }
 
