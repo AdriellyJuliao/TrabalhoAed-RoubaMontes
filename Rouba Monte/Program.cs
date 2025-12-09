@@ -75,22 +75,14 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public void CartaDaVez(MontedeCompra montedeCompraPartida, List<Jogador> Jogadores, AreadeDescarte mesa, Arquivo logsdapartida)
         {
-            //Fazer validacao para que o sistema nao procure um jogador que nao tenha um monte pois vai dar erro de out of range
-            //Prioridade menor mas seria interessante na hora de digitar o nome dos jogadores nao deixar repetir pois pode dar confusão no metodo CartaDaVez
+            
             bool fimdaCartadaVez = false;
 
-            if (montedeCompraPartida == null || montedeCompraPartida.QuantidadeCarta == 0)
-            {
-                Console.WriteLine("Monte de Compra Esgotado");
-                fimdaCartadaVez = true;
-            }
-            else
-            {
 
                 do
                 {
                     Carta CartadoMomento = montedeCompraPartida.RemoverMontedeCarta();
-                    if (CartadoMomento == null)
+                    if (montedeCompraPartida == null || montedeCompraPartida.QuantidadeCarta == 0)
                     {
                         logsdapartida.Registrar(this.nome + " tentou retirar carta mas monte está vazio.");
                         break;
@@ -218,7 +210,7 @@ namespace Trabalho_de_AED___Rouba_Monte
                     }
                 } while (!fimdaCartadaVez);
 
-            }
+            
         }
 
         public void VisualizarRanking()
@@ -269,11 +261,11 @@ namespace Trabalho_de_AED___Rouba_Monte
             while (i <= j)
             {
                 // Encontrar elemento à esquerda maior que o pivo
-                while (listadaOrdenacao[i].QuantCartas < pivo.QuantCartas)
+                while (listadaOrdenacao[i].QuantCartas > pivo.QuantCartas)
                     i++;
 
                 // Encontrar elemento à direita menor que o pivo
-                while (listadaOrdenacao[j].QuantCartas > pivo.QuantCartas)
+                while (listadaOrdenacao[j].QuantCartas < pivo.QuantCartas)
                     j--;
 
                 // Se encontrou elementos válidos
@@ -399,26 +391,26 @@ namespace Trabalho_de_AED___Rouba_Monte
 
         public void PreencherMontedeCompras()
         {
-            string[] tiposNaipes = { "Copas", "Ouros", "Paus", "Espadas" };
-            Random naipeAleatorio = new Random();
+         string[] tiposNaipes = { "Copas", "Ouros", "Paus", "Espadas" };
+         Random naipeAleatorio = new Random();
+         Random numeroAleatorio = new Random();
 
-            int definidordeNumeroCarta = 1;
+         int definidordeNumeroCarta = 1;
 
             for (int i = 0; i < quantidadeCarta; i++)
-            {
-                // Reinicia numeração após 13
-                if (definidordeNumeroCarta > 13)
-                    definidordeNumeroCarta = 1;
+        {
 
-                // Sorteia o naipe
-                int indicedoVetorNaipes = naipeAleatorio.Next(0, 4);
 
-                // Cria a carta
-                Carta CartaGerada = new Carta(definidordeNumeroCarta, tiposNaipes[indicedoVetorNaipes]);
+            // Sorteia o naipe
+            int indicedoVetorNaipes = naipeAleatorio.Next(0, 4);
+            int numeroCarta = numeroAleatorio.Next(0, 14);
+
+
+            // Cria a carta
+            Carta CartaGerada = new Carta(numeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
                 cartasparaComprar.Add(CartaGerada);
 
-                definidordeNumeroCarta++;
             }
 
         }
@@ -721,7 +713,7 @@ public class Arquivo
 
                 if (resetarJogadores)
                 {
-
+                    jogadoresDaPartida.Clear();
                     Console.WriteLine("Quantos jogadores irão participar?");
                     quantJogadores = int.Parse(Console.ReadLine());
 
@@ -749,7 +741,7 @@ public class Arquivo
 
 
 
-
+                if (resetarJogadores) {
                 for (int i = 0; i < quantJogadores; i++)
                 {
                     bool nomeigual = false;
@@ -787,17 +779,30 @@ public class Arquivo
 
                 }
 
-                logdoJogo.Registrar("O jogador que começará a partida será " + jogadoresDaPartida[0].Nome);
-
+                 logdoJogo.Registrar("O jogador que começará a partida será " + jogadoresDaPartida[0].Nome);
+                }
                 do
                 {
+                    int i = 0;
 
-                    foreach (Jogador jogadordaVez in jogadoresDaPartida)
+                    while (montedeCompras.QuantidadeCarta > 0)
                     {
+                        Jogador jogadordaVez = jogadoresDaPartida[i];
+
                         logdoJogo.Registrar("Agora é a vez do " + jogadordaVez.Nome + " jogar");
 
                         jogadordaVez.CartaDaVez(montedeCompras, jogadoresDaPartida, mesadaPartida, logdoJogo);
+
+                        // avança para o próximo jogador
+                        i++;
+
+                        // se chegou no último jogador, volta para o primeiro
+                        if (i >= jogadoresDaPartida.Count)
+                        {
+                            i = 0;
+                        }
                     }
+
 
 
 
