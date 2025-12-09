@@ -367,7 +367,6 @@ public class MontedeCompra
         Random naipeAleatorio = new Random();
         Random numeroAleatorio = new Random();
 
-        int definidordeNumeroCarta = 1;
 
         for (int i = 0; i < quantidadeCarta; i++)
         {
@@ -436,6 +435,7 @@ public class AreadeDescarte
 
     private int quantidadeCartasNaMesa;
 
+
     public AreadeDescarte()
     {
         cartas = new List<Carta>();
@@ -453,6 +453,9 @@ public class AreadeDescarte
         get { return quantidadeCartasNaMesa; }
         set { quantidadeCartasNaMesa = value; }
     }
+
+   
+
     public void ImprimirAreadeDescarte()
     {
         foreach (Carta x in cartas)
@@ -560,12 +563,14 @@ public class Arquivo
     }
         */
     private List<string> logDaPartida;
+    private bool logsNaSessao;
+
 
     // Agora o arquivo vai ficar DENTRO DA PASTA /logs
     private static readonly string pastaLogs = "logs";
     private static readonly string nomedoArquivo = Path.Combine(pastaLogs, "log_ultimas_partidas.txt");
 
-    public Arquivo()
+    public Arquivo(bool logsNaSessao)
     {
         logDaPartida = new List<string>();
 
@@ -574,6 +579,15 @@ public class Arquivo
         {
             Directory.CreateDirectory(pastaLogs);
         }
+
+        this.logsNaSessao = logsNaSessao;
+
+    }
+
+    public bool LogsNaSessao
+    {
+        get { return logsNaSessao; }
+        set { logsNaSessao = value; }
     }
 
     // Adiciona mensagens ao log interno
@@ -581,7 +595,11 @@ public class Arquivo
     {
         string linha = "[" + DateTime.Now.ToString("HH:mm:ss") + "] " + mensagem;
         logDaPartida.Add(linha);
-        Console.WriteLine(linha);
+
+        if (logsNaSessao)
+        {
+            Console.WriteLine(linha);
+        }
     }
 
     // Grava a partida no arquivo, mantendo no máximo 5
@@ -645,17 +663,35 @@ public class Arquivo
     {
         static void Main(string[] args)
         {
-            bool continuarJogando = true, resetarJogadores = true, resetarQuantidadeCartas = true, visualizarRankings = true;
+            bool continuarJogando = true, resetarJogadores = true, resetarQuantidadeCartas = true, visualizarRankings = true, logsNaPartida = true;
 
-            int quantCartas = -1, quantJogadores = -1, int quantPartidas = 0;
+            int quantCartas = -1, quantJogadores = -1,  quantPartidas = 0;
 
             List<Jogador> jogadoresDaPartida = new List<Jogador>();
 
             AreadeDescarte mesadaPartida = new AreadeDescarte();
 
-            Arquivo logdoJogo = new Arquivo();
 
             Console.WriteLine("Bem-vindo ao Rouba montes");
+
+            Console.WriteLine("Deseja visualizar os logs na sessão atual? (S/N)");
+
+            string respVisualizarLogs = Console.ReadLine().Trim();
+
+            while (respVisualizarLogs == "" ||
+                   respVisualizarLogs.Length != 1 ||
+                   (respVisualizarLogs != "S" && respVisualizarLogs != "s" &&
+                    respVisualizarLogs != "N" && respVisualizarLogs != "n"))
+            {
+                Console.WriteLine("Entrada inválida! Digite apenas S ou N:");
+                respVisualizarLogs = Console.ReadLine().Trim();
+            }
+
+            char escolha = respVisualizarLogs.ToUpper()[0];
+
+            logsNaPartida = (escolha == 'S');
+
+            Arquivo logdoJogo = new Arquivo(logsNaPartida);
 
 
             do
@@ -836,6 +872,8 @@ public class Arquivo
                     Console.WriteLine(x.Posicao + "° lugar — " + x.Nome + " com " + x.QuantCartas + " cartas");
                 }
 
+                logdoJogo.SalvarPartida(quantPartidas);
+
                 do
                 {
                     Console.WriteLine("Deseja ver os Rankings de algum jogador? (S/N)");
@@ -850,9 +888,9 @@ public class Arquivo
                         entrada = Console.ReadLine().Trim();
                     }
 
-                    char resp1 = entrada.ToUpper()[0];
+                    char respRankings = entrada.ToUpper()[0];
 
-                    if (resp1 == 'S')
+                    if (respRankings == 'S')
                     {
                         visualizarRankings = true;
 
