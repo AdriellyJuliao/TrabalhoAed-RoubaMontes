@@ -17,9 +17,9 @@ namespace Trabalho_de_AED___Rouba_Monte
     {
         private string nome;
 
-        private int posicao; 
+        private int posicao;
 
-        private int quantCartas; 
+        private int quantCartas;
 
         private int quantCartasAgora;
 
@@ -299,77 +299,75 @@ namespace Trabalho_de_AED___Rouba_Monte
                 Quicksort(listadaOrdenacao, i, dir);
             }
         }
-        }
+    }
 }
 
- 
-    public class Carta
+
+public class Carta
+{
+    private int numero;
+
+    private string naipe;
+
+
+    public Carta(int numero, string naipe)
     {
-        private int numero;
-
-        private string naipe; 
-
-
-        public Carta(int numero, string naipe)
-        {
-            this.numero = numero;
-            this.naipe = naipe;
-        }
-
-
-        public int Numero
-        {
-            get { return numero; }
-            set { numero = value; }
-        }
-
-        public string Naipe
-        {
-            get { return naipe; }
-            set { naipe = value; }
-        }
-
-
+        this.numero = numero;
+        this.naipe = naipe;
     }
 
 
-
-
-
-    public class MontedeCompra
+    public int Numero
     {
-        private List<Carta> cartasparaComprar;
+        get { return numero; }
+        set { numero = value; }
+    }
 
-        private int quantidadeCarta;
-
-        public MontedeCompra(int quantidadeCarta)
-        {
-            cartasparaComprar = new List<Carta>();
-            this.quantidadeCarta = quantidadeCarta;
-        }
-
-        public List<Carta> CartasparaComprar
-        {
-            get { return cartasparaComprar; }
-            set { cartasparaComprar = value; }
-        }
-
-        public int QuantidadeCarta
-        {
-            get { return quantidadeCarta; }
-            set { quantidadeCarta = value; }
-        }
+    public string Naipe
+    {
+        get { return naipe; }
+        set { naipe = value; }
+    }
 
 
-        public void PreencherMontedeCompras()
-        {
-         string[] tiposNaipes = { "Copas", "Ouros", "Paus", "Espadas" };
-         Random naipeAleatorio = new Random();
-         Random numeroAleatorio = new Random();
+}
 
-         int definidordeNumeroCarta = 1;
 
-            for (int i = 0; i < quantidadeCarta; i++)
+
+
+public class MontedeCompra
+{
+    private List<Carta> cartasparaComprar;
+
+    private int quantidadeCarta;
+
+    public MontedeCompra(int quantidadeCarta)
+    {
+        cartasparaComprar = new List<Carta>();
+        this.quantidadeCarta = quantidadeCarta;
+    }
+
+    public List<Carta> CartasparaComprar
+    {
+        get { return cartasparaComprar; }
+        set { cartasparaComprar = value; }
+    }
+
+    public int QuantidadeCarta
+    {
+        get { return quantidadeCarta; }
+        set { quantidadeCarta = value; }
+    }
+
+
+    public void PreencherMontedeCompras()
+    {
+        string[] tiposNaipes = { "Copas", "Ouros", "Paus", "Espadas" };
+        Random naipeAleatorio = new Random();
+        Random numeroAleatorio = new Random();
+
+
+        for (int i = 0; i < quantidadeCarta; i++)
         {
 
             int indicedoVetorNaipes = naipeAleatorio.Next(0, 4);
@@ -377,96 +375,80 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             Carta CartaGerada = new Carta(numeroCarta, tiposNaipes[indicedoVetorNaipes]);
 
-                cartasparaComprar.Add(CartaGerada);
-
-            }
+            cartasparaComprar.Add(CartaGerada);
 
         }
-        
 
-        public void EmbaralharMontedeCompra()
+    }
+
+
+    public void EmbaralharMontedeCompra()
+    {
+        if (cartasparaComprar == null || quantidadeCarta <= 0)
         {
-            if (cartasparaComprar == null || quantidadeCarta <= 0)
-            {
-                throw new Exception("Monte vazio ou de tamanho inválido");
-            }
-
-            Random cartaAleatoria = new Random();
-
-            for (int i = cartasparaComprar.Count - 1; i > 0; i--)
-            {
-                int j = cartaAleatoria.Next(0, i + 1);
-
-                Carta temp = cartasparaComprar[i];
-                cartasparaComprar[i] = cartasparaComprar[j];
-                cartasparaComprar[j] = temp;
-
-            }
+            throw new Exception("Monte vazio ou de tamanho inválido");
         }
 
+        Random cartaAleatoria = new Random();
 
-        public Carta RemoverMontedeCarta()
+        for (int i = cartasparaComprar.Count - 1; i > 0; i--)
         {
-       
-      
-            int count = cartasparaComprar.Count;
-            Carta carta = cartasparaComprar[cartasparaComprar.Count - 1];
-            cartasparaComprar.RemoveAt(cartasparaComprar.Count - 1);
-            quantidadeCarta--;
-            return carta;
+            int j = cartaAleatoria.Next(0, i + 1);
+
+            Carta temp = cartasparaComprar[i];
+            cartasparaComprar[i] = cartasparaComprar[j];
+            cartasparaComprar[j] = temp;
+
         }
     }
 
 
-
-
-    
-
-
-
-
-
-
-
-
- 
-    public class AreadeDescarte
+    public Carta RemoverMontedeCarta()
     {
-        private List<Carta> cartas;
 
-        private int quantidadeCartasNaMesa;
 
-        public AreadeDescarte()
-        {
-            cartas = new List<Carta>();
-            quantidadeCartasNaMesa = 0;
-        }
+        int count = cartasparaComprar.Count;
+        Carta carta = cartasparaComprar[cartasparaComprar.Count - 1];
+        cartasparaComprar.RemoveAt(cartasparaComprar.Count - 1);
+        quantidadeCarta--;
+        return carta;
+    }
+}
 
-        public List<Carta> Cartas
-        {
-            get { return cartas; }
-            set { cartas = value; }
-        }
 
-        public int QuantidadeCartasNaMesa
-        {
-            get { return quantidadeCartasNaMesa; }
-            set { quantidadeCartasNaMesa = value; }
-        }
-        public void ImprimirAreadeDescarte()
-        {
-            foreach (Carta x in cartas)
-            {
-              Console.Write("||" + x.Numero + "||"); 
-            }
-        }
+public class AreadeDescarte
+{
+    private List<Carta> cartas;
 
-        public void LimparAreadeDescarte()
-        {
-          cartas.Clear();
-          quantidadeCartasNaMesa = 0;
+    private int quantidadeCartasNaMesa;
 
-        }
+
+    public AreadeDescarte()
+    {
+        cartas = new List<Carta>();
+        quantidadeCartasNaMesa = 0;
+    }
+
+    public List<Carta> Cartas
+    {
+        get { return cartas; }
+        set { cartas = value; }
+    }
+
+    public int QuantidadeCartasNaMesa
+    {
+        get { return quantidadeCartasNaMesa; }
+        set { quantidadeCartasNaMesa = value; }
+    }
+
+
+
+    public void LimparAreadeDescarte()
+    {
+        cartas.Clear();
+        quantidadeCartasNaMesa = 0;
+
+    }
 }
 
 
@@ -560,12 +542,14 @@ public class Arquivo
     }
         */
     private List<string> logDaPartida;
+    private bool logsNaSessao;
+
 
     // Agora o arquivo vai ficar DENTRO DA PASTA /logs
     private static readonly string pastaLogs = "logs";
     private static readonly string nomedoArquivo = Path.Combine(pastaLogs, "log_ultimas_partidas.txt");
 
-    public Arquivo()
+    public Arquivo(bool logsNaSessao)
     {
         logDaPartida = new List<string>();
 
@@ -574,6 +558,15 @@ public class Arquivo
         {
             Directory.CreateDirectory(pastaLogs);
         }
+
+        this.logsNaSessao = logsNaSessao;
+
+    }
+
+    public bool LogsNaSessao
+    {
+        get { return logsNaSessao; }
+        set { logsNaSessao = value; }
     }
 
     // Adiciona mensagens ao log interno
@@ -581,7 +574,11 @@ public class Arquivo
     {
         string linha = "[" + DateTime.Now.ToString("HH:mm:ss") + "] " + mensagem;
         logDaPartida.Add(linha);
-        Console.WriteLine(linha);
+
+        if (logsNaSessao)
+        {
+            Console.WriteLine(linha);
+        }
     }
 
     // Grava a partida no arquivo, mantendo no máximo 5
@@ -645,28 +642,52 @@ public class Arquivo
     {
         static void Main(string[] args)
         {
-            bool continuarJogando = true, resetarJogadores = true, resetarQuantidadeCartas = true, visualizarRankings = true;
+            bool continuarJogando = true, resetarJogadores = true, resetarQuantidadeCartas = true, visualizarRankings = true, logsNaPartida = true;
 
-            int quantCartas = -1, quantJogadores = -1;
+            int quantCartas = -1, quantJogadores = -1, quantPartidas = 0;
 
             List<Jogador> jogadoresDaPartida = new List<Jogador>();
 
             AreadeDescarte mesadaPartida = new AreadeDescarte();
 
-            Arquivo logdoJogo = new Arquivo();
+
+            Console.WriteLine("Bem-vindo ao Rouba montes");
+
+            Console.WriteLine("Deseja visualizar os logs na sessão atual? (S/N)");
+
+            string respVisualizarLogs = Console.ReadLine().Trim();
+
+            while (respVisualizarLogs == "" ||
+                   respVisualizarLogs.Length != 1 ||
+                   (respVisualizarLogs != "S" && respVisualizarLogs != "s" &&
+                    respVisualizarLogs != "N" && respVisualizarLogs != "n"))
+            {
+                Console.WriteLine("Entrada inválida! Digite apenas S ou N:");
+                respVisualizarLogs = Console.ReadLine().Trim();
+            }
+
+            char escolha = respVisualizarLogs.ToUpper()[0];
+
+            logsNaPartida = (escolha == 'S');
+
+            Arquivo logdoJogo = new Arquivo(logsNaPartida);
 
 
             do
             {
-                Console.WriteLine("Bem vindo ao Rouba montes");
+                quantPartidas++;
+
+                Console.WriteLine("Partida " + quantPartidas);
+                logdoJogo.Registrar("Preparamento para a partida de número " + quantPartidas);
+
 
                 if (resetarQuantidadeCartas)
                 {
                     Console.WriteLine("Quantas cartas serão geradas?");
 
-                    while (!int.TryParse(Console.ReadLine(), out quantCartas) || quantCartas < 0)
+                    while (!int.TryParse(Console.ReadLine(), out quantCartas) || quantCartas <= 0)
                     {
-                        Console.WriteLine("Valor inválido! Digite um número inteiro positivo:");
+                        Console.WriteLine("Valor inválido! Digite um número inteiro positivo maior que zero:");
                     }
                 }
                 logdoJogo.Registrar("O Monte de Compra será criado com " + quantCartas + " cartas.");
@@ -677,9 +698,9 @@ public class Arquivo
                     jogadoresDaPartida.Clear();
                     Console.WriteLine("Quantos jogadores irão participar?");
 
-                    while (!int.TryParse(Console.ReadLine(), out quantJogadores) || quantJogadores < 0)
+                    while (!int.TryParse(Console.ReadLine(), out quantJogadores) || quantJogadores <= 0)
                     {
-                        Console.WriteLine("Valor inválido! Digite um número inteiro positivo:");
+                        Console.WriteLine("Valor inválido! Digite um número inteiro positivo maior que zero:");
                     }
                 }
 
@@ -697,43 +718,44 @@ public class Arquivo
                 logdoJogo.Registrar("O monte de compra foi embaralhado.");
 
 
-                if (resetarJogadores) {
-                for (int i = 0; i < quantJogadores; i++)
+                if (resetarJogadores)
                 {
-                    bool nomeigual = false;
-                    string nomeJogadorInserir;
-                    int contagemJogadoresInseridos = i + 1;
-                    do
+                    for (int i = 0; i < quantJogadores; i++)
                     {
-                        nomeigual = false;
-                        Console.WriteLine("Nome do jogador " + contagemJogadoresInseridos);
-                        nomeJogadorInserir = Console.ReadLine();
-
-                        foreach (Jogador jogadoresRegistrados in jogadoresDaPartida)
+                        bool nomeigual = false;
+                        string nomeJogadorInserir;
+                        int contagemJogadoresInseridos = i + 1;
+                        do
                         {
-                            if (jogadoresRegistrados.Nome == nomeJogadorInserir)
+                            nomeigual = false;
+                            Console.WriteLine("Nome do jogador " + contagemJogadoresInseridos);
+                            nomeJogadorInserir = Console.ReadLine();
+
+                            foreach (Jogador jogadoresRegistrados in jogadoresDaPartida)
                             {
-                                nomeigual = true;
+                                if (jogadoresRegistrados.Nome == nomeJogadorInserir)
+                                {
+                                    nomeigual = true;
 
-                                Console.WriteLine("O nome " + nomeJogadorInserir + "já foi usado");
-                                logdoJogo.Registrar("Não foi possível inserir novamente o nome " + nomeJogadorInserir);
+                                    Console.WriteLine("O nome " + nomeJogadorInserir + "já foi usado");
+                                    logdoJogo.Registrar("Não foi possível inserir novamente o nome " + nomeJogadorInserir);
 
+                                }
                             }
-                        }
-                    } while (nomeigual);
+                        } while (nomeigual);
 
-                    Jogador jogadorNovo = new Jogador(nomeJogadorInserir);
-
+                        Jogador jogadorNovo = new Jogador(nomeJogadorInserir);
 
 
-                    jogadoresDaPartida.Add(jogadorNovo);
 
-                    logdoJogo.Registrar("O " + nomeJogadorInserir + " ingressou no jogo.");
+                        jogadoresDaPartida.Add(jogadorNovo);
+
+                        logdoJogo.Registrar("O " + nomeJogadorInserir + " ingressou no jogo.");
 
 
-                }
+                    }
 
-                 logdoJogo.Registrar("O jogador que começará a partida será " + jogadoresDaPartida[0].Nome);
+                    logdoJogo.Registrar("O jogador que começará a partida será " + jogadoresDaPartida[0].Nome);
                 }
                 do
                 {
@@ -743,7 +765,7 @@ public class Arquivo
                     {
                         Jogador jogadordaVez = jogadoresDaPartida[i];
 
-                        logdoJogo.Registrar("Agora é a vez do " + jogadordaVez.Nome + " jogar");
+                        logdoJogo.Registrar("Agora é a vez de " + jogadordaVez.Nome + " jogar");
 
                         jogadordaVez.CartaDaVez(montedeCompras, jogadoresDaPartida, mesadaPartida, logdoJogo);
 
@@ -810,6 +832,7 @@ public class Arquivo
                     foreach (Jogador x in ganhadores)
                     {
                         Console.WriteLine(x.Nome + " (" + x.QuantCartas + " cartas)");
+                        x.Posicao = 1;
                     }
 
                     List<string> nomes = new List<string>();
@@ -829,6 +852,8 @@ public class Arquivo
                     Console.WriteLine(x.Posicao + "° lugar — " + x.Nome + " com " + x.QuantCartas + " cartas");
                 }
 
+                logdoJogo.SalvarPartida(quantPartidas);
+
                 do
                 {
                     Console.WriteLine("Deseja ver os Rankings de algum jogador? (S/N)");
@@ -843,9 +868,9 @@ public class Arquivo
                         entrada = Console.ReadLine().Trim();
                     }
 
-                    char resp1 = entrada.ToUpper()[0];
+                    char respRankings = entrada.ToUpper()[0];
 
-                    if (resp1 == 'S')
+                    if (respRankings == 'S')
                     {
                         visualizarRankings = true;
 
@@ -869,7 +894,7 @@ public class Arquivo
                             Console.WriteLine("Jogador não encontrado! Verifique o nome digitado.");
                         }
                     }
-                    else 
+                    else
                     {
                         visualizarRankings = false;
                     }
@@ -941,6 +966,9 @@ public class Arquivo
                 else if (respContinuar == 'N' || respContinuar == 'n')
                 {
                     continuarJogando = false;
+
+                    logdoJogo.Registrar("A sessão irá se encerrar com " + quantPartidas + " partidas realizadas");
+
                 }
                 else
                 {
@@ -959,4 +987,3 @@ public class Arquivo
         }
     }
 }
-

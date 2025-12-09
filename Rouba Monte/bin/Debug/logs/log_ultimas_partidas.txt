@@ -1,0 +1,165 @@
+
+=============================================
+   PARTIDA 1 - 09/12/2025 12:35
+=============================================
+
+[12:35:24] Preparamento para a partida de número 1
+[12:35:29] O Monte de Compra será criado com 19 cartas.
+[12:35:32] O jogo contará com 2 no total.
+[12:35:32] O monte de compra foi criado.
+[12:35:32] O monte de compra foi preenchido.
+[12:35:32] O monte de compra foi embaralhado.
+[12:35:35] O c ingressou no jogo.
+[12:35:35] O a ingressou no jogo.
+[12:35:35] O jogador que começará a partida será c
+[12:35:35] Agora é a vez de c jogar
+[12:35:36] c retirou do Monte de Compra a carta 9 de Paus.
+[12:35:36] c está verificando a mesa para roubo.
+[12:35:36] c descartou a carta 9 de Paus.
+[12:35:36] Agora é a vez de a jogar
+[12:35:36] a retirou do Monte de Compra a carta 0 de Copas.
+[12:35:36] a está verificando a mesa para roubo.
+[12:35:36] a descartou a carta 0 de Copas.
+[12:35:36] Agora é a vez de c jogar
+[12:35:36] c retirou do Monte de Compra a carta 13 de Espadas.
+[12:35:36] c está verificando a mesa para roubo.
+[12:35:36] c descartou a carta 13 de Espadas.
+[12:35:36] Agora é a vez de a jogar
+[12:35:36] a retirou do Monte de Compra a carta 11 de Espadas.
+[12:35:36] a está verificando a mesa para roubo.
+[12:35:36] a descartou a carta 11 de Espadas.
+[12:35:36] Agora é a vez de c jogar
+[12:35:36] c retirou do Monte de Compra a carta 11 de Espadas.
+[12:35:36] c está verificando a mesa para roubo.
+[12:35:36] c roubou a carta 11 de Espadas da mesa.
+[12:35:36] c retirou do Monte de Compra a carta 6 de Ouros.
+[12:35:36] c está verificando a mesa para roubo.
+[12:35:36] c descartou a carta 6 de Ouros.
+[12:35:36] Agora é a vez de a jogar
+[12:35:36] a retirou do Monte de Compra a carta 12 de Espadas.
+[12:35:36] a está verificando a mesa para roubo.
+[12:35:36] a descartou a carta 12 de Espadas.
+[12:35:36] Agora é a vez de c jogar
+[12:35:36] c retirou do Monte de Compra a carta 11 de Espadas.
+[12:35:36] c está verificando a mesa para roubo.
+[12:35:36] c empilhou a carta 11 de Espadas no próprio monte.
+[12:35:36] c retirou do Monte de Compra a carta 6 de Ouros.
+[12:35:36] c está verificando a mesa para roubo.
+[12:35:36] c roubou a carta 6 de Ouros da mesa.
+[12:35:36] c retirou do Monte de Compra a carta 7 de Paus.
+[12:35:36] c está verificando a mesa para roubo.
+[12:35:36] c descartou a carta 7 de Paus.
+[12:35:36] Agora é a vez de a jogar
+[12:35:36] a retirou do Monte de Compra a carta 6 de Ouros.
+[12:35:36] Adversários compatíveis: c.
+[12:35:36] a está roubando o monte de c.
+[12:35:36] a adicionou a carta retirada ao próprio monte.
+[12:35:36] a retirou do Monte de Compra a carta 5 de Ouros.
+[12:35:36] a está verificando a mesa para roubo.
+[12:35:36] a descartou a carta 5 de Ouros.
+[12:35:36] Agora é a vez de c jogar
+[12:35:36] c retirou do Monte de Compra a carta 10 de Espadas.
+[12:35:36] c está verificando a mesa para roubo.
+[12:35:36] c descartou a carta 10 de Espadas.
+[12:35:36] Agora é a vez de a jogar
+[12:35:36] a retirou do Monte de Compra a carta 6 de Ouros.
+[12:35:36] a está verificando a mesa para roubo.
+[12:35:36] a empilhou a carta 6 de Ouros no próprio monte.
+[12:35:36] a retirou do Monte de Compra a carta 13 de Espadas.
+[12:35:36] a está verificando a mesa para roubo.
+[12:35:36] a roubou a carta 13 de Espadas da mesa.
+[12:35:36] a retirou do Monte de Compra a carta 5 de Ouros.
+[12:35:36] a está verificando a mesa para roubo.
+[12:35:36] a roubou a carta 5 de Ouros da mesa.
+[12:35:36] a retirou do Monte de Compra a carta 10 de Paus.
+[12:35:36] a está verificando a mesa para roubo.
+[12:35:36] a roubou a carta 10 de Espadas da mesa.
+[12:35:36] a retirou do Monte de Compra a carta 9 de Paus.
+[12:35:36] a está verificando a mesa para roubo.
+[12:35:36] a roubou a carta 9 de Paus da mesa.
+[12:35:36] a tentou retirar carta mas monte está vazio.
+[12:35:36] A área de descarte foi limpa
+[12:35:36] Vitória individual de a com 15 cartas.
+
+=============================================
+   PARTIDA 2 - 09/12/2025 12:36
+=============================================
+
+[12:35:52] A quantidade de cartas será mantida mas os Jogadores serão alterados para a próxima partida
+[12:35:52] Preparamento para a partida de número 2
+[12:35:52] O Monte de Compra será criado com 19 cartas.
+[12:35:59] O jogo contará com 1 no total.
+[12:35:59] O monte de compra foi criado.
+[12:35:59] O monte de compra foi preenchido.
+[12:35:59] O monte de compra foi embaralhado.
+[12:36:01] O a ingressou no jogo.
+[12:36:01] O jogador que começará a partida será a
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 11 de Espadas.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a descartou a carta 11 de Espadas.
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 3 de Ouros.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a descartou a carta 3 de Ouros.
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 10 de Paus.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a descartou a carta 10 de Paus.
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 5 de Ouros.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a descartou a carta 5 de Ouros.
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 6 de Ouros.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a descartou a carta 6 de Ouros.
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 12 de Espadas.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a descartou a carta 12 de Espadas.
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 10 de Paus.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a roubou a carta 10 de Paus da mesa.
+[12:36:01] a retirou do Monte de Compra a carta 2 de Copas.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a descartou a carta 2 de Copas.
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 10 de Espadas.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a empilhou a carta 10 de Espadas no próprio monte.
+[12:36:01] a retirou do Monte de Compra a carta 3 de Copas.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a roubou a carta 3 de Ouros da mesa.
+[12:36:01] a retirou do Monte de Compra a carta 3 de Copas.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a empilhou a carta 3 de Copas no próprio monte.
+[12:36:01] a retirou do Monte de Compra a carta 5 de Ouros.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a roubou a carta 5 de Ouros da mesa.
+[12:36:01] a retirou do Monte de Compra a carta 4 de Ouros.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a descartou a carta 4 de Ouros.
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 10 de Espadas.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a descartou a carta 10 de Espadas.
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 12 de Espadas.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a roubou a carta 12 de Espadas da mesa.
+[12:36:01] a retirou do Monte de Compra a carta 9 de Paus.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a descartou a carta 9 de Paus.
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 3 de Copas.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a descartou a carta 3 de Copas.
+[12:36:01] Agora é a vez de a jogar
+[12:36:01] a retirou do Monte de Compra a carta 3 de Copas.
+[12:36:01] a está verificando a mesa para roubo.
+[12:36:01] a roubou a carta 3 de Copas da mesa.
+[12:36:01] a tentou retirar carta mas monte está vazio.
+[12:36:01] A área de descarte foi limpa
+[12:36:01] Vitória individual de a com 12 cartas.
