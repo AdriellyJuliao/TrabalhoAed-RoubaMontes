@@ -7007,3 +7007,2719 @@ PARTIDA 1 - 09/12/2025 14:13
 [14:13:33] felipe descartou a carta 7 de Paus.
 [14:13:33] A área de descarte foi limpa
 [14:13:33] Empate entre felipe, adrielly, vitor, luiz com 0 cartas.
+
+#### INICIO PARTIDA
+PARTIDA 1 - 09/12/2025 18:23
+=============================================
+
+[18:23:31] Preparamento para a partida de número 1
+[18:23:34] O Monte de Compra será criado com 100 cartas.
+[18:23:35] O jogo contará com 3 no total.
+[18:23:35] O monte de compra foi criado.
+[18:23:35] O monte de compra foi preenchido.
+[18:23:35] O monte de compra foi embaralhado.
+[18:23:45] vitor ingressou no jogo.
+[18:23:50] Adrielly ingressou no jogo.
+[18:23:56] Luiz Felipe ingressou no jogo.
+[18:23:56] Jogadores da Partida 1: [vitor, Adrielly, Luiz Felipe]
+[18:23:56] O jogador que começará a partida será vitor
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 3 de Ouros.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 13 de Espadas.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 5 de Ouros.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 8 de Paus.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 8 de Paus da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly empilhou a carta 8 de Paus no próprio monte.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 2 de Copas.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 9 de Paus.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 0 de Copas.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 5 de Ouros da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly empilhou a carta 5 de Ouros no próprio monte.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 13 de Espadas da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 10 de Paus.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 10 de Paus.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 5 de Ouros.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 6 de Ouros.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 7 de Paus.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 11 de Espadas.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 5 de Ouros da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 10 de Espadas.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 10 de Paus da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 0 de Copas da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 10 de Paus.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 10 de Paus.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 8 de Paus.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe roubou a carta 3 de Ouros da mesa.
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 12 de Espadas.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 11 de Espadas da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 12 de Espadas da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 8 de Paus da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 6 de Ouros da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 9 de Paus da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 3 de Copas.
+[18:23:56] Adversários compatíveis: Luiz Felipe.
+[18:23:56] vitor está roubando o monte de Luiz Felipe.
+[18:23:56] vitor adicionou a carta retirada ao próprio monte.
+[18:23:56] vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 12 de Espadas.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 2 de Copas da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 5 de Ouros.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 3 de Ouros.
+[18:23:56] Adversários compatíveis: vitor.
+[18:23:56] Luiz Felipe está roubando o monte de vitor.
+[18:23:56] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 0 de Copas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 0 de Copas.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 9 de Paus.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:23:56] Adversários compatíveis: Luiz Felipe.
+[18:23:56] Adrielly está roubando o monte de Luiz Felipe.
+[18:23:56] Adrielly adicionou a carta retirada ao próprio monte.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 0 de Copas da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 11 de Espadas.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 13 de Espadas.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 8 de Paus.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 5 de Ouros da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 3 de Ouros.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 6 de Ouros.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 6 de Ouros da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 13 de Espadas da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 10 de Paus.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 10 de Paus da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 0 de Copas.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 6 de Ouros.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe roubou a carta 9 de Paus da mesa.
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 2 de Copas.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:23:56] Adversários compatíveis: Luiz Felipe.
+[18:23:56] vitor está roubando o monte de Luiz Felipe.
+[18:23:56] vitor adicionou a carta retirada ao próprio monte.
+[18:23:56] vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 1 de Copas.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 11 de Espadas da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 8 de Paus da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 6 de Ouros da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 3 de Ouros da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 7 de Paus da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 4 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 4 de Ouros.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe roubou a carta 12 de Espadas da mesa.
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 10 de Paus.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 10 de Paus.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 5 de Ouros.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 5 de Ouros da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 13 de Espadas.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 6 de Ouros.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:23:56] Adversários compatíveis: Luiz Felipe.
+[18:23:56] vitor está roubando o monte de Luiz Felipe.
+[18:23:56] vitor adicionou a carta retirada ao próprio monte.
+[18:23:56] vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 6 de Ouros da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 4 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 4 de Ouros da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] Adversários compatíveis: Adrielly.
+[18:23:56] vitor está roubando o monte de Adrielly.
+[18:23:56] vitor adicionou a carta retirada ao próprio monte.
+[18:23:56] vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 11 de Espadas.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 6 de Ouros.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe roubou a carta 1 de Copas da mesa.
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 4 de Ouros.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor empilhou a carta 5 de Ouros no próprio monte.
+[18:23:56] vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 7 de Paus.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 11 de Espadas da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 1 de Copas.
+[18:23:56] Adversários compatíveis: Luiz Felipe.
+[18:23:56] Adrielly está roubando o monte de Luiz Felipe.
+[18:23:56] Adrielly adicionou a carta retirada ao próprio monte.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 8 de Paus.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 0 de Copas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe roubou a carta 0 de Copas da mesa.
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 3 de Copas.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor roubou a carta 6 de Ouros da mesa.
+[18:23:56] vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 5 de Ouros.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 2 de Copas da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 3 de Copas da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 10 de Espadas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 10 de Paus da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 2 de Copas.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 1 de Copas.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 9 de Paus.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 5 de Ouros da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 10 de Espadas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 10 de Espadas.
+[18:23:56] Agora é a vez de Luiz Felipe jogar
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe roubou a carta 13 de Espadas da mesa.
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] Adversários compatíveis: Adrielly.
+[18:23:56] Luiz Felipe está roubando o monte de Adrielly.
+[18:23:56] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:23:56] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:23:56] Luiz Felipe está verificando a mesa para roubo.
+[18:23:56] Luiz Felipe descartou a carta 11 de Espadas.
+[18:23:56] Agora é a vez de vitor jogar
+[18:23:56] vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:23:56] vitor está verificando a mesa para roubo.
+[18:23:56] vitor descartou a carta 3 de Ouros.
+[18:23:56] Agora é a vez de Adrielly jogar
+[18:23:56] Adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 11 de Espadas da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 8 de Paus da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:23:56] Adversários compatíveis: Luiz Felipe.
+[18:23:56] Adrielly está roubando o monte de Luiz Felipe.
+[18:23:56] Adrielly adicionou a carta retirada ao próprio monte.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 7 de Paus da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 1 de Copas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly roubou a carta 1 de Copas da mesa.
+[18:23:56] Adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:23:56] Adrielly está verificando a mesa para roubo.
+[18:23:56] Adrielly descartou a carta 13 de Espadas.
+[18:23:56] A área de descarte foi limpa
+[18:23:56] Vitória individual de vitor com 67 cartas.
+
+#### INICIO PARTIDA
+PARTIDA 2 - 09/12/2025 18:24
+=============================================
+
+[18:24:04] A quantidade de cartas e os Jogadores serão mantidos para a próxima partida
+[18:24:04] Preparamento para a partida de número 2
+[18:24:04] O Monte de Compra será criado com 100 cartas.
+[18:24:04] O jogo contará com 3 no total.
+[18:24:04] O monte de compra foi criado.
+[18:24:04] O monte de compra foi preenchido.
+[18:24:04] O monte de compra foi embaralhado.
+[18:24:04] Jogadores da Partida 2: [vitor, Adrielly, Luiz Felipe]
+[18:24:04] O jogador que começará a partida será vitor
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 12 de Espadas.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 11 de Espadas.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 5 de Ouros.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 2 de Copas.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 9 de Paus.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 5 de Ouros da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 7 de Paus.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor roubou a carta 7 de Paus da mesa.
+[18:24:04] vitor retirou do Monte de Compra a carta 10 de Paus.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 10 de Paus.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 11 de Espadas da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:04] Adversários compatíveis: Luiz Felipe.
+[18:24:04] Adrielly está roubando o monte de Luiz Felipe.
+[18:24:04] Adrielly adicionou a carta retirada ao próprio monte.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 10 de Paus.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 10 de Paus da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 8 de Paus.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 4 de Ouros.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor roubou a carta 9 de Paus da mesa.
+[18:24:04] vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor roubou a carta 2 de Copas da mesa.
+[18:24:04] vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor empilhou a carta 2 de Copas no próprio monte.
+[18:24:04] vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 9 de Paus.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 4 de Ouros da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 10 de Paus.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 10 de Paus.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 6 de Ouros.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 3 de Ouros.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 9 de Paus da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 3 de Copas.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 3 de Ouros da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly empilhou a carta 3 de Ouros no próprio monte.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 6 de Ouros da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly empilhou a carta 6 de Ouros no próprio monte.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:24:04] Adversários compatíveis: vitor.
+[18:24:04] Adrielly está roubando o monte de vitor.
+[18:24:04] Adrielly adicionou a carta retirada ao próprio monte.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 10 de Espadas.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 10 de Paus da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 9 de Paus.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 6 de Ouros.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor roubou a carta 6 de Ouros da mesa.
+[18:24:04] vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor roubou a carta 12 de Espadas da mesa.
+[18:24:04] vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 1 de Copas.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 0 de Copas.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 9 de Paus da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 8 de Paus.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 8 de Paus da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 13 de Espadas.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor empilhou a carta 12 de Espadas no próprio monte.
+[18:24:04] vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 11 de Espadas.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 9 de Paus.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 1 de Copas da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:04] Adversários compatíveis: vitor.
+[18:24:04] Luiz Felipe está roubando o monte de vitor.
+[18:24:04] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 0 de Copas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 0 de Copas da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 4 de Ouros.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 7 de Paus.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 3 de Ouros.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 10 de Paus.
+[18:24:04] Adversários compatíveis: Adrielly.
+[18:24:04] Luiz Felipe está roubando o monte de Adrielly.
+[18:24:04] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 3 de Ouros da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 7 de Paus da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 1 de Copas.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:24:04] Adversários compatíveis: Luiz Felipe.
+[18:24:04] vitor está roubando o monte de Luiz Felipe.
+[18:24:04] vitor adicionou a carta retirada ao próprio monte.
+[18:24:04] vitor retirou do Monte de Compra a carta 10 de Espadas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 10 de Espadas.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 5 de Ouros.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 3 de Copas.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor roubou a carta 1 de Copas da mesa.
+[18:24:04] vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 6 de Ouros.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 7 de Paus.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 8 de Paus.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 8 de Paus.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor roubou a carta 7 de Paus da mesa.
+[18:24:04] vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor roubou a carta 13 de Espadas da mesa.
+[18:24:04] vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 1 de Copas.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:04] Adversários compatíveis: vitor.
+[18:24:04] Adrielly está roubando o monte de vitor.
+[18:24:04] Adrielly adicionou a carta retirada ao próprio monte.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 2 de Copas.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 11 de Espadas da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 3 de Ouros.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 3 de Copas da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 3 de Ouros.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe empilhou a carta 3 de Ouros no próprio monte.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 7 de Paus.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor roubou a carta 2 de Copas da mesa.
+[18:24:04] vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 0 de Copas.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 7 de Paus da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 5 de Ouros da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:24:04] Adversários compatíveis: vitor.
+[18:24:04] Adrielly está roubando o monte de vitor.
+[18:24:04] Adrielly adicionou a carta retirada ao próprio monte.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 6 de Ouros da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 10 de Paus.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 10 de Espadas da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 11 de Espadas.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 13 de Espadas.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor roubou a carta 1 de Copas da mesa.
+[18:24:04] vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 5 de Ouros.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 0 de Copas da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 13 de Espadas da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 6 de Ouros.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe empilhou a carta 3 de Copas no próprio monte.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe empilhou a carta 3 de Copas no próprio monte.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 5 de Ouros da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe empilhou a carta 5 de Ouros no próprio monte.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 2 de Copas.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 0 de Copas.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly roubou a carta 4 de Ouros da mesa.
+[18:24:04] Adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 13 de Espadas.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 13 de Espadas da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 11 de Espadas da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:04] Adversários compatíveis: Adrielly.
+[18:24:04] Luiz Felipe está roubando o monte de Adrielly.
+[18:24:04] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 12 de Espadas.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor descartou a carta 7 de Paus.
+[18:24:04] Agora é a vez de Adrielly jogar
+[18:24:04] Adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:04] Adrielly está verificando a mesa para roubo.
+[18:24:04] Adrielly descartou a carta 13 de Espadas.
+[18:24:04] Agora é a vez de Luiz Felipe jogar
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 9 de Paus da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 0 de Copas.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe roubou a carta 0 de Copas da mesa.
+[18:24:04] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:04] Luiz Felipe está verificando a mesa para roubo.
+[18:24:04] Luiz Felipe descartou a carta 4 de Ouros.
+[18:24:04] Agora é a vez de vitor jogar
+[18:24:04] vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:24:04] vitor está verificando a mesa para roubo.
+[18:24:04] vitor empilhou a carta 1 de Copas no próprio monte.
+[18:24:04] vitor tentou retirar carta mas monte está vazio.
+[18:24:04] A área de descarte foi limpa
+[18:24:04] Vitória individual de Luiz Felipe com 90 cartas.
+
+#### INICIO PARTIDA
+PARTIDA 3 - 09/12/2025 18:24
+=============================================
+
+[18:24:06] A quantidade de cartas e os Jogadores serão mantidos para a próxima partida
+[18:24:06] Preparamento para a partida de número 3
+[18:24:06] O Monte de Compra será criado com 100 cartas.
+[18:24:06] O jogo contará com 3 no total.
+[18:24:06] O monte de compra foi criado.
+[18:24:06] O monte de compra foi preenchido.
+[18:24:06] O monte de compra foi embaralhado.
+[18:24:06] Jogadores da Partida 3: [Luiz Felipe, vitor, Adrielly]
+[18:24:06] O jogador que começará a partida será Luiz Felipe
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 10 de Paus.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 10 de Paus.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 3 de Ouros.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 3 de Copas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 3 de Ouros da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 4 de Ouros.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 3 de Ouros.
+[18:24:06] Adversários compatíveis: Adrielly.
+[18:24:06] Luiz Felipe está roubando o monte de Adrielly.
+[18:24:06] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 7 de Paus.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 4 de Ouros da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 12 de Espadas.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 5 de Ouros.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 9 de Paus.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 5 de Ouros da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 1 de Copas.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 8 de Paus.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 0 de Copas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 0 de Copas.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 8 de Paus da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 12 de Espadas da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 0 de Copas da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 11 de Espadas.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 2 de Copas.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 4 de Ouros.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 2 de Copas da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 3 de Copas.
+[18:24:06] Adversários compatíveis: Luiz Felipe.
+[18:24:06] vitor está roubando o monte de Luiz Felipe.
+[18:24:06] vitor adicionou a carta retirada ao próprio monte.
+[18:24:06] vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 8 de Paus.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 2 de Copas.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe roubou a carta 2 de Copas da mesa.
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe roubou a carta 1 de Copas da mesa.
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 8 de Paus.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe roubou a carta 8 de Paus da mesa.
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 12 de Espadas.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 5 de Ouros.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 2 de Copas.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe roubou a carta 11 de Espadas da mesa.
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe roubou a carta 4 de Ouros da mesa.
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe roubou a carta 2 de Copas da mesa.
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 13 de Espadas.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 12 de Espadas da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 6 de Ouros.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 4 de Ouros.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:06] Adversários compatíveis: vitor.
+[18:24:06] Luiz Felipe está roubando o monte de vitor.
+[18:24:06] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 3 de Copas.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 0 de Copas.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:06] Adversários compatíveis: Luiz Felipe.
+[18:24:06] Adrielly está roubando o monte de Luiz Felipe.
+[18:24:06] Adrielly adicionou a carta retirada ao próprio monte.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly empilhou a carta 12 de Espadas no próprio monte.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 0 de Copas da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 1 de Copas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 1 de Copas.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 11 de Espadas.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 3 de Copas da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 10 de Paus.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 10 de Paus da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 11 de Espadas da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 3 de Ouros.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 9 de Paus da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 2 de Copas.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe roubou a carta 5 de Ouros da mesa.
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 10 de Espadas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 10 de Espadas.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 12 de Espadas.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 7 de Paus da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 6 de Ouros da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:06] Adversários compatíveis: Luiz Felipe.
+[18:24:06] Adrielly está roubando o monte de Luiz Felipe.
+[18:24:06] Adrielly adicionou a carta retirada ao próprio monte.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 13 de Espadas da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 7 de Paus.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 8 de Paus.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 8 de Paus.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 10 de Espadas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 10 de Espadas da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 7 de Paus da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 3 de Copas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 3 de Ouros da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 6 de Ouros.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 11 de Espadas.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 7 de Paus.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 9 de Paus.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 6 de Ouros da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 8 de Paus da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 9 de Paus da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 11 de Espadas da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 3 de Copas.
+[18:24:06] Adversários compatíveis: vitor.
+[18:24:06] Adrielly está roubando o monte de vitor.
+[18:24:06] Adrielly adicionou a carta retirada ao próprio monte.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 2 de Copas da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 4 de Ouros da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 0 de Copas.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 9 de Paus.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 3 de Copas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 3 de Copas.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 13 de Espadas.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 0 de Copas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe roubou a carta 0 de Copas da mesa.
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 2 de Copas.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:06] Adversários compatíveis: Adrielly.
+[18:24:06] vitor está roubando o monte de Adrielly.
+[18:24:06] vitor adicionou a carta retirada ao próprio monte.
+[18:24:06] vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 3 de Copas da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 9 de Paus da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 6 de Ouros.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 6 de Ouros da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 5 de Ouros.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe roubou a carta 7 de Paus da mesa.
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 4 de Ouros.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 5 de Ouros da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:24:06] Adversários compatíveis: Luiz Felipe.
+[18:24:06] vitor está roubando o monte de Luiz Felipe.
+[18:24:06] vitor adicionou a carta retirada ao próprio monte.
+[18:24:06] vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 1 de Copas da mesa.
+[18:24:06] vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor empilhou a carta 1 de Copas no próprio monte.
+[18:24:06] vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 5 de Ouros.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly roubou a carta 13 de Espadas da mesa.
+[18:24:06] Adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 9 de Paus.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 10 de Paus.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 10 de Paus.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 3 de Copas.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor descartou a carta 3 de Copas.
+[18:24:06] Agora é a vez de Adrielly jogar
+[18:24:06] Adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:24:06] Adrielly está verificando a mesa para roubo.
+[18:24:06] Adrielly descartou a carta 0 de Copas.
+[18:24:06] Agora é a vez de Luiz Felipe jogar
+[18:24:06] Luiz Felipe retirou do Monte de Compra a carta 8 de Paus.
+[18:24:06] Luiz Felipe está verificando a mesa para roubo.
+[18:24:06] Luiz Felipe descartou a carta 8 de Paus.
+[18:24:06] Agora é a vez de vitor jogar
+[18:24:06] vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:24:06] vitor está verificando a mesa para roubo.
+[18:24:06] vitor roubou a carta 3 de Copas da mesa.
+[18:24:06] vitor tentou retirar carta mas monte está vazio.
+[18:24:06] A área de descarte foi limpa
+[18:24:06] Vitória individual de vitor com 88 cartas.
+
+#### INICIO PARTIDA
+PARTIDA 1 - 09/12/2025 18:27
+=============================================
+
+[18:27:07] Preparamento para a partida de número 1
+[18:27:10] O Monte de Compra será criado com 100 cartas.
+[18:27:11] O jogo contará com 3 no total.
+[18:27:11] O monte de compra foi criado.
+[18:27:11] O monte de compra foi preenchido.
+[18:27:11] O monte de compra foi embaralhado.
+[18:27:15] adrielly ingressou no jogo.
+[18:27:16] Vitor ingressou no jogo.
+[18:27:22] Luiz Felipe ingressou no jogo.
+[18:27:22] Jogadores da Partida 1: [adrielly, Vitor, Luiz Felipe]
+[18:27:22] O jogador que começará a partida será adrielly
+[18:27:22] Agora é a vez de adrielly jogar
+[18:27:22] adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:22] adrielly está verificando a mesa para roubo.
+[18:27:22] adrielly descartou a carta 3 de Ouros.
+[18:27:22] Agora é a vez de Vitor jogar
+[18:27:22] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor descartou a carta 2 de Copas.
+[18:27:22] Agora é a vez de Luiz Felipe jogar
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe descartou a carta 12 de Espadas.
+[18:27:22] Agora é a vez de adrielly jogar
+[18:27:22] adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:27:22] adrielly está verificando a mesa para roubo.
+[18:27:22] adrielly descartou a carta 9 de Paus.
+[18:27:22] Agora é a vez de Vitor jogar
+[18:27:22] Vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor roubou a carta 12 de Espadas da mesa.
+[18:27:22] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor descartou a carta 1 de Copas.
+[18:27:22] Agora é a vez de Luiz Felipe jogar
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe roubou a carta 2 de Copas da mesa.
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:22] Adversários compatíveis: Vitor.
+[18:27:22] Luiz Felipe está roubando o monte de Vitor.
+[18:27:22] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe descartou a carta 13 de Espadas.
+[18:27:22] Agora é a vez de adrielly jogar
+[18:27:22] adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:22] adrielly está verificando a mesa para roubo.
+[18:27:22] adrielly descartou a carta 5 de Ouros.
+[18:27:22] Agora é a vez de Vitor jogar
+[18:27:22] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor roubou a carta 1 de Copas da mesa.
+[18:27:22] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor descartou a carta 2 de Copas.
+[18:27:22] Agora é a vez de Luiz Felipe jogar
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe descartou a carta 6 de Ouros.
+[18:27:22] Agora é a vez de adrielly jogar
+[18:27:22] adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:27:22] adrielly está verificando a mesa para roubo.
+[18:27:22] adrielly roubou a carta 2 de Copas da mesa.
+[18:27:22] adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:27:22] adrielly está verificando a mesa para roubo.
+[18:27:22] adrielly descartou a carta 8 de Paus.
+[18:27:22] Agora é a vez de Vitor jogar
+[18:27:22] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor descartou a carta 0 de Copas.
+[18:27:22] Agora é a vez de Luiz Felipe jogar
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe descartou a carta 11 de Espadas.
+[18:27:22] Agora é a vez de adrielly jogar
+[18:27:22] adrielly retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:22] adrielly está verificando a mesa para roubo.
+[18:27:22] adrielly descartou a carta 4 de Ouros.
+[18:27:22] Agora é a vez de Vitor jogar
+[18:27:22] Vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor roubou a carta 13 de Espadas da mesa.
+[18:27:22] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor roubou a carta 0 de Copas da mesa.
+[18:27:22] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor empilhou a carta 0 de Copas no próprio monte.
+[18:27:22] Vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor roubou a carta 8 de Paus da mesa.
+[18:27:22] Vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor empilhou a carta 8 de Paus no próprio monte.
+[18:27:22] Vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor roubou a carta 5 de Ouros da mesa.
+[18:27:22] Vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor roubou a carta 11 de Espadas da mesa.
+[18:27:22] Vitor retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor roubou a carta 4 de Ouros da mesa.
+[18:27:22] Vitor retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor descartou a carta 10 de Espadas.
+[18:27:22] Agora é a vez de Luiz Felipe jogar
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe descartou a carta 11 de Espadas.
+[18:27:22] Agora é a vez de adrielly jogar
+[18:27:22] adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:22] adrielly está verificando a mesa para roubo.
+[18:27:22] adrielly descartou a carta 13 de Espadas.
+[18:27:22] Agora é a vez de Vitor jogar
+[18:27:22] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor descartou a carta 1 de Copas.
+[18:27:22] Agora é a vez de Luiz Felipe jogar
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe roubou a carta 3 de Ouros da mesa.
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe empilhou a carta 3 de Copas no próprio monte.
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe empilhou a carta 3 de Copas no próprio monte.
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:27:22] Adversários compatíveis: adrielly.
+[18:27:22] Luiz Felipe está roubando o monte de adrielly.
+[18:27:22] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe roubou a carta 9 de Paus da mesa.
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe descartou a carta 2 de Copas.
+[18:27:22] Agora é a vez de adrielly jogar
+[18:27:22] adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:27:22] adrielly está verificando a mesa para roubo.
+[18:27:22] adrielly descartou a carta 8 de Paus.
+[18:27:22] Agora é a vez de Vitor jogar
+[18:27:22] Vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor roubou a carta 13 de Espadas da mesa.
+[18:27:22] Vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:27:22] Adversários compatíveis: Luiz Felipe.
+[18:27:22] Vitor está roubando o monte de Luiz Felipe.
+[18:27:22] Vitor adicionou a carta retirada ao próprio monte.
+[18:27:22] Vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor descartou a carta 7 de Paus.
+[18:27:22] Agora é a vez de Luiz Felipe jogar
+[18:27:22] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:22] Luiz Felipe está verificando a mesa para roubo.
+[18:27:22] Luiz Felipe descartou a carta 4 de Ouros.
+[18:27:22] Agora é a vez de adrielly jogar
+[18:27:22] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:22] adrielly está verificando a mesa para roubo.
+[18:27:22] adrielly roubou a carta 11 de Espadas da mesa.
+[18:27:22] adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:27:22] adrielly está verificando a mesa para roubo.
+[18:27:22] adrielly roubou a carta 7 de Paus da mesa.
+[18:27:22] adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:22] adrielly está verificando a mesa para roubo.
+[18:27:22] adrielly descartou a carta 13 de Espadas.
+[18:27:22] Agora é a vez de Vitor jogar
+[18:27:22] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:22] Vitor está verificando a mesa para roubo.
+[18:27:22] Vitor roubou a carta 6 de Ouros da mesa.
+[18:27:22] Vitor retirou do Monte de Compra a carta 10 de Paus.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor roubou a carta 10 de Espadas da mesa.
+[18:27:23] Vitor retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor empilhou a carta 10 de Espadas no próprio monte.
+[18:27:23] Vitor retirou do Monte de Compra a carta 10 de Paus.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor empilhou a carta 10 de Paus no próprio monte.
+[18:27:23] Vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor descartou a carta 11 de Espadas.
+[18:27:23] Agora é a vez de Luiz Felipe jogar
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe descartou a carta 3 de Ouros.
+[18:27:23] Agora é a vez de adrielly jogar
+[18:27:23] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly roubou a carta 11 de Espadas da mesa.
+[18:27:23] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly descartou a carta 12 de Espadas.
+[18:27:23] Agora é a vez de Vitor jogar
+[18:27:23] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor descartou a carta 6 de Ouros.
+[18:27:23] Agora é a vez de Luiz Felipe jogar
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe descartou a carta 7 de Paus.
+[18:27:23] Agora é a vez de adrielly jogar
+[18:27:23] adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly roubou a carta 3 de Ouros da mesa.
+[18:27:23] adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly roubou a carta 8 de Paus da mesa.
+[18:27:23] adrielly retirou do Monte de Compra a carta 10 de Paus.
+[18:27:23] Adversários compatíveis: Vitor.
+[18:27:23] adrielly está roubando o monte de Vitor.
+[18:27:23] adrielly adicionou a carta retirada ao próprio monte.
+[18:27:23] adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly roubou a carta 6 de Ouros da mesa.
+[18:27:23] adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly empilhou a carta 6 de Ouros no próprio monte.
+[18:27:23] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly descartou a carta 11 de Espadas.
+[18:27:23] Agora é a vez de Vitor jogar
+[18:27:23] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor roubou a carta 1 de Copas da mesa.
+[18:27:23] Vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor roubou a carta 11 de Espadas da mesa.
+[18:27:23] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor descartou a carta 0 de Copas.
+[18:27:23] Agora é a vez de Luiz Felipe jogar
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe roubou a carta 4 de Ouros da mesa.
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe roubou a carta 2 de Copas da mesa.
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 8 de Paus.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe descartou a carta 8 de Paus.
+[18:27:23] Agora é a vez de adrielly jogar
+[18:27:23] adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly descartou a carta 5 de Ouros.
+[18:27:23] Agora é a vez de Vitor jogar
+[18:27:23] Vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor descartou a carta 9 de Paus.
+[18:27:23] Agora é a vez de Luiz Felipe jogar
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe roubou a carta 12 de Espadas da mesa.
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe descartou a carta 2 de Copas.
+[18:27:23] Agora é a vez de adrielly jogar
+[18:27:23] adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly roubou a carta 2 de Copas da mesa.
+[18:27:23] adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly descartou a carta 3 de Ouros.
+[18:27:23] Agora é a vez de Vitor jogar
+[18:27:23] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:23] Adversários compatíveis: adrielly.
+[18:27:23] Vitor está roubando o monte de adrielly.
+[18:27:23] Vitor adicionou a carta retirada ao próprio monte.
+[18:27:23] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor descartou a carta 6 de Ouros.
+[18:27:23] Agora é a vez de Luiz Felipe jogar
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe roubou a carta 3 de Ouros da mesa.
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe roubou a carta 9 de Paus da mesa.
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe roubou a carta 6 de Ouros da mesa.
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:27:23] Adversários compatíveis: Vitor.
+[18:27:23] Luiz Felipe está roubando o monte de Vitor.
+[18:27:23] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe descartou a carta 1 de Copas.
+[18:27:23] Agora é a vez de adrielly jogar
+[18:27:23] adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly descartou a carta 3 de Ouros.
+[18:27:23] Agora é a vez de Vitor jogar
+[18:27:23] Vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor roubou a carta 8 de Paus da mesa.
+[18:27:23] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor roubou a carta 0 de Copas da mesa.
+[18:27:23] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor empilhou a carta 0 de Copas no próprio monte.
+[18:27:23] Vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor roubou a carta 5 de Ouros da mesa.
+[18:27:23] Vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor descartou a carta 9 de Paus.
+[18:27:23] Agora é a vez de Luiz Felipe jogar
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 8 de Paus.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe descartou a carta 8 de Paus.
+[18:27:23] Agora é a vez de adrielly jogar
+[18:27:23] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly descartou a carta 12 de Espadas.
+[18:27:23] Agora é a vez de Vitor jogar
+[18:27:23] Vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor descartou a carta 11 de Espadas.
+[18:27:23] Agora é a vez de Luiz Felipe jogar
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe roubou a carta 12 de Espadas da mesa.
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe roubou a carta 3 de Ouros da mesa.
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:23] Adversários compatíveis: Vitor.
+[18:27:23] Luiz Felipe está roubando o monte de Vitor.
+[18:27:23] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe descartou a carta 12 de Espadas.
+[18:27:23] Agora é a vez de adrielly jogar
+[18:27:23] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly roubou a carta 12 de Espadas da mesa.
+[18:27:23] adrielly retirou do Monte de Compra a carta 10 de Paus.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly descartou a carta 10 de Paus.
+[18:27:23] Agora é a vez de Vitor jogar
+[18:27:23] Vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor roubou a carta 11 de Espadas da mesa.
+[18:27:23] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:23] Vitor está verificando a mesa para roubo.
+[18:27:23] Vitor descartou a carta 6 de Ouros.
+[18:27:23] Agora é a vez de Luiz Felipe jogar
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe roubou a carta 1 de Copas da mesa.
+[18:27:23] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:27:23] Luiz Felipe está verificando a mesa para roubo.
+[18:27:23] Luiz Felipe descartou a carta 2 de Copas.
+[18:27:23] Agora é a vez de adrielly jogar
+[18:27:23] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly empilhou a carta 12 de Espadas no próprio monte.
+[18:27:23] adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:27:23] adrielly está verificando a mesa para roubo.
+[18:27:23] adrielly roubou a carta 2 de Copas da mesa.
+[18:27:23] adrielly tentou retirar carta mas monte está vazio.
+[18:27:23] A área de descarte foi limpa
+[18:27:23] Vitória individual de Luiz Felipe com 87 cartas.
+
+#### INICIO PARTIDA
+PARTIDA 2 - 09/12/2025 18:27
+=============================================
+
+[18:27:26] A quantidade de cartas e os Jogadores serão mantidos para a próxima partida
+[18:27:26] Preparamento para a partida de número 2
+[18:27:26] O Monte de Compra será criado com 100 cartas.
+[18:27:26] O jogo contará com 3 no total.
+[18:27:26] O monte de compra foi criado.
+[18:27:26] O monte de compra foi preenchido.
+[18:27:26] O monte de compra foi embaralhado.
+[18:27:26] Jogadores da Partida 2: [Luiz Felipe, adrielly, Vitor]
+[18:27:26] O jogador que começará a partida será Luiz Felipe
+[18:27:26] Agora é a vez de Luiz Felipe jogar
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe descartou a carta 9 de Paus.
+[18:27:26] Agora é a vez de adrielly jogar
+[18:27:26] adrielly retirou do Monte de Compra a carta 3 de Copas.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly descartou a carta 3 de Copas.
+[18:27:26] Agora é a vez de Vitor jogar
+[18:27:26] Vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor roubou a carta 9 de Paus da mesa.
+[18:27:26] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor descartou a carta 6 de Ouros.
+[18:27:26] Agora é a vez de Luiz Felipe jogar
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe descartou a carta 1 de Copas.
+[18:27:26] Agora é a vez de adrielly jogar
+[18:27:26] adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly descartou a carta 8 de Paus.
+[18:27:26] Agora é a vez de Vitor jogar
+[18:27:26] Vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor descartou a carta 5 de Ouros.
+[18:27:26] Agora é a vez de Luiz Felipe jogar
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe roubou a carta 5 de Ouros da mesa.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe descartou a carta 10 de Espadas.
+[18:27:26] Agora é a vez de adrielly jogar
+[18:27:26] adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly descartou a carta 7 de Paus.
+[18:27:26] Agora é a vez de Vitor jogar
+[18:27:26] Vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor empilhou a carta 9 de Paus no próprio monte.
+[18:27:26] Vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:26] Adversários compatíveis: Luiz Felipe.
+[18:27:26] Vitor está roubando o monte de Luiz Felipe.
+[18:27:26] Vitor adicionou a carta retirada ao próprio monte.
+[18:27:26] Vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor descartou a carta 9 de Paus.
+[18:27:26] Agora é a vez de Luiz Felipe jogar
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe descartou a carta 11 de Espadas.
+[18:27:26] Agora é a vez de adrielly jogar
+[18:27:26] adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly roubou a carta 3 de Copas da mesa.
+[18:27:26] adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly roubou a carta 7 de Paus da mesa.
+[18:27:26] adrielly retirou do Monte de Compra a carta 3 de Copas.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly descartou a carta 3 de Copas.
+[18:27:26] Agora é a vez de Vitor jogar
+[18:27:26] Vitor retirou do Monte de Compra a carta 3 de Copas.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor roubou a carta 3 de Copas da mesa.
+[18:27:26] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor roubou a carta 6 de Ouros da mesa.
+[18:27:26] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor descartou a carta 0 de Copas.
+[18:27:26] Agora é a vez de Luiz Felipe jogar
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe descartou a carta 5 de Ouros.
+[18:27:26] Agora é a vez de adrielly jogar
+[18:27:26] adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly roubou a carta 8 de Paus da mesa.
+[18:27:26] adrielly retirou do Monte de Compra a carta 1 de Copas.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly roubou a carta 1 de Copas da mesa.
+[18:27:26] adrielly retirou do Monte de Compra a carta 3 de Copas.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly descartou a carta 3 de Copas.
+[18:27:26] Agora é a vez de Vitor jogar
+[18:27:26] Vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor roubou a carta 11 de Espadas da mesa.
+[18:27:26] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor descartou a carta 6 de Ouros.
+[18:27:26] Agora é a vez de Luiz Felipe jogar
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 0 de Copas.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe roubou a carta 0 de Copas da mesa.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe descartou a carta 7 de Paus.
+[18:27:26] Agora é a vez de adrielly jogar
+[18:27:26] adrielly retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly descartou a carta 4 de Ouros.
+[18:27:26] Agora é a vez de Vitor jogar
+[18:27:26] Vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor descartou a carta 13 de Espadas.
+[18:27:26] Agora é a vez de Luiz Felipe jogar
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe roubou a carta 13 de Espadas da mesa.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:27:26] Adversários compatíveis: adrielly.
+[18:27:26] Luiz Felipe está roubando o monte de adrielly.
+[18:27:26] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe descartou a carta 13 de Espadas.
+[18:27:26] Agora é a vez de adrielly jogar
+[18:27:26] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly descartou a carta 12 de Espadas.
+[18:27:26] Agora é a vez de Vitor jogar
+[18:27:26] Vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor roubou a carta 7 de Paus da mesa.
+[18:27:26] Vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor descartou a carta 11 de Espadas.
+[18:27:26] Agora é a vez de Luiz Felipe jogar
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe roubou a carta 4 de Ouros da mesa.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe empilhou a carta 4 de Ouros no próprio monte.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe roubou a carta 3 de Copas da mesa.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe roubou a carta 10 de Espadas da mesa.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe roubou a carta 9 de Paus da mesa.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe roubou a carta 13 de Espadas da mesa.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe empilhou a carta 13 de Espadas no próprio monte.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe empilhou a carta 13 de Espadas no próprio monte.
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 10 de Paus.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe descartou a carta 10 de Paus.
+[18:27:26] Agora é a vez de adrielly jogar
+[18:27:26] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly roubou a carta 12 de Espadas da mesa.
+[18:27:26] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly roubou a carta 11 de Espadas da mesa.
+[18:27:26] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly empilhou a carta 11 de Espadas no próprio monte.
+[18:27:26] adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:26] adrielly descartou a carta 9 de Paus.
+[18:27:26] Agora é a vez de Vitor jogar
+[18:27:26] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:26] Vitor está verificando a mesa para roubo.
+[18:27:26] Vitor descartou a carta 1 de Copas.
+[18:27:26] Agora é a vez de Luiz Felipe jogar
+[18:27:26] Luiz Felipe retirou do Monte de Compra a carta 0 de Copas.
+[18:27:26] Luiz Felipe está verificando a mesa para roubo.
+[18:27:26] Luiz Felipe descartou a carta 0 de Copas.
+[18:27:26] Agora é a vez de adrielly jogar
+[18:27:26] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:26] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly descartou a carta 12 de Espadas.
+[18:27:27] Agora é a vez de Vitor jogar
+[18:27:27] Vitor retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor descartou a carta 4 de Ouros.
+[18:27:27] Agora é a vez de Luiz Felipe jogar
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:27] Adversários compatíveis: adrielly.
+[18:27:27] Luiz Felipe está roubando o monte de adrielly.
+[18:27:27] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe roubou a carta 1 de Copas da mesa.
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe roubou a carta 5 de Ouros da mesa.
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe descartou a carta 13 de Espadas.
+[18:27:27] Agora é a vez de adrielly jogar
+[18:27:27] adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:27] Adversários compatíveis: Luiz Felipe.
+[18:27:27] adrielly está roubando o monte de Luiz Felipe.
+[18:27:27] adrielly adicionou a carta retirada ao próprio monte.
+[18:27:27] adrielly retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly roubou a carta 4 de Ouros da mesa.
+[18:27:27] adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly roubou a carta 6 de Ouros da mesa.
+[18:27:27] adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly roubou a carta 13 de Espadas da mesa.
+[18:27:27] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly roubou a carta 12 de Espadas da mesa.
+[18:27:27] adrielly retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly roubou a carta 10 de Paus da mesa.
+[18:27:27] adrielly retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly empilhou a carta 10 de Espadas no próprio monte.
+[18:27:27] adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly roubou a carta 9 de Paus da mesa.
+[18:27:27] adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly descartou a carta 13 de Espadas.
+[18:27:27] Agora é a vez de Vitor jogar
+[18:27:27] Vitor retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor descartou a carta 4 de Ouros.
+[18:27:27] Agora é a vez de Luiz Felipe jogar
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe descartou a carta 6 de Ouros.
+[18:27:27] Agora é a vez de adrielly jogar
+[18:27:27] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly descartou a carta 11 de Espadas.
+[18:27:27] Agora é a vez de Vitor jogar
+[18:27:27] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor descartou a carta 1 de Copas.
+[18:27:27] Agora é a vez de Luiz Felipe jogar
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe roubou a carta 4 de Ouros da mesa.
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe roubou a carta 11 de Espadas da mesa.
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe descartou a carta 3 de Copas.
+[18:27:27] Agora é a vez de adrielly jogar
+[18:27:27] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:27] Adversários compatíveis: Luiz Felipe.
+[18:27:27] adrielly está roubando o monte de Luiz Felipe.
+[18:27:27] adrielly adicionou a carta retirada ao próprio monte.
+[18:27:27] adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly descartou a carta 5 de Ouros.
+[18:27:27] Agora é a vez de Vitor jogar
+[18:27:27] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor roubou a carta 1 de Copas da mesa.
+[18:27:27] Vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor roubou a carta 5 de Ouros da mesa.
+[18:27:27] Vitor retirou do Monte de Compra a carta 3 de Copas.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor roubou a carta 3 de Copas da mesa.
+[18:27:27] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor descartou a carta 1 de Copas.
+[18:27:27] Agora é a vez de Luiz Felipe jogar
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe descartou a carta 9 de Paus.
+[18:27:27] Agora é a vez de adrielly jogar
+[18:27:27] adrielly retirou do Monte de Compra a carta 10 de Paus.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly descartou a carta 10 de Paus.
+[18:27:27] Agora é a vez de Vitor jogar
+[18:27:27] Vitor retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor roubou a carta 10 de Paus da mesa.
+[18:27:27] Vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor descartou a carta 8 de Paus.
+[18:27:27] Agora é a vez de Luiz Felipe jogar
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe descartou a carta 5 de Ouros.
+[18:27:27] Agora é a vez de adrielly jogar
+[18:27:27] adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly descartou a carta 7 de Paus.
+[18:27:27] Agora é a vez de Vitor jogar
+[18:27:27] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor roubou a carta 0 de Copas da mesa.
+[18:27:27] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor roubou a carta 6 de Ouros da mesa.
+[18:27:27] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor descartou a carta 0 de Copas.
+[18:27:27] Agora é a vez de Luiz Felipe jogar
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe roubou a carta 5 de Ouros da mesa.
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:27] Adversários compatíveis: adrielly.
+[18:27:27] Luiz Felipe está roubando o monte de adrielly.
+[18:27:27] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:27] Adversários compatíveis: Vitor.
+[18:27:27] Luiz Felipe está roubando o monte de Vitor.
+[18:27:27] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe roubou a carta 9 de Paus da mesa.
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe descartou a carta 11 de Espadas.
+[18:27:27] Agora é a vez de adrielly jogar
+[18:27:27] adrielly retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly descartou a carta 4 de Ouros.
+[18:27:27] Agora é a vez de Vitor jogar
+[18:27:27] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor descartou a carta 6 de Ouros.
+[18:27:27] Agora é a vez de Luiz Felipe jogar
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe roubou a carta 7 de Paus da mesa.
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe roubou a carta 4 de Ouros da mesa.
+[18:27:27] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:27:27] Luiz Felipe está verificando a mesa para roubo.
+[18:27:27] Luiz Felipe descartou a carta 7 de Paus.
+[18:27:27] Agora é a vez de adrielly jogar
+[18:27:27] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:27] adrielly está verificando a mesa para roubo.
+[18:27:27] adrielly descartou a carta 12 de Espadas.
+[18:27:27] Agora é a vez de Vitor jogar
+[18:27:27] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:27] Vitor está verificando a mesa para roubo.
+[18:27:27] Vitor roubou a carta 1 de Copas da mesa.
+[18:27:27] Vitor tentou retirar carta mas monte está vazio.
+[18:27:27] A área de descarte foi limpa
+[18:27:27] Vitória individual de Luiz Felipe com 91 cartas.
+
+#### INICIO PARTIDA
+PARTIDA 3 - 09/12/2025 18:27
+=============================================
+
+[18:27:30] A quantidade de cartas e os Jogadores serão mantidos para a próxima partida
+[18:27:30] Preparamento para a partida de número 3
+[18:27:30] O Monte de Compra será criado com 100 cartas.
+[18:27:30] O jogo contará com 3 no total.
+[18:27:30] O monte de compra foi criado.
+[18:27:30] O monte de compra foi preenchido.
+[18:27:30] O monte de compra foi embaralhado.
+[18:27:30] Jogadores da Partida 3: [Luiz Felipe, Vitor, adrielly]
+[18:27:30] O jogador que começará a partida será Luiz Felipe
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 7 de Paus.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 12 de Espadas.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 8 de Paus.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 9 de Paus.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 2 de Copas.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 3 de Ouros.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 11 de Espadas.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 7 de Paus da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor empilhou a carta 7 de Paus no próprio monte.
+[18:27:30] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 0 de Copas.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 12 de Espadas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly empilhou a carta 12 de Espadas no próprio monte.
+[18:27:30] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly empilhou a carta 12 de Espadas no próprio monte.
+[18:27:30] adrielly retirou do Monte de Compra a carta 3 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 3 de Ouros da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 2 de Copas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 3 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 3 de Copas.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] Adversários compatíveis: adrielly.
+[18:27:30] Luiz Felipe está roubando o monte de adrielly.
+[18:27:30] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 1 de Copas.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 6 de Ouros.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 3 de Copas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:27:30] Adversários compatíveis: Vitor.
+[18:27:30] adrielly está roubando o monte de Vitor.
+[18:27:30] adrielly adicionou a carta retirada ao próprio monte.
+[18:27:30] adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 13 de Espadas.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe roubou a carta 1 de Copas da mesa.
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe roubou a carta 6 de Ouros da mesa.
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:27:30] Adversários compatíveis: adrielly.
+[18:27:30] Luiz Felipe está roubando o monte de adrielly.
+[18:27:30] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 5 de Ouros.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 0 de Copas da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 2 de Copas.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 5 de Ouros da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 2 de Copas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 13 de Espadas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly empilhou a carta 13 de Espadas no próprio monte.
+[18:27:30] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 11 de Espadas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:27:30] Adversários compatíveis: Luiz Felipe.
+[18:27:30] adrielly está roubando o monte de Luiz Felipe.
+[18:27:30] adrielly adicionou a carta retirada ao próprio monte.
+[18:27:30] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 12 de Espadas.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 10 de Espadas.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 1 de Copas.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:27:30] Adversários compatíveis: Vitor.
+[18:27:30] adrielly está roubando o monte de Vitor.
+[18:27:30] adrielly adicionou a carta retirada ao próprio monte.
+[18:27:30] adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 2 de Copas.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe roubou a carta 12 de Espadas da mesa.
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 13 de Espadas.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 2 de Copas da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 11 de Espadas.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 1 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 1 de Copas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 11 de Espadas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 10 de Espadas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 7 de Paus.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe roubou a carta 9 de Paus da mesa.
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 5 de Ouros.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 12 de Espadas.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 12 de Espadas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 0 de Copas.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 1 de Copas.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor empilhou a carta 2 de Copas no próprio monte.
+[18:27:30] Vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:30] Adversários compatíveis: adrielly.
+[18:27:30] Vitor está roubando o monte de adrielly.
+[18:27:30] Vitor adicionou a carta retirada ao próprio monte.
+[18:27:30] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 6 de Ouros.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 7 de Paus da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 11 de Espadas.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe roubou a carta 6 de Ouros da mesa.
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 10 de Espadas.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:30] Adversários compatíveis: Luiz Felipe.
+[18:27:30] Vitor está roubando o monte de Luiz Felipe.
+[18:27:30] Vitor adicionou a carta retirada ao próprio monte.
+[18:27:30] Vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 5 de Ouros da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 0 de Copas da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 3 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 3 de Copas.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 8 de Paus da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 9 de Paus.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 12 de Espadas.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 6 de Ouros.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 6 de Ouros da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 10 de Paus.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 10 de Espadas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:27:30] Adversários compatíveis: Vitor.
+[18:27:30] adrielly está roubando o monte de Vitor.
+[18:27:30] adrielly adicionou a carta retirada ao próprio monte.
+[18:27:30] adrielly retirou do Monte de Compra a carta 3 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 3 de Copas da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 3 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly empilhou a carta 3 de Copas no próprio monte.
+[18:27:30] adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 5 de Ouros.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 6 de Ouros.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 1 de Copas da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:30] Adversários compatíveis: adrielly.
+[18:27:30] Vitor está roubando o monte de adrielly.
+[18:27:30] Vitor adicionou a carta retirada ao próprio monte.
+[18:27:30] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 2 de Copas.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 1 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 1 de Copas.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 0 de Copas.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 0 de Copas.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 1 de Copas da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 6 de Ouros da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 13 de Espadas da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 2 de Copas da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 9 de Paus da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor empilhou a carta 9 de Paus no próprio monte.
+[18:27:30] Vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 5 de Ouros da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 4 de Ouros.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 3 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 3 de Copas.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 13 de Espadas.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 13 de Espadas da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor empilhou a carta 13 de Espadas no próprio monte.
+[18:27:30] Vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 7 de Paus.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly descartou a carta 2 de Copas.
+[18:27:30] Agora é a vez de Luiz Felipe jogar
+[18:27:30] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:30] Luiz Felipe está verificando a mesa para roubo.
+[18:27:30] Luiz Felipe descartou a carta 5 de Ouros.
+[18:27:30] Agora é a vez de Vitor jogar
+[18:27:30] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 2 de Copas da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor roubou a carta 12 de Espadas da mesa.
+[18:27:30] Vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:30] Vitor está verificando a mesa para roubo.
+[18:27:30] Vitor descartou a carta 13 de Espadas.
+[18:27:30] Agora é a vez de adrielly jogar
+[18:27:30] adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 7 de Paus da mesa.
+[18:27:30] adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:30] adrielly está verificando a mesa para roubo.
+[18:27:30] adrielly roubou a carta 5 de Ouros da mesa.
+[18:27:30] adrielly tentou retirar carta mas monte está vazio.
+[18:27:30] A área de descarte foi limpa
+[18:27:30] Vitória individual de Vitor com 91 cartas.
+
+#### INICIO PARTIDA
+PARTIDA 4 - 09/12/2025 18:27
+=============================================
+
+[18:27:35] A quantidade de cartas e os Jogadores serão mantidos para a próxima partida
+[18:27:35] Preparamento para a partida de número 4
+[18:27:35] O Monte de Compra será criado com 100 cartas.
+[18:27:35] O jogo contará com 3 no total.
+[18:27:35] O monte de compra foi criado.
+[18:27:35] O monte de compra foi preenchido.
+[18:27:35] O monte de compra foi embaralhado.
+[18:27:35] Jogadores da Partida 4: [Vitor, adrielly, Luiz Felipe]
+[18:27:35] O jogador que começará a partida será Vitor
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 8 de Paus.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 2 de Copas.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 9 de Paus.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 6 de Ouros.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly roubou a carta 9 de Paus da mesa.
+[18:27:35] adrielly retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 10 de Espadas.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 8 de Paus.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe roubou a carta 8 de Paus da mesa.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe roubou a carta 6 de Ouros da mesa.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 13 de Espadas.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 10 de Espadas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 3 de Ouros.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 8 de Paus.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 8 de Paus.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 5 de Ouros.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 3 de Ouros da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 0 de Copas.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 11 de Espadas.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:35] Adversários compatíveis: Vitor.
+[18:27:35] Luiz Felipe está roubando o monte de Vitor.
+[18:27:35] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 12 de Espadas.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 6 de Ouros.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly roubou a carta 6 de Ouros da mesa.
+[18:27:35] adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 9 de Paus.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe roubou a carta 12 de Espadas da mesa.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 7 de Paus.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] Adversários compatíveis: Luiz Felipe.
+[18:27:35] Vitor está roubando o monte de Luiz Felipe.
+[18:27:35] Vitor adicionou a carta retirada ao próprio monte.
+[18:27:35] Vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 13 de Espadas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 5 de Ouros da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 2 de Copas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 0 de Copas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 8 de Paus da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 12 de Espadas.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 1 de Copas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 1 de Copas.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 2 de Copas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 2 de Copas.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 13 de Espadas.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 0 de Copas.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 3 de Copas.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 7 de Paus da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 0 de Copas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 2 de Copas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 2 de Copas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor empilhou a carta 2 de Copas no próprio monte.
+[18:27:35] Vitor retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 5 de Ouros.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly roubou a carta 9 de Paus da mesa.
+[18:27:35] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly roubou a carta 12 de Espadas da mesa.
+[18:27:35] adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 0 de Copas.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] Adversários compatíveis: adrielly.
+[18:27:35] Luiz Felipe está roubando o monte de adrielly.
+[18:27:35] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 4 de Ouros.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 7 de Paus.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 10 de Espadas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 10 de Espadas.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe roubou a carta 7 de Paus da mesa.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 10 de Paus.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe roubou a carta 10 de Espadas da mesa.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 1 de Copas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe roubou a carta 1 de Copas da mesa.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 9 de Paus.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 9 de Paus.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 6 de Ouros.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly roubou a carta 11 de Espadas da mesa.
+[18:27:35] adrielly retirou do Monte de Compra a carta 0 de Copas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly roubou a carta 0 de Copas da mesa.
+[18:27:35] adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:27:35] Adversários compatíveis: Vitor.
+[18:27:35] adrielly está roubando o monte de Vitor.
+[18:27:35] adrielly adicionou a carta retirada ao próprio monte.
+[18:27:35] adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 7 de Paus.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe roubou a carta 13 de Espadas da mesa.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe roubou a carta 3 de Copas da mesa.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 11 de Espadas.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 12 de Espadas.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly roubou a carta 11 de Espadas da mesa.
+[18:27:35] adrielly retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly roubou a carta 12 de Espadas da mesa.
+[18:27:35] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 11 de Espadas.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] Adversários compatíveis: adrielly.
+[18:27:35] Luiz Felipe está roubando o monte de adrielly.
+[18:27:35] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 7 de Paus.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe roubou a carta 7 de Paus da mesa.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 12 de Espadas.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 9 de Paus da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 13 de Espadas.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly roubou a carta 5 de Ouros da mesa.
+[18:27:35] adrielly retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly roubou a carta 11 de Espadas da mesa.
+[18:27:35] adrielly retirou do Monte de Compra a carta 5 de Ouros.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 5 de Ouros.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 3 de Copas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 3 de Copas.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 0 de Copas.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:27:35] Adversários compatíveis: Vitor.
+[18:27:35] adrielly está roubando o monte de Vitor.
+[18:27:35] adrielly adicionou a carta retirada ao próprio monte.
+[18:27:35] adrielly retirou do Monte de Compra a carta 9 de Paus.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly empilhou a carta 9 de Paus no próprio monte.
+[18:27:35] adrielly retirou do Monte de Compra a carta 7 de Paus.
+[18:27:35] Adversários compatíveis: Luiz Felipe.
+[18:27:35] adrielly está roubando o monte de Luiz Felipe.
+[18:27:35] adrielly adicionou a carta retirada ao próprio monte.
+[18:27:35] adrielly retirou do Monte de Compra a carta 10 de Paus.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 10 de Paus.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 11 de Espadas.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 4 de Ouros.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 4 de Ouros da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 12 de Espadas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 6 de Ouros da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor empilhou a carta 6 de Ouros no próprio monte.
+[18:27:35] Vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 13 de Espadas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 3 de Ouros.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 3 de Copas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 0 de Copas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 1 de Copas.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 13 de Espadas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 13 de Espadas.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 8 de Paus.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 8 de Paus.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 1 de Copas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:27:35] Adversários compatíveis: adrielly.
+[18:27:35] Vitor está roubando o monte de adrielly.
+[18:27:35] Vitor adicionou a carta retirada ao próprio monte.
+[18:27:35] Vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor empilhou a carta 7 de Paus no próprio monte.
+[18:27:35] Vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 11 de Espadas da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 9 de Paus.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 9 de Paus.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 2 de Copas.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 2 de Copas.
+[18:27:35] Agora é a vez de Luiz Felipe jogar
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:35] Adversários compatíveis: Vitor.
+[18:27:35] Luiz Felipe está roubando o monte de Vitor.
+[18:27:35] Luiz Felipe adicionou a carta retirada ao próprio monte.
+[18:27:35] Luiz Felipe retirou do Monte de Compra a carta 12 de Espadas.
+[18:27:35] Luiz Felipe está verificando a mesa para roubo.
+[18:27:35] Luiz Felipe descartou a carta 12 de Espadas.
+[18:27:35] Agora é a vez de Vitor jogar
+[18:27:35] Vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor roubou a carta 8 de Paus da mesa.
+[18:27:35] Vitor retirou do Monte de Compra a carta 11 de Espadas.
+[18:27:35] Adversários compatíveis: Luiz Felipe.
+[18:27:35] Vitor está roubando o monte de Luiz Felipe.
+[18:27:35] Vitor adicionou a carta retirada ao próprio monte.
+[18:27:35] Vitor retirou do Monte de Compra a carta 0 de Copas.
+[18:27:35] Vitor está verificando a mesa para roubo.
+[18:27:35] Vitor descartou a carta 0 de Copas.
+[18:27:35] Agora é a vez de adrielly jogar
+[18:27:35] adrielly retirou do Monte de Compra a carta 6 de Ouros.
+[18:27:35] adrielly está verificando a mesa para roubo.
+[18:27:35] adrielly descartou a carta 6 de Ouros.
+[18:27:35] A área de descarte foi limpa
+[18:27:35] Vitória individual de Vitor com 92 cartas.
+
+#### INICIO PARTIDA
+PARTIDA 1 - 09/12/2025 18:28
+=============================================
+
+[18:28:28] Preparamento para a partida de número 1
+[18:28:33] O Monte de Compra será criado com 10 cartas.
+[18:28:38] O jogo contará com 2 no total.
+[18:28:38] O monte de compra foi criado.
+[18:28:38] O monte de compra foi preenchido.
+[18:28:38] O monte de compra foi embaralhado.
+[18:28:39] vitor ingressou no jogo.
+[18:28:42] Emanuel ingressou no jogo.
+[18:28:42] Jogadores da Partida 1: [vitor, Emanuel]
+[18:28:42] O jogador que começará a partida será vitor
+[18:28:42] Agora é a vez de vitor jogar
+[18:28:42] vitor retirou do Monte de Compra a carta 7 de Paus.
+[18:28:42] vitor está verificando a mesa para roubo.
+[18:28:42] vitor descartou a carta 7 de Paus.
+[18:28:42] Agora é a vez de Emanuel jogar
+[18:28:42] Emanuel retirou do Monte de Compra a carta 6 de Ouros.
+[18:28:42] Emanuel está verificando a mesa para roubo.
+[18:28:42] Emanuel descartou a carta 6 de Ouros.
+[18:28:42] Agora é a vez de vitor jogar
+[18:28:42] vitor retirou do Monte de Compra a carta 12 de Espadas.
+[18:28:42] vitor está verificando a mesa para roubo.
+[18:28:42] vitor descartou a carta 12 de Espadas.
+[18:28:42] Agora é a vez de Emanuel jogar
+[18:28:42] Emanuel retirou do Monte de Compra a carta 1 de Copas.
+[18:28:42] Emanuel está verificando a mesa para roubo.
+[18:28:42] Emanuel descartou a carta 1 de Copas.
+[18:28:42] Agora é a vez de vitor jogar
+[18:28:42] vitor retirou do Monte de Compra a carta 13 de Espadas.
+[18:28:42] vitor está verificando a mesa para roubo.
+[18:28:42] vitor descartou a carta 13 de Espadas.
+[18:28:42] Agora é a vez de Emanuel jogar
+[18:28:42] Emanuel retirou do Monte de Compra a carta 2 de Copas.
+[18:28:42] Emanuel está verificando a mesa para roubo.
+[18:28:42] Emanuel descartou a carta 2 de Copas.
+[18:28:42] Agora é a vez de vitor jogar
+[18:28:42] vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:28:42] vitor está verificando a mesa para roubo.
+[18:28:42] vitor descartou a carta 8 de Paus.
+[18:28:42] Agora é a vez de Emanuel jogar
+[18:28:42] Emanuel retirou do Monte de Compra a carta 12 de Espadas.
+[18:28:42] Emanuel está verificando a mesa para roubo.
+[18:28:42] Emanuel roubou a carta 12 de Espadas da mesa.
+[18:28:42] Emanuel retirou do Monte de Compra a carta 6 de Ouros.
+[18:28:42] Emanuel está verificando a mesa para roubo.
+[18:28:42] Emanuel roubou a carta 6 de Ouros da mesa.
+[18:28:42] Emanuel retirou do Monte de Compra a carta 9 de Paus.
+[18:28:42] Emanuel está verificando a mesa para roubo.
+[18:28:42] Emanuel descartou a carta 9 de Paus.
+[18:28:42] A área de descarte foi limpa
+[18:28:42] Vitória individual de Emanuel com 4 cartas.
+
+#### INICIO PARTIDA
+PARTIDA 2 - 09/12/2025 18:28
+=============================================
+
+[18:28:52] A quantidade de cartas e os Jogadores serão mantidos para a próxima partida
+[18:28:52] Preparamento para a partida de número 2
+[18:28:52] O Monte de Compra será criado com 10 cartas.
+[18:28:52] O jogo contará com 2 no total.
+[18:28:52] O monte de compra foi criado.
+[18:28:52] O monte de compra foi preenchido.
+[18:28:52] O monte de compra foi embaralhado.
+[18:28:52] Jogadores da Partida 2: [Emanuel, vitor]
+[18:28:52] O jogador que começará a partida será Emanuel
+[18:28:52] Agora é a vez de Emanuel jogar
+[18:28:52] Emanuel retirou do Monte de Compra a carta 12 de Espadas.
+[18:28:52] Emanuel está verificando a mesa para roubo.
+[18:28:52] Emanuel descartou a carta 12 de Espadas.
+[18:28:52] Agora é a vez de vitor jogar
+[18:28:52] vitor retirou do Monte de Compra a carta 1 de Copas.
+[18:28:52] vitor está verificando a mesa para roubo.
+[18:28:52] vitor descartou a carta 1 de Copas.
+[18:28:52] Agora é a vez de Emanuel jogar
+[18:28:52] Emanuel retirou do Monte de Compra a carta 12 de Espadas.
+[18:28:52] Emanuel está verificando a mesa para roubo.
+[18:28:52] Emanuel roubou a carta 12 de Espadas da mesa.
+[18:28:52] Emanuel retirou do Monte de Compra a carta 7 de Paus.
+[18:28:52] Emanuel está verificando a mesa para roubo.
+[18:28:52] Emanuel descartou a carta 7 de Paus.
+[18:28:52] Agora é a vez de vitor jogar
+[18:28:52] vitor retirou do Monte de Compra a carta 4 de Ouros.
+[18:28:52] vitor está verificando a mesa para roubo.
+[18:28:52] vitor descartou a carta 4 de Ouros.
+[18:28:52] Agora é a vez de Emanuel jogar
+[18:28:52] Emanuel retirou do Monte de Compra a carta 2 de Copas.
+[18:28:52] Emanuel está verificando a mesa para roubo.
+[18:28:52] Emanuel descartou a carta 2 de Copas.
+[18:28:52] Agora é a vez de vitor jogar
+[18:28:52] vitor retirou do Monte de Compra a carta 8 de Paus.
+[18:28:52] vitor está verificando a mesa para roubo.
+[18:28:52] vitor descartou a carta 8 de Paus.
+[18:28:52] Agora é a vez de Emanuel jogar
+[18:28:52] Emanuel retirou do Monte de Compra a carta 7 de Paus.
+[18:28:52] Emanuel está verificando a mesa para roubo.
+[18:28:52] Emanuel roubou a carta 7 de Paus da mesa.
+[18:28:52] Emanuel retirou do Monte de Compra a carta 7 de Paus.
+[18:28:52] Emanuel está verificando a mesa para roubo.
+[18:28:52] Emanuel empilhou a carta 7 de Paus no próprio monte.
+[18:28:52] Emanuel retirou do Monte de Compra a carta 11 de Espadas.
+[18:28:52] Emanuel está verificando a mesa para roubo.
+[18:28:52] Emanuel descartou a carta 11 de Espadas.
+[18:28:52] A área de descarte foi limpa
+[18:28:52] Vitória individual de Emanuel com 5 cartas.

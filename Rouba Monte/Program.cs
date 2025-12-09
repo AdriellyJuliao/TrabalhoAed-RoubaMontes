@@ -241,7 +241,7 @@ namespace Trabalho_de_AED___Rouba_Monte
 
             foreach (int rankingdojogador in ranking)
             {
-                Console.WriteLine(contagemRanking + ") " + rankingdojogador);
+                Console.WriteLine(contagemRanking + ") " + rankingdojogador + "º Posição");
                 contagemRanking++;
 
             }
@@ -448,18 +448,15 @@ public class Arquivo
     private List<string> logDaPartida;
     private bool logsNaSessao;
 
-    // Arquivos e pastas
     private static readonly string pastaLogs = "logs";
     private static readonly string nomedoArquivo = Path.Combine(pastaLogs, "log_ultimas_partidas.txt");
 
-    // Marcador exclusivo para detectar início de partidas
     private const string marcadorPartida = "#### INICIO PARTIDA";
 
     public Arquivo(bool logsNaSessao)
     {
         logDaPartida = new List<string>();
 
-        // Cria pasta logs se não existir
         if (!Directory.Exists(pastaLogs))
         {
             Directory.CreateDirectory(pastaLogs);
@@ -474,7 +471,6 @@ public class Arquivo
         set { logsNaSessao = value; }
     }
 
-    // Adiciona linhas ao log interno
     public void Registrar(string mensagem)
     {
         string linha = "[" + DateTime.Now.ToString("HH:mm:ss") + "] " + mensagem;
@@ -486,30 +482,25 @@ public class Arquivo
         }
     }
 
-    // Salva uma partida no arquivo
     public void SalvarPartida(int numeroPartida)
     {
         List<string> linhasExistentes = new List<string>();
 
-        // Se arquivo já existir, carregue o conteúdo
         if (File.Exists(nomedoArquivo))
         {
             linhasExistentes.AddRange(File.ReadAllLines(nomedoArquivo));
         }
 
-        // Adiciona nova partida usando o MARCADOR único
         linhasExistentes.Add("");
         linhasExistentes.Add(marcadorPartida);
         linhasExistentes.Add($"PARTIDA {numeroPartida} - {DateTime.Now:dd/MM/yyyy HH:mm}");
         linhasExistentes.Add("=============================================");
         linhasExistentes.Add("");
 
-        // Adiciona conteúdo do log atual
         linhasExistentes.AddRange(logDaPartida);
 
         File.WriteAllLines(nomedoArquivo, linhasExistentes);
 
-        // Limpa log interno
         logDaPartida.Clear();
     }
 
@@ -813,7 +804,25 @@ public class Arquivo
                     Console.WriteLine("4) Alterar Quantidade de Cartas e Jogadores");
 
 
-                    int opcao = int.Parse(Console.ReadLine());
+                    int opcao;
+                    bool entradaValida = false;
+
+                    do
+                    {
+                        string input = Console.ReadLine();
+
+                        if (int.TryParse(input, out opcao) && opcao >= 1 && opcao <= 4)
+                        {
+                            entradaValida = true;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Erro: digite apenas 1, 2, 3 ou 4.");
+                        }
+
+                    } while (!entradaValida);
+
+
 
                     switch (opcao)
                     {
