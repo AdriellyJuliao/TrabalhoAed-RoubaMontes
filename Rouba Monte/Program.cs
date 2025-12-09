@@ -575,16 +575,13 @@ public class Arquivo
                 if (resetarQuantidadeCartas)
                 {
                     Console.WriteLine("Quantas cartas serão geradas?");
-                    quantCartas = int.Parse(Console.ReadLine());
 
-                    while (quantCartas < 0)
+                    // fica tentando até acertar
+                    while (!int.TryParse(Console.ReadLine(), out quantCartas) || quantCartas < 0)
                     {
-                        Console.WriteLine("A quantidade de cartas deve ser positiva");
-                        quantCartas = int.Parse(Console.ReadLine());
-
+                        Console.WriteLine("Valor inválido! Digite um número inteiro positivo:");
                     }
                 }
-
                 logdoJogo.Registrar("O Monte de Compra será criado com " + quantCartas + " cartas.");
 
 
@@ -592,15 +589,13 @@ public class Arquivo
                 {
                     jogadoresDaPartida.Clear();
                     Console.WriteLine("Quantos jogadores irão participar?");
-                    quantJogadores = int.Parse(Console.ReadLine());
 
-                    while (quantJogadores < 0)
+                    while (!int.TryParse(Console.ReadLine(), out quantJogadores) || quantJogadores < 0)
                     {
-                        Console.WriteLine("A quantidade de jogadores deve ser positiva");
-                        quantJogadores = int.Parse(Console.ReadLine());
-
+                        Console.WriteLine("Valor inválido! Digite um número inteiro positivo:");
                     }
                 }
+
 
                 logdoJogo.Registrar("O jogo contará com " + quantJogadores + " no total.");
 
@@ -754,43 +749,64 @@ public class Arquivo
 
                 do
                 {
-
                     Console.WriteLine("Deseja ver os Rankings de algum jogador? (S/N)");
-                    char resp1 = char.Parse(Console.ReadLine());
+                    string entrada = Console.ReadLine().Trim();
 
-                    if (resp1 == 'S' || resp1 == 's')
+                    while (entrada == "" ||
+                           entrada.Length != 1 ||
+                           (entrada != "S" && entrada != "s" &&
+                            entrada != "N" && entrada != "n"))
+                    {
+                        Console.WriteLine("Entrada inválida! Digite apenas S ou N:");
+                        entrada = Console.ReadLine().Trim();
+                    }
+
+                    char resp1 = entrada.ToUpper()[0];
+
+                    if (resp1 == 'S')
                     {
                         visualizarRankings = true;
 
                         Console.WriteLine("Digite o nome de um jogador");
                         string nomeJogadorRanking = Console.ReadLine();
 
+                        bool encontrado = false;
 
                         foreach (Jogador jogadorRanking in jogadoresDaPartida)
                         {
                             if (jogadorRanking.Nome == nomeJogadorRanking)
                             {
                                 jogadorRanking.VisualizarRanking();
+                                encontrado = true;
+                                break;
                             }
                         }
-                    }
 
-                    else if (resp1 == 'N' || resp1 == 'n')
+                        if (!encontrado)
+                        {
+                            Console.WriteLine("Jogador não encontrado! Verifique o nome digitado.");
+                        }
+                    }
+                    else 
                     {
                         visualizarRankings = false;
                     }
-                    else
-                    {
-                        throw new Exception("Resposta Inválida");
-                    }
-
-
-
 
                 } while (visualizarRankings);
-
                 Console.WriteLine("Deseja continuar jogando? (S/N)");
-                char respContinuar = char.Parse(Console.ReadLine());
+                string entradaContinuar = Console.ReadLine().Trim();
+
+                while (entradaContinuar == "" ||
+                       entradaContinuar.Length != 1 ||
+                       (entradaContinuar != "S" && entradaContinuar != "s" &&
+                        entradaContinuar != "N" && entradaContinuar != "n"))
+                {
+                    Console.WriteLine("Entrada inválida! Digite apenas S ou N:");
+                    entradaContinuar = Console.ReadLine().Trim();
+                }
+
+                char respContinuar = entradaContinuar.ToUpper()[0];
+
 
 
                 if (respContinuar == 'S' || respContinuar == 's')

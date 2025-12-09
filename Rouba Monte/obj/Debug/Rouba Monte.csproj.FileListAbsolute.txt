@@ -1,0 +1,8 @@
+C:\Users\vitor\Source\Repos\TrabalhoAed-RoubaMontes\Rouba Monte\bin\Debug\Rouba_Monte.exe.config
+C:\Users\vitor\Source\Repos\TrabalhoAed-RoubaMontes\Rouba Monte\bin\Debug\Rouba_Monte.exe
+C:\Users\vitor\Source\Repos\TrabalhoAed-RoubaMontes\Rouba Monte\bin\Debug\Rouba_Monte.pdb
+C:\Users\vitor\Source\Repos\TrabalhoAed-RoubaMontes\Rouba Monte\obj\Debug\Rouba Monte.csproj.AssemblyReference.cache
+C:\Users\vitor\Source\Repos\TrabalhoAed-RoubaMontes\Rouba Monte\obj\Debug\Rouba Monte.csproj.CoreCompileInputs.cache
+C:\Users\vitor\Source\Repos\TrabalhoAed-RoubaMontes\Rouba Monte\obj\Debug\Rouba_Monte.exe
+C:\Users\vitor\Source\Repos\TrabalhoAed-RoubaMontes\Rouba Monte\obj\Debug\Rouba_Monte.pdb
+C:\Users\vitor\Source\Repos\TrabalhoAed-RoubaMontes\Rouba Monte\obj\Debug\Rouba_Monte.exe.config
